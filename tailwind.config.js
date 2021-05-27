@@ -7,16 +7,20 @@ module.exports = {
       fontFamily: {
         'open-sans': ['Open Sans'],
         'bebas-neue': ['Bebas Neue'],
+        'londrina-shadow': ['Londrina Shadow'],
       },
       backgroundColor: {
         'lilac': '#D8E3F5',
+        'lilac-300': '#F4F7FC',
         'lilac-400': '#F0F4FB',
         'purple': '#773DBD',
         'main': '#202E3D',
+        'card': '#374351',
       },
       fontSize: {
         '15': '15px',
         '110': '110px',
+        '7.5xl': '82px',
       },
       textColor: {
         'lilac': '#FCFDFE',

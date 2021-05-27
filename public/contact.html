@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light it</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="">
+    <!-- ===== Navigation ===== -->
+    <div id="nav" class="fixed z-50 w-full">
+        <header class="max-w-8xl mx-auto flex flex-wrap items-center justify-between py-2 px-4">
+            <div>
+                <a href="index.html"><img class="w-48" src="assets/img/Logo_purple.svg" alt=""></a>
+            </div>
+    
+            <button id="menuBtn" class="md:hidden focus:outline-none"><img class="w-6" src="assets/img/menuBtnBlack.svg" alt=""></button>
+    
+            <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
+                <nav>
+                    <ul id="nav2" class="md:flex justify-between items-center font-open-sans text-white md:text-gray-900 font-bold text-15 space-y-4 md:space-y-0 md:space-x-12 pt-4 md:pt-0">
+                        <li><a href="#">Work</a></li>
+                        <li><a href="ser_pro_strategy.html">Services</a></li>
+                        <li><a href="#">Playbook</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li class="bg-purple rounded-md py-2 px-4"><a class="text-white" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto pt-32 pb-20 px-4">
+        <h1 class="relative z-10 font-bebas-neue text-[82px] text-lilacSecondary uppercase">Contact us</h1>
+        <img class="absolute z-20 -bottom-24 -left-6" src="assets/img/contact_girl.svg" alt="">
+        <img class="absolute z-20 bottom-6 left-60 w-24 md:w-32" src="assets/img/discuss.svg" alt="">
+    </div>
+
+    <!-- ===== form ===== -->
+    <div class="relative z-30 max-w-3xl mx-auto px-4 py-20">
+        <form class="relative z-30 grid grid-cols-1 md:grid-cols-2 gap-6" action="">
+            <div class="w-full">
+                <label class="block font-open-sans" for="name">Name</label>
+                <input class="bg-lilac-400 w-full pl-2 py-2 rounded-xl focus:outline-none" type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="w-full">
+                <label class="block font-open-sans" for="email">Email</label>
+                <input class="bg-lilac-400 w-full pl-2 py-2 rounded-xl focus:outline-none" type="text" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="w-full">
+                <label class="block font-open-sans" for="phone">Phone</label>
+                <input class="bg-lilac-400 w-full pl-2 py-2 rounded-xl focus:outline-none" type="text" name="phone" id="phone" placeholder="Phone">
+            </div>
+            <div class="w-full">
+                <label class="block font-open-sans" for="project">Type of project</label>
+                <input class="bg-lilac-400 w-full pl-2 py-2 rounded-xl focus:outline-none" type="text" name="project" id="project" placeholder="Type of project">
+            </div>
+            <div class="w-full md:col-span-2">
+                <label class="block font-open-sans" for="details">Project details</label>
+                <textarea class="bg-lilac-400 w-full pl-2 py-2 rounded-xl focus:outline-none resize-none" name="details" id="details" cols="30" rows="4" placeholder="Project details"></textarea>
+            </div>
+            <div class="w-full">
+                <label class="block font-open-sans" for="budget">Budget</label>
+                <select class="bg-lilac-400 w-full pl-2 py-2 rounded-xl focus:outline-none" name="budget" id="budget" placeholder="text">
+                    <option class="text-lilac" value="">text</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="w-full">
+                <label class="block font-open-sans" for="project">How did you hear about us?</label>
+                <input class="bg-lilac-400 w-full pl-2 py-2 rounded-xl focus:outline-none" type="text" name="how" id="how" placeholder="How hear?">
+            </div>
+            <div class="w-full md:col-start-2">
+                <button class="bg-purple text-white font-bold text-center w-full py-2 rounded-xl font-open-sans focus:outline-none">Submit</button>
+            </div>
+        </form>
+
+        <!-- absloute images -->
+        <img class="absolute z-20 top-28 left-6 md:-left-40" src="assets/img/flying_paper.svg" alt="">
+        <img class="hidden absolute z-20 -right-40 bottom-28 w-32 overflow-hidden" src="assets/img/discuss1.svg" alt="">
+        <img class="hidden absolute z-20 -right-8 bottom-8" src="assets/img/msg_popup.svg" alt="">
+        <img class="hidden absolute z-20 -right-8 bottom-8" src="assets/shapes/dot_grid.svg" alt="">
+        <!-- pentagon -->
+        <svg class="absolute z-20 top-56 -left-10 md:-left-96" width="127" height="121" viewBox="0 0 127 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#D7E4FF"/>
+        </svg>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!-- mistakes in: absolute positions one in hero and other in client review
+    select option style
+    animation of triangles and pentagons
+-->

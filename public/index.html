@@ -10,43 +10,56 @@
 </head>
 <body class="">
     <!-- ===== Navigation ===== -->
-    <div class="fixed z-50 w-full">
-        <div class="max-w-8xl mx-auto flex items-center justify-between">
+    <div id="nav" class="fixed z-50 w-full">
+        <header class="max-w-8xl mx-auto flex flex-wrap items-center justify-between py-2 px-4">
             <div>
                 <a href="index.html"><img class="w-48" src="assets/img/Logo.svg" alt=""></a>
             </div>
-            <nav class="flex items-center font-open-sans text-white font-bold text-15 space-x-12">
-                <ul class="flex space-x-12">
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Playbook</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-                <div class="bg-lilac rounded-md py-2 px-4">
-                    <a class="text-black" href="#">Contact Us</a>
-                </div>
-            </nav>
-        </div>
+    
+            <button id="menuBtn" class="md:hidden focus:outline-none"><img class="w-6" src="assets/img/menuBtn.svg" alt=""></button>
+    
+            <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
+                <nav>
+                    <ul class="md:flex justify-between items-center font-open-sans text-white font-bold text-15 space-y-4 md:space-y-0 md:space-x-12 pt-4 md:pt-0">
+                        <li><a href="#">Work</a></li>
+                        <li><a href="ser_pro_strategy.html">Services</a></li>
+                        <li><a href="#">Playbook</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li class="bg-lilac rounded-md py-2 px-4"><a class="text-black" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     </div>
 
     <!-- ===== hero ===== -->
-    <div style="background-image: url(assets/img/hero_bg.png);" class="relative bg-cover bg-no-repeat object-fill h-screen">
+    <div style="background-image: url(assets/img/hero_bg.png);" class="relative bg-cover bg-center bg-no-repeat h-screen">
         <div class="absolute bg-gray-900 bg-opacity-70 w-full h-screen">
-            <div class="max-w-6xl mx-auto flex flex-col justify-center text-lilac h-screen">
-                <h1 class="font-bebas-neue text-110 leading-tight">we create <br> <span class="bg-purple">&nbsp;successful digital products&nbsp;</span></h1>
-                <p class="font-open-sans text-2xl font-semibold pt-12 pb-8">Our team helps founders and companies ideate, build, and <br> launch web & mobile applications people love to use.</p>
+            <div class="relative z-20 max-w-6xl mx-auto flex flex-col justify-center text-lilac h-screen px-6">
+                <h1 class="font-bebas-neue text-5xl md:text-7xl lg:text-110 leading-tight">we create <br> <span class="bg-purple">&nbsp;successful digital products&nbsp;</span></h1>
+                <p class="font-open-sans text-xl md:text-2xl font-semibold pt-12 pb-8">Our team helps founders and companies ideate, build, and <br> launch web & mobile applications people love to use.</p>
                 <a class="inline-block" href="#"><span class="font-open-sans text-15 bg-purple rounded-md py-2 px-4">Contact Us</span></a>
             </div>
         </div>
         <!-- triangle -->
-        <svg class="absolute z-30 left-10 bottom-36" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="hidden md:block absolute z-0 left-0 md:left-10 bottom-0 md:bottom-36" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
         </svg>
+        <!-- triangle little -->
+        <svg class="md:hidden absolute z-0 left-0 -bottom-4" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+        </svg>
         <!-- dot-grid -->
-        <img class="absolute z-30 -left-20 -bottom-32" src="assets/shapes/dot_grid.svg" alt="">
+        <div class="hidden absolute z-0 -right-20 md:-left-20 bottom-56 md:-bottom-32"> <!-- overflow-hidden  -->
+            <img src="assets/shapes/dot_grid.svg" alt="">
+        </div>
         <!-- pentagon -->
-        <svg class="absolute z-30 right-10 -bottom-4" width="96" height="91" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class=" hidden md:block absolute z-0 right-10 -bottom-4" width="96" height="91" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#D7E4FF"/>
+        </svg>
+        <!-- pentagon little -->
+        <svg class="md:hidden absolute z-0 right-0 -bottom-4" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
         </svg>
     </div>
 
@@ -54,28 +67,28 @@
     <div class="bg-main">
 
         <!-- ===== leading company partners ===== -->
-        <div class="max-w-8xl ml-auto">
-            <div class="flex items-center py-4">
+        <div class="max-w-8xl ml-auto px-4">
+            <div class="flex items-center py-12 md:py-4">
                 <h1 class="text-lilac text-lg font-semibold w-100">Leading companies that worked with us</h1>
-                <div class="bg-lilac w-full h-px"></div>
+                <div class="hidden md:block bg-lilac w-full h-px"></div>
             </div>
-            <div class="flex items-center justify-between pl-20 pr-4">
-                <a href="#"><img src="assets/img/bestbuy.svg" alt="best buy logo"></a>
-                <a href="#"><img src="assets/img/curascribe.svg" alt="curascribe logo"></a>
-                <a href="#"><img src="assets/img/d_local.svg" alt="d local logo"></a>
-                <a href="#"><img src="assets/img/WTC.svg" alt="WTC logo"></a>
-                <a href="#"><img src="assets/img/Chatbot.svg" alt=""></a>
+            <div class="flex flex-wrap items-center justify-center md:justify-between md:pl-20 md:pr-4">
+                <a class="p-2" href="#"><img src="assets/img/bestbuy.svg" alt="best buy logo"></a>
+                <a class="p-2" href="#"><img src="assets/img/curascribe.svg" alt="curascribe logo"></a>
+                <a class="p-2" href="#"><img src="assets/img/d_local.svg" alt="d local logo"></a>
+                <a class="p-2" href="#"><img src="assets/img/WTC.svg" alt="WTC logo"></a>
+                <a class="hidden md:block p-2" href="#"><img src="assets/img/Chatbot.svg" alt=""></a>
             </div>
         </div>
 
         <!-- ===== services ===== -->
-        <div class="max-w-6xl mx-auto grid grid-rows-8 grid-cols-2 gap-6 pt-24">
-            <div class="relative row-span-2">
+        <div class="max-w-6xl mx-auto grid grid-rows-8 grid-cols-1 md:grid-cols-2 gap-6 pt-24 px-4">
+            <div class="relative row-span-2 order-1">
                 <h1 class="relative z-10 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">services</h1>
                 <p class="absolute z-20 bottom-6 font-open-sans text-lilac pl-6">We're the partner you need! Our team will help you build top-notch digital products that strengthen your relationship with your users and make your business thrive. Let's take your business to the next level!</p>
             </div>
 
-            <div class="row-span-3 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4">
+            <div class="row-span-3 order-3 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4">
                 <img src="assets/img/product_design.svg" alt="">
                 <div class="space-y-4">
                     <h1 class="text-white text-2xl font-bebas-neue">product design</h1>
@@ -87,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="row-span-3 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4">
+            <div class="row-span-3 order-2 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4">
                 <img src="assets/img/product_strategy.svg" alt="">
                 <div class="space-y-4">
                     <h1 class="text-white text-2xl font-bebas-neue">product strategy</h1>
@@ -100,7 +113,7 @@
                 </div>
             </div>
 
-            <div class="row-span-3 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4">
+            <div class="row-span-3 order-5 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4">
                 <img src="assets/img/staff_augmentation.svg" alt="">
                 <div class="space-y-4">
                     <h1 class="text-white text-2xl font-bebas-neue">staff augmentation</h1>
@@ -111,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="relative row-span-3 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4">
+            <div class="relative row-span-3 order-4 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4">
                 <img src="assets/img/development.svg" alt="">
                 <div class="space-y-4">
                     <h1 class="text-white text-2xl font-bebas-neue">development</h1>
@@ -121,32 +134,48 @@
                         <div class="absolute z-10 -left-1 top-0 w-4 h-7 bg-main"></div>
                     </div>
                 </div>
-                <svg class="absolute z-20 bottom-2 left-1/2" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="hidden md:block absolute z-20 bottom-2 left-1/2" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
                 </svg>
             </div>
-            <div>
-                <a class="inline-block float-right" href="#"><span class="text-white font-bold font-open-sans text-15 bg-purple rounded-md py-2 pl-4 pr-20">Contact Us</span></a>
+            <div class="relative order-6">
+                <a class="relative z-20 float-right w-full text-white font-bold font-open-sans text-15 bg-purple rounded-md py-2 pl-4 pr-20" href="#"><span>Contact Us</span></a>
+                <svg class="block mg:hidden absolute z-10 -top-6 -right-4" width="70" height="66" viewBox="0 0 70 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z" fill="#D7E4FF"/>
+                </svg>
             </div>
         </div>
 
         <!-- ===== our work ===== -->
 
         <!-- ===== best buy ===== -->
-        <div class="max-w-6xl mx-auto flex items-center py-44">
-            <div class="w-2/5">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center py-44 px-4">
+            <div class="relative w-full md:w-2/5">
                 <p class="text-lilacSecondary font-bebas-neue text-sm">case study</p>
                 <h1 class="text-lilac font-bebas-neue text-4xl pb-8">best buy</h1>
-                <p class="font-open-sans text-gray-100 pb-14">Retailer <br><br>
+
+                <div class="block md:hidden relative w-full md:w-3/5">
+                    <img class="relative z-20" src="assets/img/laptop.svg" alt="">
+                    <h1 class="hidden md:block absolute z-10 -top-16 right-0 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">our work</h1>
+                    <svg class="absolute z-10 bottom-20 right-6" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
+                    </svg>
+                </div>
+
+                <p class="font-open-sans text-gray-100 pt-6 md:pt-0 pb-14">Retailer <br><br>
                     We built BestBuy's influencer network, a platform where influencers from different social media channels can collaborate with BestBuy to promote their electronic products.</p>
                 <div class="relative">
                     <a class="relative z-20 inline-block text-lilac font-bold" href="#">Read the success story</a>
                     <div class="absolute z-10 -left-1 top-0 w-4 h-7 bg-gray-500"></div>
+                    <svg class="md:hidden absolute z-0 right-20 -bottom-6" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+                    </svg>
                 </div>
+                <h1 class="md:hidden absolute z-10 -top-28 left-0 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">our work</h1>
             </div>
-            <div class="relative w-3/5">
+            <div class="hidden md:block relative w-full md:w-3/5">
                 <img class="relative z-20" src="assets/img/laptop.svg" alt="">
-                <h1 class="absolute z-10 -top-16 right-0 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">our work</h1>
+                <h1 class="hidden md:block absolute z-10 -top-16 right-0 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">our work</h1>
                 <svg class="absolute z-10 -bottom-10 right-6" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
                 </svg>
@@ -157,8 +186,8 @@
         </div>
 
         <!-- ===== d local ===== -->
-        <div class="max-w-6xl mx-auto flex items-center py-44">
-            <div class="relative w-3/5">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center pb-20 md:py-44 px-4">
+            <div class="hidden md:block relative w-full md:w-3/5">
                 <img class="relative z-20" src="assets/img/dlocal_phone.svg" alt="">
                 <svg class="absolute z-10 top-10 right-56" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
@@ -167,10 +196,21 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#D7E4FF"/>
                 </svg>
             </div>
-            <div class="w-2/5">
+            <div class="w-full md:w-2/5">
                 <p class="text-lilacSecondary font-bebas-neue text-sm">case study</p>
                 <h1 class="text-lilac font-bebas-neue text-4xl pb-8">dlocal</h1>
-                <p class="font-open-sans text-gray-100 pb-14">Fintech <br><br>
+
+                <div class="md:hidden relative w-full md:w-3/5">
+                    <img class="relative z-20" src="assets/img/dlocal_phone.svg" alt="">
+                    <svg class="absolute z-10 -top-10 right-6" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+                    </svg>
+                    <svg class="absolute z-10 bottom-28 left-8" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
+                    </svg>
+                </div>
+
+                <p class="font-open-sans text-gray-100 pt-6 md:pt-0 pb-14">Fintech <br><br>
                     We integrated Dlocal, a unicorn company that offers a payment platform for emerging markets, with Shopify, the largest e-commerce cloud-based tool.</p>
                 <div class="relative">
                     <a class="relative z-20 inline-block text-lilac font-bold" href="#">Read the success story</a>
@@ -180,10 +220,21 @@
         </div>
 
         <!-- ===== curascribe ===== -->
-        <div class="max-w-6xl mx-auto flex items-center pt-44 pb-60">
-            <div class="w-2/5">
-                <p class="text-lilacSecondary font-bebas-neue text-sm">case study</p>
-                <h1 class="text-lilac font-bebas-neue text-4xl pb-8">curascribe</h1>
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center pt-20 md:pt-44 pb-60 px-4">
+            <div class="w-full md:w-2/5">
+                <p class="text-lilacSecondary relative z-20 font-bebas-neue text-sm">case study</p>
+                <h1 class="text-lilac relative z-20 font-bebas-neue text-4xl pb-8">curascribe</h1>
+
+                <div class="md:hidden relative w-full md:w-3/5">
+                    <img class="relative z-20" src="assets/img/curascribe_laptop.svg" alt="">
+                    <svg class="absolute z-10 -top-24 left-4"  width="85" height="86" viewBox="0 0 85 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="42.5346" cy="42.6317" r="42.3935" fill="#BF9DDF"/>
+                    </svg>
+                    <svg class="absolute z-10 bottom-16 -right-4" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
+                    </svg>
+                </div>
+
                 <p class="font-open-sans text-gray-100 pb-14">Healthcare <br><br>
                     We designed and built the first web and mobile platform that connects doctors with virtual scribes, helping doctors save time, focus entirely on the patient's health, and store confidential information safely.</p>
                 <div class="relative">
@@ -191,7 +242,7 @@
                     <div class="absolute z-10 -left-1 top-0 w-4 h-7 bg-gray-500"></div>
                 </div>
             </div>
-            <div class="relative w-3/5">
+            <div class="hidden md:block relative w-full md:w-3/5">
                 <img class="relative z-20" src="assets/img/curascribe_laptop.svg" alt="">
                 <svg class="absolute z-10 -top-3 left-10" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD"/>
@@ -204,76 +255,106 @@
         </div>
     </div>
 
-    <div class="relative">
-        <!-- ===== playbook ===== -->
-        <div class="absolute -top-32 max-w-6xl w-full ml-44 bg-[#374351] rounded-2xl py-14 px-8">
+    <!-- ===== playbook ===== -->
+    <div class="px-4">
+        <div class="relative max-w-6xl mx-auto w-full bg-card rounded-2xl -mt-36 py-14 px-4 md:px-8">
             <div class="relative">
                 <p class="font-bebas-neue text-xl text-lilacSecondary">playbook</p>
                 <h1 class="font-bebas-neue text-4xl text-lilac pt-6 pb-8">learn more about our approach</h1>
                 <a class="block" href="#"><span class="text-gray-900 font-bold font-open-sans text-15 bg-lilac rounded-lg py-2 px-4">Our playbook</span></a>
             </div>
-            <svg class="absolute right-1/3 bottom-1/3" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- triangle -->
+            <svg class="hidden md:block absolute right-1/3 bottom-1/3" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
             </svg>
-            <svg class="absolute right-60 top-12" width="96" height="91" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- pentagon -->
+            <svg class="hidden md:block absolute right-60 top-12" width="96" height="91" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#D7E4FF"/>
             </svg>
-            <svg class="absolute right-8 bottom-6" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- circle -->
+            <svg class="hidden md:block absolute right-8 bottom-6" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
+            </svg>
+
+            <!-- triangle little -->
+            <svg class="md:hidden absolute bottom-10 right-28" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+            </svg>
+            <!-- pentagon tittle -->
+            <svg class="md:hidden absolute bottom-28 right-12" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
+            </svg>
+            <!-- circle little -->
+            <svg class="md:hidden absolute bottom-6 right-4" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD"/>
             </svg>
         </div>
     </div>
 
     <!-- ===== client reviews ===== -->
-    <div class="max-w-5xl mx-auto px-12 pt-80">
-        <div class="relative grid grid-rows-5 grid-cols-5 gap-6">
+    <!-- hozr siz shu 3 ta card ni bitta div qilasiz, svglarni bitta qilasiz, chunki svg bu cardlarni ichida, overflow begani uchun yonboshdan ko'rinmayapti -->
+    <div class="max-w-5xl mx-auto px-4 md:px-12 pt-80">
+        <div class="relative">
+            <div class="grid md:grid-rows-5 grid-cols-1 md:grid-cols-5 gap-6">
+                <div class="relative z-30 md:row-start-2 md:row-end-4 md:col-start-1 md:col-end-3 rounded-xl bg-lilac-400 p-6">
+                    <p class="font-open-sans pb-8">“The most impressive thing about them was their involvement in the project. They not only participate on technical decisions, but also product & business-related ones.”</p>
+                    <div class="flex space-x-4">
+                        <img class="rounded-full w-16" src="assets/img/Joel_dlocal.png" alt="">
+                        <div>
+                            <h1 class="font-bebas-neue text-2xl">Joel Liurner</h1>
+                            <p class="text-sm font-open-sans">D-local</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="relative z-30 row-start-2 row-end-4 col-start-1 col-end-3 rounded-xl bg-lilac-400 p-6">
-                <p class="font-open-sans pb-8">“The most impressive thing about them was their involvement in the project. They not only participate on technical decisions, but also product & business-related ones.”</p>
-                <div class="flex space-x-4">
-                    <img class="rounded-full w-16" src="assets/img/Joel_dlocal.png" alt="">
-                    <div>
-                        <h1 class="font-bebas-neue text-2xl">Joel Liurner</h1>
-                        <p class="text-sm font-open-sans">D-local</p>
+                <div class="relative z-30 md:row-start-1 md:row-end-3 md:col-start-3 md:col-end-6 rounded-xl bg-lilac-400 p-6">
+                    <p class="font-open-sans pb-8">“I’ve never worked with an offshore team that provided such good results. They were very collaborative, and they delivered solutions that went beyond our specifications and were extremely impactful.”</p>
+                    <div class="flex space-x-4">
+                        <img class="rounded-full w-16" src="assets/img/gary_bestbuy.png" alt="">
+                        <div>
+                            <h1 class="font-bebas-neue text-2xl">gary koelling</h1>
+                            <p class="text-sm font-open-sans">Best Buy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-start-3 md:row-end-5 md:col-start-3 md:col-end-5 rounded-xl bg-lilac-400 p-6">
+                    <p class="font-open-sans pb-8">“One of the things that have impressed me the most is Light-it’s willingness to listen to what we have in mind for our product.”</p>
+                    <div class="flex space-x-4">
+                        <img class="rounded-full w-16" src="assets/img/alisha_curascribe.png" alt="">
+                        <div>
+                            <h1 class="font-bebas-neue text-2xl">Alisha gallagher</h1>
+                            <p class="text-sm font-open-sans">CuraScribe</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="relative z-30 row-start-1 row-end-3 col-start-3 col-end-6 rounded-xl bg-lilac-400 p-6">
-                <p class="font-open-sans pb-8">“I’ve never worked with an offshore team that provided such good results. They were very collaborative, and they delivered solutions that went beyond our specifications and were extremely impactful.”</p>
-                <div class="flex space-x-4">
-                    <img class="rounded-full w-16" src="assets/img/gary_bestbuy.png" alt="">
-                    <div>
-                        <h1 class="font-bebas-neue text-2xl">gary koelling</h1>
-                        <p class="text-sm font-open-sans">Best Buy</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row-start-3 row-end-5 col-start-3 col-end-5 rounded-xl bg-lilac-400 p-6">
-                <p class="font-open-sans pb-8">“One of the things that have impressed me the most is Light-it’s willingness to listen to what we have in mind for our product.”</p>
-                <div class="flex space-x-4">
-                    <img class="rounded-full w-16" src="assets/img/alisha_curascribe.png" alt="">
-                    <div>
-                        <h1 class="font-bebas-neue text-2xl">Alisha gallagher</h1>
-                        <p class="text-sm font-open-sans">CuraScribe</p>
-                    </div>
-                </div>
-            </div>
-
-            <h1 class="absolute z-10 top-16 -left-32 font-bebas-neue text-[82px] text-lilacSecondary">client reviews</h1>
+            <!-- for large screen -->
+            <h1 class="hidden md:block absolute z-10 top-16 -left-32 font-bebas-neue text-[82px] text-lilacSecondary">client reviews</h1>
+            <!-- for little screen -->
+            <h1 class="md:hidden absolute z-10 -top-64 left-0 font-bebas-neue text-[82px] text-lilacSecondary">client reviews</h1>
+            <!-- pentagon -->
             <svg class="absolute -top-12 left-0" width="70" height="66" viewBox="0 0 70 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z" fill="#D7E4FF"/>
             </svg>
-            <svg class="absolute z-10 -right-28" width="146" height="127" viewBox="0 0 146 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- triangle -->
+            <svg class="hidden md:block absolute z-10 -right-28 top-0 overflow-hidden" width="146" height="127" viewBox="0 0 146 127" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.68725 126.194L73.2307 0.16113L145.774 126.194L0.68725 126.194Z" fill="#D7E4FF"/>
             </svg>
+            <!-- circle -->
             <svg class="absolute z-20 bottom-72 -left-28" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
             </svg>
-            <img class="absolute z-10 bottom-36 -left-12" src="assets/shapes/dot_grid.svg" alt="">
+            <!-- grid dots -->
+            <img class="hidden md:block absolute z-10 bottom-36 -left-12" src="assets/shapes/dot_grid.svg" alt="">
         </div>
     </div>
 
+    <script src="app.js"></script>
 </body>
 </html>
+
+<!-- mistakes in: two absolute positions one in hero and other in client review
+    carousel
+    animation of triangles and pentagons
+-->
