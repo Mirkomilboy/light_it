@@ -25,6 +25,7 @@ module.exports = {
       textColor: {
         'lilac': '#FCFDFE',
         'lilacSecondary': '#D8E3F5',
+        'lilac-500': '#ECF1FA',
       },
       maxWidth: {
         '8xl': '84rem',
