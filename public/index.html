@@ -33,7 +33,7 @@
     </div>
 
     <!-- ===== hero ===== -->
-    <div style="background-image: url(assets/img/hero_bg.png);" class="relative bg-cover bg-center bg-no-repeat h-screen">
+    <div style="background-image: url(assets/img/hero_bg.png);" class="relative w-full overflow-x-hidden overview bg-cover bg-center bg-no-repeat h-screen">
         <div class="absolute bg-gray-900 bg-opacity-70 w-full h-screen">
             <div class="relative z-20 max-w-6xl mx-auto flex flex-col justify-center text-lilac h-screen px-6">
                 <h1 class="font-bebas-neue text-5xl md:text-7xl lg:text-110 leading-tight">we create <br> <span class="bg-purple">&nbsp;successful digital products&nbsp;</span></h1>
@@ -50,7 +50,10 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
         </svg>
         <!-- dot-grid -->
-        <div class="hidden absolute z-0 -right-20 md:-left-20 bottom-56 md:-bottom-32"> <!-- overflow-hidden  -->
+        <div class="hidden md:block absolute z-0 -left-20 -bottom-32"> <!-- overflow-hidden  -->
+            <img src="assets/shapes/dot_grid.svg" alt="">
+        </div>
+        <div class="md:hidden absolute z-0 -right-20 bottom-64 transform rotate-90"> <!-- overflow-hidden  -->
             <img src="assets/shapes/dot_grid.svg" alt="">
         </div>
         <!-- pentagon -->
@@ -82,7 +85,7 @@
         </div>
 
         <!-- ===== services ===== -->
-        <div class="max-w-6xl mx-auto grid grid-rows-8 grid-cols-1 md:grid-cols-2 gap-6 pt-24 px-4">
+        <div class="max-w-6xl mx-auto grid grid-rows-8 grid-cols-1 md:grid-cols-2 gap-6 relative w-full overflow-x-hidden overview pt-24 px-4">
             <div class="relative row-span-2 order-1">
                 <h1 class="relative z-10 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">services</h1>
                 <p class="absolute z-20 bottom-6 font-open-sans text-lilac pl-6">We're the partner you need! Our team will help you build top-notch digital products that strengthen your relationship with your users and make your business thrive. Let's take your business to the next level!</p>
@@ -138,9 +141,12 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
                 </svg>
             </div>
-            <div class="relative order-6">
+            <div class="hidden md:block relative order-6">
                 <a class="relative z-20 float-right" href="#"><span class="w-full text-white font-bold font-open-sans text-15 bg-purple rounded-xl py-2.5 pl-4 pr-20">Contact Us</span></a>
-                <svg class="block mg:hidden absolute z-10 -top-6 -right-4" width="70" height="66" viewBox="0 0 70 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </div>
+            <div class="md:hidden relative order-6">
+                <a class="relative z-20 float-right w-full text-white font-bold font-open-sans text-15 bg-purple rounded-xl py-2.5 pl-4 pr-20" href="contact.html"><span >Contact Us</span></a>
+                <svg class="absolute z-10 -top-4 -right-8" width="70" height="66" viewBox="0 0 70 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z" fill="#D7E4FF"/>
                 </svg>
             </div>
@@ -150,7 +156,7 @@
 
         <!-- ===== best buy ===== -->
         <div class="max-w-6xl mx-auto flex flex-wrap items-center py-44 px-4">
-            <div class="relative w-full md:w-2/5">
+            <div class="relative w-full md:w-2/5 md:pr-6">
                 <p class="text-lilacSecondary font-bebas-neue text-sm">case study</p>
                 <h1 class="text-lilac font-bebas-neue text-4xl pb-8">best buy</h1>
 
@@ -173,7 +179,7 @@
                 </div>
                 <h1 class="md:hidden absolute z-10 -top-28 left-0 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">our work</h1>
             </div>
-            <div class="hidden md:block relative w-full md:w-3/5">
+            <div class="hidden md:block relative w-full md:w-3/5 md:pl-6">
                 <img class="relative z-20" src="assets/img/laptop.svg" alt="">
                 <h1 class="hidden md:block absolute z-10 -top-16 right-0 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">our work</h1>
                 <svg class="absolute z-10 -bottom-10 right-6" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -187,7 +193,7 @@
 
         <!-- ===== d local ===== -->
         <div class="max-w-6xl mx-auto flex flex-wrap items-center pb-20 md:py-44 px-4">
-            <div class="hidden md:block relative w-full md:w-3/5">
+            <div class="hidden md:block relative w-full md:w-3/5 md:pr-6">
                 <img class="relative z-20" src="assets/img/dlocal_phone.svg" alt="">
                 <svg class="absolute z-10 top-10 right-56" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
@@ -196,7 +202,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#D7E4FF"/>
                 </svg>
             </div>
-            <div class="w-full md:w-2/5">
+            <div class="w-full md:w-2/5 md:pl-6">
                 <p class="text-lilacSecondary font-bebas-neue text-sm">case study</p>
                 <h1 class="text-lilac font-bebas-neue text-4xl pb-8">dlocal</h1>
 
@@ -220,8 +226,8 @@
         </div>
 
         <!-- ===== curascribe ===== -->
-        <div class="max-w-6xl mx-auto flex flex-wrap items-center pt-20 md:pt-44 pb-60 px-4">
-            <div class="w-full md:w-2/5">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center pt-20 md:pt-44 pb-56 md:pb-96 px-4">
+            <div class="w-full md:w-2/5 md:pr-8">
                 <p class="text-lilacSecondary relative z-20 font-bebas-neue text-sm">case study</p>
                 <h1 class="text-lilac relative z-20 font-bebas-neue text-4xl pb-8">curascribe</h1>
 
@@ -242,7 +248,7 @@
                     <div class="absolute z-10 -left-1 top-0 w-4 h-7 bg-gray-500"></div>
                 </div>
             </div>
-            <div class="hidden md:block relative w-full md:w-3/5">
+            <div class="hidden md:block relative w-full md:w-3/5 md:pl-8">
                 <img class="relative z-20" src="assets/img/curascribe_laptop.svg" alt="">
                 <svg class="absolute z-10 -top-3 left-10" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD"/>
@@ -258,7 +264,7 @@
     <!-- ===== playbook ===== -->
     <div class="px-4">
         <div class="relative max-w-6xl mx-auto w-full bg-card rounded-2xl -mt-36 py-14 px-4 md:px-8">
-            <div class="relative">
+            <div class="relative w-4/5">
                 <p class="font-bebas-neue text-xl text-lilacSecondary">playbook</p>
                 <h1 class="font-bebas-neue text-4xl text-lilac pt-6 pb-8">learn more about our approach</h1>
                 <a class="block" href="#"><span class="text-gray-900 font-bold font-open-sans text-15 bg-lilac rounded-lg py-2 px-4">Our playbook</span></a>
@@ -277,8 +283,8 @@
             </svg>
 
             <!-- triangle little -->
-            <svg class="md:hidden absolute bottom-10 right-28" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+            <svg class="md:hidden absolute bottom-16 right-24" width="30" height="30" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#DAC6ED"/>
             </svg>
             <!-- pentagon tittle -->
             <svg class="md:hidden absolute bottom-28 right-12" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -292,7 +298,6 @@
     </div>
 
     <!-- ===== client reviews ===== -->
-    <!-- hozr siz shu 3 ta card ni bitta div qilasiz, svglarni bitta qilasiz, chunki svg bu cardlarni ichida, overflow begani uchun yonboshdan ko'rinmayapti -->
     <div class="max-w-5xl mx-auto px-4 md:px-12 pt-80">
         <div class="relative">
             <div class="grid md:grid-rows-5 grid-cols-1 md:grid-cols-5 gap-6">

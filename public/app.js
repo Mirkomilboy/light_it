@@ -1,18 +1,30 @@
 // =============== changing bg of nav on scroll ===============
 window.onscroll = function() {scrollFunction()};
 
-const nav = document.getElementById("nav");
-const nav2 = document.getElementById("nav2");
+const nav = document.getElementById("navIndex");
+// const navAll = document.getElementById("navAll");
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     nav.style.cssText = "background: #202e3d;";
-    nav2.style.cssText = "color: #fff;";
+    // navAll.style.cssText = "background: #fff;";
   } else {
     nav.style.cssText = "background: none;";
-    nav2.style.cssText = "color: #000;";
+    // navAll.style.cssText = "background: none;";
   }
 }
+
+// window.onscroll = function() {scrollFn()};
+
+// const navAll = document.getElementById("navAll");
+
+// function scrollFn() {
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     navAll.style.cssText = "background: #fff;";
+//   } else {
+//     navAll.style.cssText = "background: none;";
+//   }
+// }
 
 // =============== menu btn work on mobile ===============
 const btn = document.getElementById('menuBtn');
