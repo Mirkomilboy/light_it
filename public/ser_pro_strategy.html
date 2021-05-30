@@ -61,12 +61,16 @@
             </div>
         </div>
         <img class="absolute z-10 -top-16 right-24 transform rotate-90" src="assets/shapes/dot_grid.svg" alt="">
-        <svg class="absolute z-0 left-10 bottom-36" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- circle -->
+        <svg class="scale absolute z-0 left-10 bottom-36" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#CCB1E6"/>
         </svg>
-        <svg class="absolute z-0 -left-14 bottom-0" width="146" height="127" viewBox="0 0 146 127" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.68725 126.194L73.2307 0.16113L145.774 126.194L0.68725 126.194Z" fill="#D7E4FF"/>
-        </svg>
+        <!-- triangle -->
+        <div class="scale absolute z-0 -left-14 bottom-0">
+            <svg class="spin" width="146" height="127" viewBox="0 0 146 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.68725 126.194L73.2307 0.16113L145.774 126.194L0.68725 126.194Z" fill="#D7E4FF"/>
+            </svg>
+        </div>
     </div>
 
     <!-- ===== 3 cards ===== -->
@@ -88,12 +92,18 @@
                 <p class="font-open-sans">We’ll work in building the preliminary version of your product’s design, putting the users at the center of the design process. We’ll focus our strategy on truly emphasizing with the users and start designing a product that solves their problems in an intuitive and friendly way.</p>
             </div>
         </div>
-        <svg class="absolute z-0 right-8 bottom-1/2" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#B18AD9"/>
-        </svg>
-        <svg class="absolute z-0 -right-12 bottom-64" width="127" height="121" viewBox="0 0 127 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#D7E4FF"/>
-        </svg>
+        <!-- triangle -->
+        <div class="scale absolute z-0 right-8 bottom-1/2">
+            <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#B18AD9"/>
+            </svg>
+        </div>
+        <!-- pentagon -->
+        <div class="scale absolute z-0 -right-12 bottom-64">
+            <svg class="spin" width="127" height="121" viewBox="0 0 127 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#D7E4FF"/>
+            </svg>
+        </div>
     </div>
 
     <!-- ===== animating words ===== -->
@@ -120,7 +130,7 @@
 
     <!-- ===== links to other pages ===== -->
     <div class="max-w-6xl mx-auto flex flex-wrap justify-between">
-        <a class="flex items-center font-open-sans font-bold text-gray-900 space-x-2" href="staff_augmentation.html">
+        <a class="flex items-center font-open-sans font-bold text-gray-900 space-x-2" href="staff_augment.html">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
@@ -143,28 +153,36 @@
                 <a class="block" href="#"><span class="text-gray-900 font-bold font-open-sans text-15 bg-lilac rounded-lg py-2 px-4">Schedule a call</span></a>
             </div>
             <!-- triangle -->
-            <svg class="hidden md:block absolute right-1/3 bottom-1/3" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
-            </svg>
+            <div class="scale hidden md:block absolute right-1/3 bottom-1/3">
+                <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+                </svg>
+            </div>
             <!-- pentagon -->
-            <svg class="hidden md:block absolute right-100 top-12" width="68" height="65" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#CCB1E6"/>
-            </svg>
+            <div class="scale hidden md:block absolute right-100 top-12">
+                <svg class="spin" width="68" height="65" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#CCB1E6"/>
+                </svg>
+            </div>
             <!-- circle -->
-            <svg class="hidden md:block absolute right-60 top-6" width="85" height="86" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="scale hidden md:block absolute right-60 top-6" width="85" height="86" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
             </svg>
 
             <!-- triangle little -->
-            <svg class="md:hidden absolute top-20 right-28" width="20" height="20" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
-            </svg>
+            <div class="scale md:hidden absolute top-20 right-28">
+                <svg class="spin" width="20" height="20" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+                </svg>
+            </div>
             <!-- pentagon tittle -->
-            <svg class="md:hidden absolute top-6 right-16" width="30" height="30" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#CCB1E6"/>
-            </svg>
+            <div class="scale md:hidden absolute top-6 right-16">
+                <svg class="spin" width="30" height="30" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#CCB1E6"/>
+                </svg>
+            </div>
             <!-- circle little -->
-            <svg class="md:hidden absolute top-20 right-4" width="35" height="35" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="scale md:hidden absolute top-20 right-4" width="35" height="35" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD"/>
             </svg>
             <!-- man img -->
@@ -218,7 +236,4 @@
 </body>
 </html>
 
-<!-- mistakes in: absolute positions in navigation of sections backround white triangle
-    cannot z-0 absolute shape in cards section
-    animation of triangles and pentagons
--->
+<!-- animating words -->

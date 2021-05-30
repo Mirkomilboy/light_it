@@ -1393,6 +1393,15 @@ video {
 .pt-16 {
 	padding-top: 4rem;
 }
+.pb-12 {
+	padding-bottom: 3rem;
+}
+.pb-10 {
+	padding-bottom: 2.5rem;
+}
+.pr-10 {
+	padding-right: 2.5rem;
+}
 .text-center {
 	text-align: center;
 }
@@ -1951,6 +1960,10 @@ video {
 
 	.md\:pt-32 {
 		padding-top: 8rem;
+	}
+
+	.md\:pt-40 {
+		padding-top: 10rem;
 	}
 
 	.md\:text-7\.5xl {
