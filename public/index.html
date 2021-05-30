@@ -42,13 +42,17 @@
             </div>
         </div>
         <!-- triangle -->
-        <svg class="hidden md:block absolute z-0 left-0 md:left-10 bottom-0 md:bottom-36" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
-        </svg>
+        <div class="scale hidden md:block absolute z-0 left-0 md:left-10 bottom-0 md:bottom-36">
+            <svg class="spin" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
+            </svg>
+        </div>
         <!-- triangle little -->
-        <svg class="md:hidden absolute z-0 left-0 -bottom-4" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
-        </svg>
+        <div class="scale md:hidden absolute z-0 left-0 -bottom-4">
+            <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+            </svg>
+        </div>
         <!-- dot-grid -->
         <div class="hidden md:block absolute z-0 -left-20 -bottom-32"> <!-- overflow-hidden  -->
             <img src="assets/shapes/dot_grid.svg" alt="">
@@ -57,13 +61,17 @@
             <img src="assets/shapes/dot_grid.svg" alt="">
         </div>
         <!-- pentagon -->
-        <svg class=" hidden md:block absolute z-0 right-10 -bottom-4" width="96" height="91" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#D7E4FF"/>
-        </svg>
+        <div class="scale hidden md:block absolute z-0 right-10 -bottom-4">
+            <svg class="spin" width="96" height="91" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#D7E4FF"/>
+            </svg>
+        </div>
         <!-- pentagon little -->
-        <svg class="md:hidden absolute z-0 right-0 -bottom-4" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
-        </svg>
+        <div class="scale md:hidden absolute z-0 right-0 -bottom-4">
+            <svg class="spin" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
+            </svg>
+        </div>
     </div>
 
     <!-- ===== main ===== -->
@@ -137,18 +145,24 @@
                         <div class="absolute z-10 -left-1 top-0 w-4 h-7 bg-main"></div>
                     </div>
                 </div>
-                <svg class="hidden md:block absolute z-20 bottom-2 left-1/2" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
-                </svg>
+                <!-- pentagon -->
+                <div class="scale hidden md:block absolute z-20 bottom-2 left-1/2">
+                    <svg class="spin" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
+                    </svg>
+                </div>
             </div>
             <div class="hidden md:block relative order-6">
                 <a class="relative z-20 float-right" href="#"><span class="w-full text-white font-bold font-open-sans text-15 bg-purple rounded-xl py-2.5 pl-4 pr-20">Contact Us</span></a>
             </div>
             <div class="md:hidden relative order-6">
                 <a class="relative z-20 float-right w-full text-white font-bold font-open-sans text-15 bg-purple rounded-xl py-2.5 pl-4 pr-20" href="contact.html"><span >Contact Us</span></a>
-                <svg class="absolute z-10 -top-4 -right-8" width="70" height="66" viewBox="0 0 70 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z" fill="#D7E4FF"/>
-                </svg>
+                <!-- pentagon -->
+                <div class="scale absolute z-10 -top-4 -right-8">
+                    <svg class="spin" width="70" height="66" viewBox="0 0 70 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z" fill="#D7E4FF"/>
+                    </svg>
+                </div>
             </div>
         </div>
 
@@ -163,7 +177,8 @@
                 <div class="block md:hidden relative w-full md:w-3/5">
                     <img class="relative z-20" src="assets/img/laptop.svg" alt="">
                     <h1 class="hidden md:block absolute z-10 -top-16 right-0 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">our work</h1>
-                    <svg class="absolute z-10 bottom-20 right-6" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- circle -->
+                    <svg class="scale absolute z-10 bottom-20 right-6" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
                     </svg>
                 </div>
@@ -173,21 +188,28 @@
                 <div class="relative">
                     <a class="relative z-20 inline-block text-lilac font-bold" href="#">Read the success story</a>
                     <div class="absolute z-10 -left-1 top-0 w-4 h-7 bg-gray-500"></div>
-                    <svg class="md:hidden absolute z-0 right-20 -bottom-6" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
-                    </svg>
+                    <!-- triangle -->
+                    <div class="scale md:hidden absolute z-0 right-20 -bottom-6">
+                        <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+                        </svg>
+                    </div>
                 </div>
                 <h1 class="md:hidden absolute z-10 -top-28 left-0 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">our work</h1>
             </div>
             <div class="hidden md:block relative w-full md:w-3/5 md:pl-6">
                 <img class="relative z-20" src="assets/img/laptop.svg" alt="">
                 <h1 class="hidden md:block absolute z-10 -top-16 right-0 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">our work</h1>
-                <svg class="absolute z-10 -bottom-10 right-6" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- circle -->
+                <svg class="scale absolute z-10 -bottom-10 right-6" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
                 </svg>
-                <svg class="absolute left-16 -bottom-32" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
-                </svg>
+                <!-- triangle -->
+                <div class="scale absolute left-16 -bottom-32">
+                    <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+                    </svg>
+                </div>
             </div>
         </div>
 
@@ -195,12 +217,18 @@
         <div class="max-w-6xl mx-auto flex flex-wrap items-center pb-20 md:py-44 px-4">
             <div class="hidden md:block relative w-full md:w-3/5 md:pr-6">
                 <img class="relative z-20" src="assets/img/dlocal_phone.svg" alt="">
-                <svg class="absolute z-10 top-10 right-56" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
-                </svg>
-                <svg class="absolute z-10 bottom-6 -left-8" width="96" height="91" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#D7E4FF"/>
-                </svg>
+                <!-- triangle -->
+                <div class="scale absolute z-10 top-10 right-56">
+                    <svg class="spin" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
+                    </svg>
+                </div>
+                <!-- pentagon -->
+                <div class="scale absolute z-10 bottom-6 -left-8">
+                    <svg class="spin" width="96" height="91" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#D7E4FF"/>
+                    </svg>
+                </div>
             </div>
             <div class="w-full md:w-2/5 md:pl-6">
                 <p class="text-lilacSecondary font-bebas-neue text-sm">case study</p>
@@ -208,12 +236,18 @@
 
                 <div class="md:hidden relative w-full md:w-3/5">
                     <img class="relative z-20" src="assets/img/dlocal_phone.svg" alt="">
-                    <svg class="absolute z-10 -top-10 right-6" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
-                    </svg>
-                    <svg class="absolute z-10 bottom-28 left-8" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
-                    </svg>
+                    <!-- triangle -->
+                    <div class="scale absolute z-10 -top-10 right-6">
+                        <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+                        </svg>
+                    </div>
+                    <!-- pentagon -->
+                    <div class="scale absolute z-10 bottom-28 left-8">
+                        <svg class="spin" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
+                        </svg>
+                    </div>
                 </div>
 
                 <p class="font-open-sans text-gray-100 pt-6 md:pt-0 pb-14">Fintech <br><br>
@@ -233,12 +267,16 @@
 
                 <div class="md:hidden relative w-full md:w-3/5">
                     <img class="relative z-20" src="assets/img/curascribe_laptop.svg" alt="">
-                    <svg class="absolute z-10 -top-24 left-4"  width="85" height="86" viewBox="0 0 85 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- circle -->
+                    <svg class="scale absolute z-10 -top-24 left-4"  width="85" height="86" viewBox="0 0 85 86" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="42.5346" cy="42.6317" r="42.3935" fill="#BF9DDF"/>
                     </svg>
-                    <svg class="absolute z-10 bottom-16 -right-4" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
-                    </svg>
+                    <!-- triangle -->
+                    <div class="scale absolute z-10 bottom-16 -right-4">
+                        <svg class="spin" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
+                        </svg>
+                    </div>
                 </div>
 
                 <p class="font-open-sans text-gray-100 pb-14">Healthcare <br><br>
@@ -250,12 +288,16 @@
             </div>
             <div class="hidden md:block relative w-full md:w-3/5 md:pl-8">
                 <img class="relative z-20" src="assets/img/curascribe_laptop.svg" alt="">
-                <svg class="absolute z-10 -top-3 left-10" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- circle -->
+                <svg class="scale absolute z-10 -top-3 left-10" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD"/>
                 </svg>
-                <svg class="absolute z-10 bottom-6 right-10" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
-                </svg>
+                <!-- triangle -->
+                <div class="scale absolute z-10 bottom-6 right-0">
+                    <svg class="spin" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.63657 92.2408L53.3895 0.952146L106.142 92.2408L0.63657 92.2408Z" fill="#D7E4FF"/>
+                    </svg>
+                </div>
                 <img class="absolute z-10 -bottom-12 left-12 transform rotate-90" src="assets/shapes/dot_grid.svg" alt="">
             </div>
         </div>
@@ -270,28 +312,36 @@
                 <a class="block" href="#"><span class="text-gray-900 font-bold font-open-sans text-15 bg-lilac rounded-lg py-2 px-4">Our playbook</span></a>
             </div>
             <!-- triangle -->
-            <svg class="hidden md:block absolute right-1/3 bottom-1/3" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
-            </svg>
+            <div class="scale hidden md:block absolute right-1/3 bottom-1/3">
+                <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+                </svg>
+            </div>
             <!-- pentagon -->
-            <svg class="hidden md:block absolute right-60 top-12" width="96" height="91" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#D7E4FF"/>
-            </svg>
+            <div class="scale hidden md:block absolute right-60 top-12">
+                <svg class="spin" width="96" height="91" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#D7E4FF"/>
+                </svg>
+            </div>
             <!-- circle -->
-            <svg class="hidden md:block absolute right-8 bottom-6" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="scale hidden md:block absolute right-8 bottom-6" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
             </svg>
 
             <!-- triangle little -->
-            <svg class="md:hidden absolute bottom-16 right-24" width="30" height="30" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#DAC6ED"/>
-            </svg>
+            <div class="scale md:hidden absolute bottom-16 right-24">
+                <svg class="spin" width="30" height="30" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#DAC6ED"/>
+                </svg>
+            </div>
             <!-- pentagon tittle -->
-            <svg class="md:hidden absolute bottom-28 right-12" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
-            </svg>
+            <div class="scale md:hidden absolute bottom-28 right-12">
+                <svg class="spin" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF"/>
+                </svg>
+            </div>
             <!-- circle little -->
-            <svg class="md:hidden absolute bottom-6 right-4" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="scale md:hidden absolute bottom-6 right-4" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD"/>
             </svg>
         </div>
@@ -339,15 +389,19 @@
             <!-- for little screen -->
             <h1 class="md:hidden absolute z-10 -top-64 left-0 font-bebas-neue text-[82px] text-lilacSecondary">client reviews</h1>
             <!-- pentagon -->
-            <svg class="absolute -top-12 left-0" width="70" height="66" viewBox="0 0 70 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z" fill="#D7E4FF"/>
-            </svg>
+            <div class="scale absolute -top-12 left-0">
+                <svg class="spin" width="70" height="66" viewBox="0 0 70 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z" fill="#D7E4FF"/>
+                </svg>
+            </div>
             <!-- triangle -->
-            <svg class="hidden xl:block absolute z-10 -right-28 top-0 overflow-hidden" width="146" height="127" viewBox="0 0 146 127" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.68725 126.194L73.2307 0.16113L145.774 126.194L0.68725 126.194Z" fill="#D7E4FF"/>
-            </svg>
+            <div class="scale hidden xl:block absolute z-10 -right-28 top-0 overflow-hidden">
+                <svg class="spin" width="146" height="127" viewBox="0 0 146 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.68725 126.194L73.2307 0.16113L145.774 126.194L0.68725 126.194Z" fill="#D7E4FF"/>
+                </svg>
+            </div>
             <!-- circle -->
-            <svg class="absolute z-20 bottom-72 -left-28" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="scale absolute z-20 bottom-72 -left-28" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
             </svg>
             <!-- grid dots -->
