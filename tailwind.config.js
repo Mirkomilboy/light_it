@@ -30,6 +30,7 @@ module.exports = {
         'lilacSecondary': '#D8E3F5',
         'lilac-500': '#ECF1FA',
         'custom-gray-900': '#374351',
+        'custom-gray-1000': '#202E3D',
       },
       maxWidth: {
         '8xl': '84rem',

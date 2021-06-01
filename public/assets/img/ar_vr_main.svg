@@ -141,6 +141,8 @@
 <path d="M483.498 521.5C483.498 521.5 475.707 522.1 471.912 529.4" stroke="#1F2D3D" stroke-miterlimit="10"/>
 <path d="M497.28 523.1L423.473 539.9" stroke="#1F2D3D" stroke-miterlimit="10"/>
 <path d="M377.732 442.1C377.732 442.1 366.646 463.1 379.429 473.4" stroke="#EA5C62" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M382.097 359.32C382.097 359.32 380 359.02 377.004 360.32" stroke="#A67C52" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M392.08 359.32C392.08 359.32 399.569 357.82 403.564 361.32" stroke="#A67C52" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
 <defs>
 <filter id="filter0_d" x="114.957" y="70.0583" width="263.488" height="108.845" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
