@@ -1,30 +1,30 @@
 // =============== changing bg of nav on scroll ===============
-window.onscroll = function() {scrollFunction()};
+document.onscroll = function() {scrollFunction()};
 
-const nav = document.getElementById("navIndex");
-// const navAll = document.getElementById("navAll");
+const navIndex = document.getElementById("navIndex");
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    nav.style.cssText = "background: #202e3d;";
-    // navAll.style.cssText = "background: #fff;";
+    navIndex.style.cssText = "background: #202e3d;";
+  } else {
+    navIndex.style.cssText = "background: none;";
+  }
+};
+
+
+document.body.onscroll = function() {scrollFunctionAllPage()};
+
+const nav = document.getElementById("nav");
+
+function scrollFunctionAllPage() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    nav.style.cssText = "background: #fff;";
   } else {
     nav.style.cssText = "background: none;";
-    // navAll.style.cssText = "background: none;";
   }
 }
 
-// window.onscroll = function() {scrollFn()};
 
-// const navAll = document.getElementById("navAll");
-
-// function scrollFn() {
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     navAll.style.cssText = "background: #fff;";
-//   } else {
-//     navAll.style.cssText = "background: none;";
-//   }
-// }
 
 // =============== menu btn work on mobile ===============
 const btn = document.getElementById('menuBtn');
