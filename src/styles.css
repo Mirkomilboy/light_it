@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body.active-sticky #navIndex {
+    @apply transition-colors duration-300 bg-main
+}
+
+body.active-sticky #nav {
+    @apply transition-colors duration-300 bg-white
+}
+
 .overview {
     overflow-x: clip;
 }

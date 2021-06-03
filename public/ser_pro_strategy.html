@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Light it</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Shadow&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Shadow&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="bg-lilac-100 text-custom-gray-1000">
     <!-- ===== Navigation ===== -->
     <div id="nav" class="fixed z-50 w-full">
         <header class="max-w-8xl mx-auto flex flex-wrap items-center justify-between py-2 md:py-8 px-4">
             <div>
-                <a href="index.html"><img class="w-32 md:w-48" src="assets/img/Logo_purple.svg" alt=""></a>
+                <a href="index.html">
+                    <img class="w-32 md:w-48" src="assets/img/Logo_purple.svg" alt="">
+                </a>
             </div>
 
-            <button id="menuBtn" class="md:hidden focus:outline-none"><img class="w-6" src="assets/img/menuBtnBlack.svg" alt=""></button>
+            <button id="menuBtn" class="md:hidden focus:outline-none"><img class="w-6" src="assets/img/menuBtnBlack.svg"
+                    alt=""></button>
 
             <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
                 <nav>
-                    <ul id="nav2" class="md:flex justify-between items-center font-open-sans text-white md:text-gray-900 font-bold text-15 space-y-4 md:space-y-0 md:space-x-12 py-4 md:pt-0">
+                    <ul id="nav2"
+                        class="md:flex justify-between items-center font-open-sans text-white md:text-gray-900 font-bold text-15 space-y-4 md:space-y-0 md:space-x-12 py-4 md:pt-0">
                         <li><a href="#">Our Work</a></li>
                         <li class="relative group">
                             <a href="#">Services</a>
-                            <div class="hidden absolute w-52 bg-lilac-200 shadow-md text-custom-gray-900 text-sm font-normal rounded-xl p-6 space-y-4 group-hover:block">
-                                <a class="block" href="ser_pro_strategy.html">Product strategy</a>
-                                <a class="block" href="ser_pro_design.html">Product design</a>
-                                <a class="block" href="development.html">Development</a>
-                                <a class="block" href="staff_augment.html">Staff augmentation</a>
+                            <div class="hidden absolute w-52  group-hover:block pt-1.5">
+                                <div
+                                    class="bg-lilac-200 shadow-md text-custom-gray-900  text-sm font-normal rounded-xl py-4">
+                                    <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover"
+                                        href="ser_pro_strategy.html">Product
+                                        strategy</a>
+                                    <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover"
+                                        href="ser_pro_design.html">Product
+                                        design</a>
+                                    <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover"
+                                        href="development.html">Development</a>
+                                    <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover"
+                                        href="staff_augment.html">Staff
+                                        augmentation</a>
+                                </div>
                             </div>
                         </li>
                         <li><a href="#">Playbook</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a class="text-white bg-purple rounded-xl py-3 px-4 hover:bg-purple-900 active:bg-purple-800 transition ease-in" href="contact.html">Contact Us</a></li>
+                        <li><a class="text-white bg-purple rounded-xl py-3 px-4 hover:bg-purple-900 active:bg-purple-800 transition ease-in"
+                                href="contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -44,14 +63,20 @@
     <div class="relative pt-36 px-4">
         <div class="max-w-8xl mx-auto flex items-center relative w-full overflow-hidden">
             <a class="relative z-10 block font-open-sans font-semibold pr-4 md:pr-7" href="#">Services</a>
-            <a class="relative z-10 block font-open-sans font-semibold px-4 md:px-7" href="ser_pro_strategy.html">Product&nbsp;strategy</a>
-            <a class="relative z-10 block font-open-sans font-semibold px-4 md:px-7 text-gray-500" href="ser_pro_design.html">Product&nbsp;design</a>
-            <a class="relative z-10 block font-open-sans font-semibold px-4 md:px-7 text-gray-500" href="development.html">Development</a>
-            <a class="relative z-10 block font-open-sans font-semibold px-4 md:px-7 text-gray-500" href="staff_augment.html">Staff&nbsp;augmentation</a>
+            <a class="relative z-10 block font-open-sans font-semibold px-4 md:px-7"
+                href="ser_pro_strategy.html">Product&nbsp;strategy</a>
+            <a class="relative z-10 block font-open-sans font-semibold px-4 md:px-7 text-gray-500"
+                href="ser_pro_design.html">Product&nbsp;design</a>
+            <a class="relative z-10 block font-open-sans font-semibold px-4 md:px-7 text-gray-500"
+                href="development.html">Development</a>
+            <a class="relative z-10 block font-open-sans font-semibold px-4 md:px-7 text-gray-500"
+                href="staff_augment.html">Staff&nbsp;augmentation</a>
         </div>
         <div class="absolute -bottom-3 right-0 w-[89%] flex items-center">
-            <svg class="transform rotate-[90deg] -mr-6" width="30" height="30" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#fff"/>
+            <svg class="transform rotate-[90deg] -mr-6" width="30" height="30" viewBox="0 0 52 46" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#fff" />
             </svg>
             <div class="w-full h-12 bg-lilac-300"></div>
         </div>
@@ -62,7 +87,10 @@
         <div class="max-w-6xl mx-auto px-4 flex flex-wrap items-center pt-24">
             <div class="relative z-20 w-full md:w-1/2 order-2 md:order-1 pt-12 md:pt-0 md:pr-4">
                 <h1 class="text-5xl md:text-7.5xl font-bebas-neue pb-8 text-custom-gray-900">product strategy</h1>
-                <p class="font-open-sans">The Product Strategy is a set of actions that allows the team to understand and validate which is the right product to build. It consists of two main parts, product discovery and technical discovery. The result is the determination of the business model, target audience, MVP specifics and high-level diagram.</p>
+                <p class="font-open-sans">The Product Strategy is a set of actions that allows the team to understand
+                    and validate which is the right product to build. It consists of two main parts, product discovery
+                    and technical discovery. The result is the determination of the business model, target audience, MVP
+                    specifics and high-level diagram.</p>
             </div>
             <div class="w-full md:w-1/2 order-1 md:order-2 md: pl-4">
                 <img class="relative z-20" src="assets/img/Illustration_parents.svg" alt="">
@@ -70,13 +98,16 @@
         </div>
         <img class="absolute z-10 -top-16 right-24 transform rotate-90" src="assets/shapes/dot_grid.svg" alt="">
         <!-- circle -->
-        <svg class="scale absolute z-0 left-10 bottom-36" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#CCB1E6"/>
+        <svg class="scale absolute z-0 left-10 bottom-36" width="57" height="57" viewBox="0 0 57 57" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#CCB1E6" />
         </svg>
         <!-- triangle -->
         <div class="scale absolute z-0 -left-14 bottom-0">
-            <svg class="spin" width="146" height="127" viewBox="0 0 146 127" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.68725 126.194L73.2307 0.16113L145.774 126.194L0.68725 126.194Z" fill="#D7E4FF"/>
+            <svg class="spin" width="146" height="127" viewBox="0 0 146 127" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.68725 126.194L73.2307 0.16113L145.774 126.194L0.68725 126.194Z" fill="#D7E4FF" />
             </svg>
         </div>
     </div>
@@ -87,29 +118,42 @@
             <div class="relative z-20 box-shadow rounded-lg py-8 px-6">
                 <img class="w" src="assets/img/product_discovery.svg" alt="">
                 <h1 class="font-bebas-neue text-2xl text py-4">product discovery</h1>
-                <p class="font-open-sans">Product Discovery is the process of figuring out what is the right product to build to reduce uncertainty around your business idea or product, and the final deliverable is a fully understood USP and the MVP specifications. We’ll be tackling your problem, business model, target audience and market. Our team will design an action plan made specifically for your product discovery.</p>
+                <p class="font-open-sans">Product Discovery is the process of figuring out what is the right product to
+                    build to reduce uncertainty around your business idea or product, and the final deliverable is a
+                    fully understood USP and the MVP specifications. We’ll be tackling your problem, business model,
+                    target audience and market. Our team will design an action plan made specifically for your product
+                    discovery.</p>
             </div>
             <div class="relative z-30 box-shadow rounded-lg py-8 px-6">
                 <img class="w" src="assets/img/technical_discovery.svg" alt="">
                 <h1 class="font-bebas-neue text-2xl text py-4">technical discovery</h1>
-                <p class="font-open-sans">We evaluate the feasibility and main technical challenges of your product to determine the technical blueprints of the project. The result is a complete analysis of the pain points with strategies to overcome them and the high-level diagram of the architecture of your system.</p>
+                <p class="font-open-sans">We evaluate the feasibility and main technical challenges of your product to
+                    determine the technical blueprints of the project. The result is a complete analysis of the pain
+                    points with strategies to overcome them and the high-level diagram of the architecture of your
+                    system.</p>
             </div>
             <div class="relative z-30 box-shadow rounded-lg py-8 px-6">
                 <img class="w" src="assets/img/design_discovery.svg" alt="">
                 <h1 class="font-bebas-neue text-2xl text py-4">design discovery</h1>
-                <p class="font-open-sans">We’ll work in building the preliminary version of your product’s design, putting the users at the center of the design process. We’ll focus our strategy on truly emphasizing with the users and start designing a product that solves their problems in an intuitive and friendly way.</p>
+                <p class="font-open-sans">We’ll work in building the preliminary version of your product’s design,
+                    putting the users at the center of the design process. We’ll focus our strategy on truly emphasizing
+                    with the users and start designing a product that solves their problems in an intuitive and friendly
+                    way.</p>
             </div>
         </div>
         <!-- triangle -->
         <div class="scale absolute z-0 right-8 bottom-1/2">
             <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#B18AD9"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#B18AD9" />
             </svg>
         </div>
         <!-- pentagon -->
         <div class="scale absolute z-0 -right-12 bottom-64">
-            <svg class="spin" width="127" height="121" viewBox="0 0 127 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#D7E4FF"/>
+            <svg class="spin" width="127" height="121" viewBox="0 0 127 121" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#D7E4FF" />
             </svg>
         </div>
     </div>
@@ -118,26 +162,38 @@
     <div class="words relative w-full overflow-hidden pb-24">
         <div class="scroll w-full flex line1">
             <div class="text-white text-3xl whitespace-nowrap font-extrabold uppercase">
-                Design Sprints &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Design Thinking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lean Methodology &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Business model strategy
+                Design Sprints &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Design Thinking
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lean Methodology
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Business model strategy
             </div><br><br><br>
             <div class="text-white text-3xl whitespace-nowrap font-extrabold uppercase">
-                Design Sprints &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Design Thinking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lean Methodology &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Business model strategy
+                Design Sprints &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Design Thinking
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lean Methodology
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Business model strategy
             </div><br><br><br>
         </div>
         <div class="scroll w-full flex line2">
             <div class="text-white text-3xl whitespace-nowrap font-extrabold uppercase">
-                User Insights  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Market Analysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Creative Design  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Journey Mapping
+                User Insights &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Market Analysis
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Creative Design
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Journey Mapping
             </div><br><br><br>
             <div class="text-white text-3xl whitespace-nowrap font-extrabold uppercase">
-                User Insights  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Market Analysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Creative Design  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Journey Mapping
+                User Insights &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Market Analysis
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Creative Design
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Journey Mapping
             </div><br><br><br>
         </div>
         <div class="scroll w-full flex line3">
             <div class="text-white text-3xl whitespace-nowrap font-extrabold uppercase">
-                Prototyping  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Analytics Audits  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BenchmarkingUser-Centered  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Research
+                Prototyping &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Analytics Audits
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BenchmarkingUser-Centered
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Research
             </div><br><br><br>
             <div class="text-white text-3xl whitespace-nowrap font-extrabold uppercase">
-                Prototyping &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Analytics Audits &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BenchmarkingUser-Centered &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Research
+                Prototyping &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Analytics Audits
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BenchmarkingUser-Centered
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Research
             </div>
         </div>
     </div>
@@ -145,14 +201,16 @@
     <!-- ===== links to other pages ===== -->
     <div class="max-w-6xl mx-auto flex flex-wrap justify-between">
         <a class="flex items-center font-open-sans font-bold text-gray-900 space-x-2" href="staff_augment.html">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
             <h1 class="text-sm sm:text-base">Staff augmentation</h1>
         </a>
         <a class="flex items-center font-open-sans font-bold text-gray-900 space-x-2" href="ser_pro_design.html">
             <h1 class="text-sm sm:text-base">Product design</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
         </a>
@@ -163,41 +221,52 @@
         <div class="relative max-w-6xl mx-auto w-full bg-card rounded-2xl transform translate-y-1/2 py-14 px-4 md:px-8">
             <div class="relative z-50 w-3/5 md:pl-10">
                 <p class="font-bebas-neue text-4xl text-lilacSecondary">Let’s talk</p>
-                <h1 class="font-open-sans text-lilac pt-6 pb-8">Whether it's a quick question or a fantastic idea, <br> let's start with a conversation.</h1>
-                <a class="block" href="#"><span class="text-gray-900 font-bold font-open-sans text-15 bg-lilac-1000 rounded-xl py-2 px-4 hover:bg-lilac-600 focus:bg-lilac-200 transition ease-in">Schedule a call</span></a>
+                <h1 class="font-open-sans text-lilac pt-6 pb-8">Whether it's a quick question or a fantastic idea, <br>
+                    let's start with a conversation.</h1>
+                <a class="block" href="#"><span
+                        class="text-gray-900 font-bold font-open-sans text-15 bg-lilac-1000 rounded-xl py-2 px-4 hover:bg-lilac-600 focus:bg-lilac-200 transition ease-in">Schedule
+                        a call</span></a>
             </div>
             <!-- triangle -->
             <div class="hidden md:block absolute right-1/3 bottom-1/3">
                 <svg width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF" />
                 </svg>
             </div>
             <!-- pentagon -->
             <div class="hidden md:block absolute right-100 top-12">
                 <svg width="68" height="65" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#CCB1E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z"
+                        fill="#CCB1E6" />
                 </svg>
             </div>
             <!-- circle -->
-            <svg class="hidden md:block absolute right-60 top-6" width="85" height="86" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
+            <svg class="hidden md:block absolute right-60 top-6" width="85" height="86" viewBox="0 0 156 157"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD" />
             </svg>
 
             <!-- triangle little -->
             <div class="md:hidden absolute top-20 right-28">
                 <svg width="20" height="20" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF" />
                 </svg>
             </div>
             <!-- pentagon tittle -->
             <div class="md:hidden absolute top-6 right-16">
                 <svg width="30" height="30" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#CCB1E6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z"
+                        fill="#CCB1E6" />
                 </svg>
             </div>
             <!-- circle little -->
-            <svg class="md:hidden absolute top-20 right-4" width="35" height="35" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD"/>
+            <svg class="md:hidden absolute top-20 right-4" width="35" height="35" viewBox="0 0 57 57" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD" />
             </svg>
             <!-- man img -->
             <img class="absolute right-4 md:right-10 bottom-6 w-32 md:w-64" src="assets/img/man.svg" alt="">
@@ -209,7 +278,9 @@
         <div class="max-w-6xl mx-auto border-b-2 border-[#D8E3F5] pt-72 pb-14 px-4">
             <img src="./assets/img/Logo.svg" alt="Logo" class="w-20 pb-2" />
             <div class="flex flex-wrap justify-between">
-                <p class="w-full lg:w-2/6 py-4">We are an outstanding digital product studio that combines strategic thinking and the latest technologies to craft innovative solutions that consistently break ground.</p>
+                <p class="w-full lg:w-2/6 py-4">We are an outstanding digital product studio that combines strategic
+                    thinking and the latest technologies to craft innovative solutions that consistently break ground.
+                </p>
 
                 <div class="w-full lg:w-4/6 flex flex-wrap lg:pl-32 py-4">
                     <ul class="w-full sm:w-1/3 space-y-2">
@@ -237,15 +308,16 @@
         <div class="max-w-6xl mx-auto flex justify-between py-10 px-4">
             <p>&copy; Copyright 2021 Light-it. All Right Reserved.</p>
             <div class="hidden md:flex space-x-5">
-                <a href="#"><img src="./assets/img/linkedin.svg" alt="LinkidIn"/></a>
-                <a href="#"><img src="./assets/img/github.svg" alt="Github"/></a>
-                <a href="#"><img src="./assets/img/dribbble.svg" alt="Drib"/></a>
-                <a href="#"><img src="./assets/img/twitter.svg" alt="Twitter"/></a>
-                <a href="#"><img src="./assets/img/instagram.svg" alt="Instagram"/></a>
+                <a href="#"><img src="./assets/img/linkedin.svg" alt="LinkidIn" /></a>
+                <a href="#"><img src="./assets/img/github.svg" alt="Github" /></a>
+                <a href="#"><img src="./assets/img/dribbble.svg" alt="Drib" /></a>
+                <a href="#"><img src="./assets/img/twitter.svg" alt="Twitter" /></a>
+                <a href="#"><img src="./assets/img/instagram.svg" alt="Instagram" /></a>
             </div>
         </div>
     </footer>
 
     <script src="assets/js/app.js"></script>
 </body>
+
 </html>

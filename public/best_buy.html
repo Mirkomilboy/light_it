@@ -1,439 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>LightIt</title>
-  </head>
-  <body class="bg-lilac-100 text-custom-gray-1000 font-open-sans">
 
-    <!-- ===== Navigation ===== -->
-    <div id="nav" class="fixed z-50 w-full">
-        <header class="max-w-8xl mx-auto flex flex-wrap items-center justify-between py-2 md:py-8 px-4">
-            <div>
-                <a href="index.html"><img class="w-32 md:w-48" src="assets/img/Logo_purple.svg" alt=""></a>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>LightIt</title>
+</head>
 
-            <button id="menuBtn" class="md:hidden focus:outline-none"><img class="w-6" src="assets/img/menuBtnBlack.svg" alt=""></button>
+<body class="bg-lilac-100 text-custom-gray-1000 font-open-sans">
 
-            <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
-                <nav>
-                    <ul id="nav2" class="md:flex justify-between items-center font-open-sans text-white md:text-gray-900 font-bold text-15 space-y-4 md:space-y-0 md:space-x-12 py-4 md:pt-0">
-                        <li><a href="#">Our Work</a></li>
-                        <li class="relative group">
-                          <a href="#">Services</a>
-                          <div class="hidden absolute w-52 bg-lilac-200 shadow-md text-custom-gray-900 text-sm font-normal rounded-xl p-6 space-y-4 group-hover:block">
-                              <a class="block" href="ser_pro_strategy.html">Product strategy</a>
-                              <a class="block" href="ser_pro_design.html">Product design</a>
-                              <a class="block" href="development.html">Development</a>
-                              <a class="block" href="staff_augment.html">Staff augmentation</a>
-                          </div>
-                      </li>
-                        <li><a href="#">Playbook</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li class=""><a class="text-white bg-purple rounded-xl py-3 px-4 hover:bg-purple-900 active:bg-purple-800 transition ease-in" href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </div>
-
-    <!-- ===== hero ===== -->
-    <div class="relative z-30 w-full overflow-x-hidden overview">
-        <div class="max-w-6xl mx-auto px-4 pt-36">
-            <div class="relative z-20">
-                <h1 class="text-4xl md:text-6xl tracking-tight font-bebas-neue text-custom-gray-900">best buy influencer network</h1>
-                <div class="hidden md:block md:w-4/6 md:pr-14">
-                    <p class="font-bold pt-10">Our client: Best Buy</p>
-                    <p class="">Best Buy is the largest consumer electronics retailer globally, worth a net of $29B. It has over 1231 stores worldwide and a powerful e-commerce that creates around 35.2% of total revenue. </p>
-                    <p class="font-bold pt-10">Industry</p>
-                    <p class="">Retailer</p>
-                </div>
-            </div>
-            <img src="assets/img/bestBuy_logo_sm.svg" alt="Curascribe_Logo" class="md:hidden w-20 py-6"/>
-            <img class="mx-auto md:-mt-16" src="assets/img/Laptop_BestBuy.svg" alt="iphone"/>
-        </div>
-        <!-- triangle -->
-        <div class="scale hidden md:block absolute left-20 bottom-1/2">
-            <svg class="spin" width="49.84" height="43.7" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF" />
-            </svg>
-        </div>
-    </div>
-
-
-    <!-- ===== OVERVIEW  ===== -->
-    <div class="bg-lilac-1000 relative z-20 w-full overflow-x-hidden overview -mt-36 pb-20">
-      <img src="assets/img/bestBuy_logo.svg" alt="BestBuy_Logo" class="absolute right-24 top-32 xl:top-4 hidden md:block" />
-      <div class="relative max-w-6xl mx-auto pt-24 md:pt-72 pb-14 md:pb-2 px-4" >
-        <!-- Only Mobile -->
-        <p class="font-bold block md:hidden pt-16">Our client: Best buy</p>
-        <p class="pb-8 block md:hidden">
-          Best Buy is the largest consumer electronics retailer globally, worth
-          a net of $29B. It has over 1231 stores worldwide and a powerful
-          e-commerce that creates around 35.2% of total revenue.
-        </p>
-        <p class="font-bold block md:hidden">Industry</p>
-        <p class="block md:hidden">Fintech</p>
-        <!-- END -->
-
-        <h3 class=" text-[43px] relative z-20 md:text-[50px] font-bebas-neue text-custom-gray-900 pt-28 md:pt-0">
-          OVERVIEW
-        </h3>
-        <p class="relative z-20 pt-4 md:pt-0 text-sm md:text-base">
-          Best Buy is the largest consumer electronics retailer globally, worth
-          a net of $29B. It has over 1231 stores worldwide and a powerful
-          e-commerce that creates around 35.2% of total revenue.
-        </p>
+  <!-- ===== Navigation ===== -->
+  <div id="nav" class="fixed z-50 w-full">
+    <header class="max-w-8xl mx-auto flex flex-wrap items-center justify-between py-2 md:py-8 px-4">
+      <div>
+        <a href="index.html"><img class="w-32 md:w-48" src="assets/img/Logo_purple.svg" alt=""></a>
       </div>
-      <img src="assets/shapes/dot_grid.svg" alt="" class="hidden md:block absolute z-30 -top-32 -left-10"/>
-      <!-- CIRCLE -->
-      <svg class="scale absolute z-0 bottom-64 -right-8 md:bottom-16 md:-right-10" width="117" height="117" viewBox="0 0 117 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="58.3649" cy="58.7409" r="58.3649" fill="#DAC6ED" />
+
+      <button id="menuBtn" class="md:hidden focus:outline-none"><img class="w-6" src="assets/img/menuBtnBlack.svg"
+          alt=""></button>
+
+      <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
+        <nav>
+          <ul id="nav2"
+            class="md:flex justify-between items-center font-open-sans text-white md:text-gray-900 font-bold text-15 space-y-4 md:space-y-0 md:space-x-12 py-4 md:pt-0">
+            <li><a href="#">Our Work</a></li>
+            <li class="relative group">
+              <a href="#">Services</a>
+              <div class="hidden absolute w-52  group-hover:block pt-1.5">
+                <div class="bg-lilac-200 shadow-md text-custom-gray-900  text-sm font-normal rounded-xl py-4">
+                  <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover"
+                    href="ser_pro_strategy.html">Product
+                    strategy</a>
+                  <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover" href="ser_pro_design.html">Product
+                    design</a>
+                  <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover"
+                    href="development.html">Development</a>
+                  <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover" href="staff_augment.html">Staff
+                    augmentation</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Playbook</a></li>
+            <li><a href="#">Blog</a></li>
+            <li class=""><a
+                class="text-white bg-purple rounded-xl py-3 px-4 hover:bg-purple-900 active:bg-purple-800 transition ease-in"
+                href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <!-- ===== hero ===== -->
+  <div class="relative z-30 w-full overflow-x-hidden overview">
+    <div class="max-w-6xl mx-auto px-4 pt-36">
+      <div class="relative z-20">
+        <h1 class="text-4xl md:text-6xl tracking-tight font-bebas-neue text-custom-gray-900">best buy influencer network
+        </h1>
+        <div class="hidden md:block md:w-4/6 md:pr-14">
+          <p class="font-bold pt-10">Our client: Best Buy</p>
+          <p class="">Best Buy is the largest consumer electronics retailer globally, worth a net of $29B. It has over
+            1231 stores worldwide and a powerful e-commerce that creates around 35.2% of total revenue. </p>
+          <p class="font-bold pt-10">Industry</p>
+          <p class="">Retailer</p>
+        </div>
+      </div>
+      <img src="assets/img/bestBuy_logo_sm.svg" alt="Curascribe_Logo" class="md:hidden w-20 py-6" />
+      <img class="mx-auto md:-mt-16" src="assets/img/Laptop_BestBuy.svg" alt="iphone" />
+    </div>
+    <!-- triangle -->
+    <div class="scale hidden md:block absolute left-20 bottom-1/2">
+      <svg class="spin" width="49.84" height="43.7" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF" />
       </svg>
-      <img src="assets/shapes/dot_grid.svg" alt="" class="absolute -bottom-64 -right-8 hidden md:block" />
     </div>
+  </div>
 
-    <!-- THE PROJECT -->
-    <div class="my-20 md:my-52">
-      <div class=" max-w-6xl mx-auto flex space-x-0 md:space-x-12 flex-col space-y-10 md:space-y-0 md:flex-row relative px-4" >
-        <!-- Flex left -->
-        <div class="md:w-1/2 relative mx-auto md:mx-0">
-          <img src="assets/img/Girls_project.svg" alt="" class="w-80 md:w-auto h-auto" />
 
-          <!-- Pentagon -->
-          <div class="scale absolute -bottom-44 -left-44 -bottom hidden md:block">
-            <svg class="spin" width="94.46" height="89.85" viewBox="0 0 127 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#B7BEDB"/>
-              </svg>
-          </div>
-        </div>
+  <!-- ===== OVERVIEW  ===== -->
+  <div class="bg-lilac-1000 relative z-20 w-full overflow-x-hidden overview -mt-36 pb-20">
+    <img src="assets/img/bestBuy_logo.svg" alt="BestBuy_Logo"
+      class="absolute right-24 top-32 xl:top-4 hidden md:block" />
+    <div class="relative max-w-6xl mx-auto pt-24 md:pt-72 pb-14 md:pb-2 px-4">
+      <!-- Only Mobile -->
+      <p class="font-bold block md:hidden pt-16">Our client: Best buy</p>
+      <p class="pb-8 block md:hidden">
+        Best Buy is the largest consumer electronics retailer globally, worth
+        a net of $29B. It has over 1231 stores worldwide and a powerful
+        e-commerce that creates around 35.2% of total revenue.
+      </p>
+      <p class="font-bold block md:hidden">Industry</p>
+      <p class="block md:hidden">Fintech</p>
+      <!-- END -->
 
-        <!-- Flex right -->
-
-        <div class="md:w-1/2 relative">
-          <h3 class="text-[43px] md:text-[50px] text-[#374351] font-bebas-neue">
-            THE PROJECT
-          </h3>
-          <p class="text-sm md:text-base"> Centennials may not know this, but Influencers have always existed, and we used to call them bloggers in the 2000s. Best Buy was visionary and started collaborating with Myspace and Blogspot's influencers back then by gifting them products to talk about on their social media. <br /> <br /> To find collaborations, Best Buy had an exclusive blogger platform, where bloggers subscribed to partake in the different promotion opportunities. Bloggers who were admitted to the platform and accepted for the promotion broadcasted the product on their social media. In exchange, Best Buy rewarded them with gift cards.</p>
-
-          <!-- ONLY MOBILE -->
-          <div class="scale absolute block md:hidden -bottom-12 -left-8">
-            <svg class="spin" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#919BC8" />
-              </svg>
-          </div>
-        </div>
-      </div>
+      <h3 class=" text-[43px] relative z-20 md:text-[50px] font-bebas-neue text-custom-gray-900 pt-28 md:pt-0">
+        OVERVIEW
+      </h3>
+      <p class="relative z-20 pt-4 md:pt-0 text-sm md:text-base">
+        Best Buy is the largest consumer electronics retailer globally, worth
+        a net of $29B. It has over 1231 stores worldwide and a powerful
+        e-commerce that creates around 35.2% of total revenue.
+      </p>
     </div>
+    <img src="assets/shapes/dot_grid.svg" alt="" class="hidden md:block absolute z-30 -top-32 -left-10" />
+    <!-- CIRCLE -->
+    <svg class="scale absolute z-0 bottom-64 -right-8 md:bottom-16 md:-right-10" width="117" height="117"
+      viewBox="0 0 117 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="58.3649" cy="58.7409" r="58.3649" fill="#DAC6ED" />
+    </svg>
+    <img src="assets/shapes/dot_grid.svg" alt="" class="absolute -bottom-64 -right-8 hidden md:block" />
+  </div>
 
-    <!-- THE HISTORY -->
-    <div class="md:pt-32 mb-20 md:mb-40 relative overview">
-      <!-- SHAPES -->
-      <div class="scale absolute top-60 -right-4 md:top-30 md:right-20">
-        <svg class="spin" width="45.59" height="43.37" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#D7E4FF" />
+  <!-- THE PROJECT -->
+  <div class="my-20 md:my-52">
+    <div
+      class=" max-w-6xl mx-auto flex space-x-0 md:space-x-12 flex-col space-y-10 md:space-y-0 md:flex-row relative px-4">
+      <!-- Flex left -->
+      <div class="md:w-1/2 relative mx-auto md:mx-0">
+        <img src="assets/img/Girls_project.svg" alt="" class="w-80 md:w-auto h-auto" />
+
+        <!-- Pentagon -->
+        <div class="scale absolute -bottom-44 -left-44 -bottom hidden md:block">
+          <svg class="spin" width="94.46" height="89.85" viewBox="0 0 127 121" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#B7BEDB" />
           </svg>
-      </div>
-      <div class="absolute -bottom-16 md:bottom-24 -right-4">
-        <svg class="spin" width="49.84" height="43.7" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#CACFE5" />
-          </svg>
+        </div>
       </div>
 
-      <!-- CONTENT -->
-      <div class="max-w-6xl mx-auto px-4">
-        <div class=" flex flex-col md:flex-row md:items-center md:justify-between relative " >
-          <p class="md:w-1/2 order-2 md:order-1 text-sm md:text-base"> In 2018, the platform was completely outdated and obsolete for modern social media influencers. Best Buy decided they wanted to bring it back to life by re-thinking the features and redesigning the entire solution. <br /> <br /> That's when our team came in. We were in charge of developing and designing the renewed site. There were many things to fix and rebuild. They needed to add new features and improve existing ones. Another critical task was working on enhancing performance and stabilizing it. We also adjusted the website to BestBuy's new brand image. Most importantly, we adapted the platform to the contemporary lifestyle, mobile-first, and the latest trending social media channels, such as Instagram, Twitter, Youtube, and Vimeo. </p>
-          <img src="assets/img/BestBuy_IPad.svg" alt="Featured Influincers" class="order-1 md:order-2 mb-12 md:mb-0"/>
+      <!-- Flex right -->
+
+      <div class="md:w-1/2 relative">
+        <h3 class="text-[43px] md:text-[50px] text-[#374351] font-bebas-neue">
+          THE PROJECT
+        </h3>
+        <p class="text-sm md:text-base"> Centennials may not know this, but Influencers have always existed, and we used
+          to call them bloggers in the 2000s. Best Buy was visionary and started collaborating with Myspace and
+          Blogspot's influencers back then by gifting them products to talk about on their social media. <br /> <br />
+          To find collaborations, Best Buy had an exclusive blogger platform, where bloggers subscribed to partake in
+          the different promotion opportunities. Bloggers who were admitted to the platform and accepted for the
+          promotion broadcasted the product on their social media. In exchange, Best Buy rewarded them with gift cards.
+        </p>
+
+        <!-- ONLY MOBILE -->
+        <div class="scale absolute block md:hidden -bottom-12 -left-8">
+          <svg class="spin" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z"
+              fill="#919BC8" />
+          </svg>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- THE Process Workflow -->
-    <div class="relative w-full overflow-x-hidden overview">
-        <div class="max-w-6xl mx-auto mb-40 px-4">
-            <div class="md:w-1/2">
-                <h3 class=" text-[43px] md:text-[50px] text-[#374351] font-bebas-neue pb-2 uppercase " > Process & Workflow </h3>
-                <p class="text-sm md:text-base">
-                The project had three main stages: Discovery, UX/UI Design and
-                Development.
-                </p>
+  <!-- THE HISTORY -->
+  <div class="md:pt-32 mb-20 md:mb-40 relative overview">
+    <!-- SHAPES -->
+    <div class="scale absolute top-60 -right-4 md:top-30 md:right-20">
+      <svg class="spin" width="45.59" height="43.37" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z"
+          fill="#D7E4FF" />
+      </svg>
+    </div>
+    <div class="absolute -bottom-16 md:bottom-24 -right-4">
+      <svg class="spin" width="49.84" height="43.7" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#CACFE5" />
+      </svg>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="max-w-6xl mx-auto px-4">
+      <div class=" flex flex-col md:flex-row md:items-center md:justify-between relative ">
+        <p class="md:w-1/2 order-2 md:order-1 text-sm md:text-base"> In 2018, the platform was completely outdated and
+          obsolete for modern social media influencers. Best Buy decided they wanted to bring it back to life by
+          re-thinking the features and redesigning the entire solution. <br /> <br /> That's when our team came in. We
+          were in charge of developing and designing the renewed site. There were many things to fix and rebuild. They
+          needed to add new features and improve existing ones. Another critical task was working on enhancing
+          performance and stabilizing it. We also adjusted the website to BestBuy's new brand image. Most importantly,
+          we adapted the platform to the contemporary lifestyle, mobile-first, and the latest trending social media
+          channels, such as Instagram, Twitter, Youtube, and Vimeo. </p>
+        <img src="assets/img/BestBuy_IPad.svg" alt="Featured Influincers" class="order-1 md:order-2 mb-12 md:mb-0" />
+      </div>
+    </div>
+  </div>
+
+  <!-- THE Process Workflow -->
+  <div class="relative w-full overflow-x-hidden overview">
+    <div class="max-w-6xl mx-auto mb-40 px-4">
+      <div class="md:w-1/2">
+        <h3 class=" text-[43px] md:text-[50px] text-[#374351] font-bebas-neue pb-2 uppercase "> Process & Workflow </h3>
+        <p class="text-sm md:text-base">
+          The project had three main stages: Discovery, UX/UI Design and
+          Development.
+        </p>
+      </div>
+      <!-- PROCESS TIMELINE -->
+      <div class="md:pl-16 pt-10 flex space-x-7 md:space-x-24">
+        <img src="assets/shapes/Timeline_Line.svg" alt="" class="self-start hidden md:block" />
+        <!-- MOBILE ONLY -->
+        <img src="assets/shapes/Timeline_Line_mobile.svg" alt="" class="self-start block md:hidden !ml-0 !mr-0" />
+        <div>
+          <h3 class="text-4xl font-bebas-neue">Product discovery : Defining the Solution</h3>
+          <p class="py-2 md:py-7 text-sm md:text-base"> The discovery phase consisted mainly of defining the platform's
+            features and technological needs, translating them to requirements. We worked side-by-side with Bestbuy's
+            team to re-think the core of the platform. We understood that the needs of the users had changed, and there
+            were new challenges to confront. The business needs and technological possibilities evolved, and now we had
+            the possibility to measure data and discover lots of valuable insights.</p>
+          <p class="pb-10 md:pb-7 text-sm md:text-base">We defined the MVP:</p>
+          <div class="md:flex space-x-0 md:space-x-8 space-y-10 md:space-y-0">
+            <!-- CARD 1 -->
+            <div class="p-5 bg-white md:w-1/2 shadow rounded-lg">
+              <img src="assets/img/Services_icon.svg" alt="" class="pb-6" />
+              <p class="pt-2 font-bold">A scalable platform</p>
+              <p> A scalable platform for modern mobile users, content creators that love the digital world and are
+                thrilled to make a business deal entirely digitally, without even the need to exchange long, tedious
+                emails or phone calls. </p>
             </div>
-            <!-- PROCESS TIMELINE -->
-          <div class="md:pl-16 pt-10 flex space-x-7 md:space-x-24">
-            <img src="assets/shapes/Timeline_Line.svg" alt="" class="self-start hidden md:block" />
-            <!-- MOBILE ONLY -->
-            <img src="assets/shapes/Timeline_Line_mobile.svg" alt="" class="self-start block md:hidden !ml-0 !mr-0" />
-            <div>
-                <h3 class="text-4xl font-bebas-neue">Product discovery : Defining the Solution</h3>
-                <p class="py-2 md:py-7 text-sm md:text-base"> The discovery phase consisted mainly of defining the platform's features and technological needs, translating them to requirements. We worked side-by-side with Bestbuy's team to re-think the core of the platform. We understood that the needs of the users had changed, and there were new challenges to confront. The business needs and technological possibilities evolved, and now we had the possibility to measure data and discover lots of valuable insights.</p>
-                <p class="pb-10 md:pb-7 text-sm md:text-base">We defined the MVP:</p>
-                <div class="md:flex space-x-0 md:space-x-8 space-y-10 md:space-y-0">
-                    <!-- CARD 1 -->
-                    <div class="p-5 bg-white md:w-1/2 shadow rounded-lg">
-                        <img src="assets/img/Services_icon.svg" alt="" class="pb-6" />
-                        <p class="pt-2 font-bold">A scalable platform</p>
-                        <p> A scalable platform for modern mobile users, content creators that love the digital world and are thrilled to make a business deal entirely digitally, without even the need to exchange long, tedious emails or phone calls. </p>
-                    </div>
-                    <!-- CARD 2 -->
-                    <div class="p-5 bg-white md:w-1/2 shadow rounded-lg">
-                        <img src="assets/img/Presentation_icon.svg" alt="" class="pb-6" />
-                        <p class="pt-2 font-bold">Data reports</p>
-                        <p> The platform was intuitive and straightforward for them, and BestBuy didn't only benefit from making deals easier but also from relevant data reports. </p>
-                    </div>
-                </div>
-    
-              <!-- UX/UI DESIGN -->
-                <div class="relative pt-16">
-                    <h3 class="text-4xl font-bebas-neue">UX/UI Design</h3>
-                    <p class="py-4 md:py-7 text-sm md:text-base">
-                    The site's design was outdated visually, and the mobile user
-                    experience was poor, essentially because, when it was initially
-                    built, smartphones weren't on the table.
-                    </p>
-                    <p class="pb-4 md:pb-7 text-sm md:text-base">
-                    A big challenge was adapting it to Best Buy's new brand identity.
-                    BestBuy's personality had evolved a lot, and it was quite a
-                    challenge to learn everything about their new rigorous brand
-                    guidelines and design practices. The redesign caused a fantastic
-                    impact on the user experience of the site.
-                    </p>
-                    <p class="pb-8 md:pb-7 text-sm md:text-base">
-                    We also made the site responsive: bloggers only used computers,
-                    but most influencers nowadays work solely with their phones, so
-                    the platform had to function perfectly on both. We used a
-                    mobile-first approach when designing and made it a flawless fit
-                    for all screen sizes.
-                    </p>
-                    <div class="flex space-x-2 md:space-x-7 justify-center">
-                        <img src="assets/img/Best_buy-1.svg" alt="" class="w-24 md:w-auto md:h-auto" />
-                        <img src="assets/img/Best_buy-2.svg" alt="" class="w-24 md:w-auto md:h-auto" />
-                        <img src="assets/img/Best_buy.svg" alt="" class="w-24 md:w-auto md:h-auto" />
-                    </div>
-                </div>
-    
-              <!-- DEVELOPMENT -->
-              <div class="relative z-20 pt-20 md:pt-48">
-                <h3 class="text-4xl font-bebas-neue uppercase">Development</h3>
-                <p class="py-2 md:py-7">
-                  Development tasks included creating new features, improving
-                  existing ones, working in the server's maintenance and
-                  actualization, and optimizing the software's performance.
+            <!-- CARD 2 -->
+            <div class="p-5 bg-white md:w-1/2 shadow rounded-lg">
+              <img src="assets/img/Presentation_icon.svg" alt="" class="pb-6" />
+              <p class="pt-2 font-bold">Data reports</p>
+              <p> The platform was intuitive and straightforward for them, and BestBuy didn't only benefit from making
+                deals easier but also from relevant data reports. </p>
+            </div>
+          </div>
+
+          <!-- UX/UI DESIGN -->
+          <div class="relative pt-16">
+            <h3 class="text-4xl font-bebas-neue">UX/UI Design</h3>
+            <p class="py-4 md:py-7 text-sm md:text-base">
+              The site's design was outdated visually, and the mobile user
+              experience was poor, essentially because, when it was initially
+              built, smartphones weren't on the table.
+            </p>
+            <p class="pb-4 md:pb-7 text-sm md:text-base">
+              A big challenge was adapting it to Best Buy's new brand identity.
+              BestBuy's personality had evolved a lot, and it was quite a
+              challenge to learn everything about their new rigorous brand
+              guidelines and design practices. The redesign caused a fantastic
+              impact on the user experience of the site.
+            </p>
+            <p class="pb-8 md:pb-7 text-sm md:text-base">
+              We also made the site responsive: bloggers only used computers,
+              but most influencers nowadays work solely with their phones, so
+              the platform had to function perfectly on both. We used a
+              mobile-first approach when designing and made it a flawless fit
+              for all screen sizes.
+            </p>
+            <div class="flex space-x-2 md:space-x-7 justify-center">
+              <img src="assets/img/Best_buy-1.svg" alt="" class="w-24 md:w-auto md:h-auto" />
+              <img src="assets/img/Best_buy-2.svg" alt="" class="w-24 md:w-auto md:h-auto" />
+              <img src="assets/img/Best_buy.svg" alt="" class="w-24 md:w-auto md:h-auto" />
+            </div>
+          </div>
+
+          <!-- DEVELOPMENT -->
+          <div class="relative z-20 pt-20 md:pt-48">
+            <h3 class="text-4xl font-bebas-neue uppercase">Development</h3>
+            <p class="py-2 md:py-7">
+              Development tasks included creating new features, improving
+              existing ones, working in the server's maintenance and
+              actualization, and optimizing the software's performance.
+            </p>
+            <p class="py-10 md:pb-7">Some of the tasks were:</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-7">
+              <!-- CARD 1 -->
+              <div class="p-5 bg-white shadow rounded-lg">
+                <img src="./assets/img/Presentation_icon.svg" alt="Icon" />
+                <p class="pt-2">
+                  Creating automatized reports with data about each influencer
+                  and their characteristics. This information is highly valuable
+                  for BestBuy's marketing team.
                 </p>
-                <p class="py-10 md:pb-7">Some of the tasks were:</p>
-    
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-7">
-                  <!-- CARD 1 -->
-                  <div class="p-5 bg-white shadow rounded-lg">
-                    <img src="./assets/img/Presentation_icon.svg" alt="Icon" />
-                    <p class="pt-2">
-                      Creating automatized reports with data about each influencer
-                      and their characteristics. This information is highly valuable
-                      for BestBuy's marketing team.
-                    </p>
-                  </div>
-    
-                  <!-- CARD 2 -->
-                  <div class="p-5 bg-white shadow rounded-lg">
-                    <img src="./assets/img/diagram_icon.svg" alt="Icon" />
-                    <p class="pt-2">
-                      Building data reports for each campaign, that measured
-                      performance among other relevant metrics.
-                    </p>
-                  </div>
-    
-                  <!-- CARD 3 -->
-                  <div class="p-5 bg-white shadow rounded-lg">
-                    <img src="./assets/img/Services_icon.svg" alt="Icon" />
-                    <p class="pt-2">
-                      New views, such as the list of open projects for influencers
-                      to apply, with categories and filters, the FAQs, among others.
-                    </p>
-                  </div>
-    
-                  <!-- CARD 4 -->
-                  <div class="p-5 bg-white shadow rounded-lg">
-                    <img src="./assets/img/Document_report.svg" alt="Icon" />
-                    <p class="pt-2">
-                      Developing a dashboard with analytics that crosses different
-                      relevant metrics about influencers. For example, an
-                      interesting finding is the number of stores per state compared
-                      with the number of influencers there.
-                    </p>
-                  </div>
-                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="p-5 bg-white shadow rounded-lg">
+                <img src="./assets/img/diagram_icon.svg" alt="Icon" />
+                <p class="pt-2">
+                  Building data reports for each campaign, that measured
+                  performance among other relevant metrics.
+                </p>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="p-5 bg-white shadow rounded-lg">
+                <img src="./assets/img/Services_icon.svg" alt="Icon" />
+                <p class="pt-2">
+                  New views, such as the list of open projects for influencers
+                  to apply, with categories and filters, the FAQs, among others.
+                </p>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="p-5 bg-white shadow rounded-lg">
+                <img src="./assets/img/Document_report.svg" alt="Icon" />
+                <p class="pt-2">
+                  Developing a dashboard with analytics that crosses different
+                  relevant metrics about influencers. For example, an
+                  interesting finding is the number of stores per state compared
+                  with the number of influencers there.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <img class="absolute z-0 bottom-1/4 -left-32 md:-left-12" src="assets/shapes/dot_grid.svg" alt="">
-        <!-- circle top left -->
-        <svg class="scale hidden md:block absolute z-0 top-80 -left-12" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="77.9996" cy="78.376" r="78" fill="#E8EEF9"/>
-        </svg>
-        <!-- pentagon -->
-        <div class="scale absolute z-0 top-64 -left-4 md:left-10">
-            <svg class="spin" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#7E8ABF"/>
-            </svg>
-        </div>
-        <!-- triangle -->
-        <div class="scale absolute z-0 top-1/2 -right-4 md:right-16">
-            <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#7E8ABF"/>
-            </svg>
-        </div>
-        <!-- circle bottom left -->
-        <svg class="scale absolute z-0 bottom-1/3 -left-4 md:left-12" width="56" height="57" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="77.9996" cy="78.376" r="78" fill="#7E8ABF"/>
-        </svg>
-        <!-- circle bottom right -->
-        <svg class="scale absolute z-0 -bottom-20 -right-20" width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="77.9996" cy="78.376" r="78" fill="#E8EEF9"/>
-        </svg>
+      </div>
     </div>
+    <img class="absolute z-0 bottom-1/4 -left-32 md:-left-12" src="assets/shapes/dot_grid.svg" alt="">
+    <!-- circle top left -->
+    <svg class="scale hidden md:block absolute z-0 top-80 -left-12" width="156" height="157" viewBox="0 0 156 157"
+      fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="77.9996" cy="78.376" r="78" fill="#E8EEF9" />
+    </svg>
+    <!-- pentagon -->
+    <div class="scale absolute z-0 top-64 -left-4 md:left-10">
+      <svg class="spin" width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z"
+          fill="#7E8ABF" />
+      </svg>
+    </div>
+    <!-- triangle -->
+    <div class="scale absolute z-0 top-1/2 -right-4 md:right-16">
+      <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#7E8ABF" />
+      </svg>
+    </div>
+    <!-- circle bottom left -->
+    <svg class="scale absolute z-0 bottom-1/3 -left-4 md:left-12" width="56" height="57" viewBox="0 0 156 157"
+      fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="77.9996" cy="78.376" r="78" fill="#7E8ABF" />
+    </svg>
+    <!-- circle bottom right -->
+    <svg class="scale absolute z-0 -bottom-20 -right-20" width="156" height="157" viewBox="0 0 156 157" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="77.9996" cy="78.376" r="78" fill="#E8EEF9" />
+    </svg>
+  </div>
 
-    <!-- RESULTS -->
-    <div class="max-w-6xl mx-auto pb-24 px-4">
-      <h3 class="text-5xl text-[#374351] font-bebas-neue md:pb-2">RESULTS</h3>
+  <!-- RESULTS -->
+  <div class="max-w-6xl mx-auto pb-24 px-4">
+    <h3 class="text-5xl text-[#374351] font-bebas-neue md:pb-2">RESULTS</h3>
 
-      <!-- CARDS -->
-      <div class=" relative grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-10 md:gap-7 pt-10 z-10 " >
-        <!-- 1st Card -->
-        <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
-          <img src="./assets/img/Services_icons.svg" alt="" />
-          <p>Reached billions of customers from emerging countries.</p>
-        </div>
-
-        <!-- 2nd Card -->
-        <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
-          <img src="./assets/img/Thumb_down.svg" alt="" />
-          <p>
-            Over 1,000,000+ stores are able to integrate the payment gateway.
-          </p>
-        </div>
-
-        <!-- 3rd Card -->
-        <div class="relative bg-white p-5 space-y-6 rounded-lg shadow-md">
-          <div class="flex items-center space-x-4">
-            <a href="#"><img class="w-14" src="assets/img/instagram.svg" alt=""></a>
-            <a href="#"><img class="w-14" src="assets/img/facebook.svg" alt=""></a>
-            <a href="#"><img class="w-14" src="assets/img/twitter.svg" alt=""></a>
-            <a href="#"><img class="w-14" src="assets/img/youtube.svg" alt=""></a>
-            <a href="#"><img class="w-14" src="assets/img/vimeo.svg" alt=""></a>
-          </div>
-          <p>Currently operating in +30 countries across de globe</p>
-        </div>
-
-        <!-- 4th Card -->
-        <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
-          <img src="./assets/img/Sparkles.svg" alt="" />
-          <p>Currently operating in +30 countries across de globe</p>
-        </div>
+    <!-- CARDS -->
+    <div class=" relative grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-10 md:gap-7 pt-10 z-10 ">
+      <!-- 1st Card -->
+      <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
+        <img src="./assets/img/Services_icons.svg" alt="" />
+        <p>Reached billions of customers from emerging countries.</p>
       </div>
 
-      <!-- SHAPE -->
-      <div class="relative">
-        <div class="scale absolute -bottom-8 -left-14 hidden md:block">
-            <svg class="spin" width="94.46" height="89.85" viewBox="0 0 127 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#CCB1E6" />
-            </svg>
+      <!-- 2nd Card -->
+      <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
+        <img src="./assets/img/Thumb_down.svg" alt="" />
+        <p>
+          Over 1,000,000+ stores are able to integrate the payment gateway.
+        </p>
+      </div>
+
+      <!-- 3rd Card -->
+      <div class="relative bg-white p-5 space-y-6 rounded-lg shadow-md">
+        <div class="flex items-center space-x-4">
+          <a href="#"><img class="w-14" src="assets/img/instagram.svg" alt=""></a>
+          <a href="#"><img class="w-14" src="assets/img/facebook.svg" alt=""></a>
+          <a href="#"><img class="w-14" src="assets/img/twitter.svg" alt=""></a>
+          <a href="#"><img class="w-14" src="assets/img/youtube.svg" alt=""></a>
+          <a href="#"><img class="w-14" src="assets/img/vimeo.svg" alt=""></a>
         </div>
+        <p>Currently operating in +30 countries across de globe</p>
+      </div>
+
+      <!-- 4th Card -->
+      <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
+        <img src="./assets/img/Sparkles.svg" alt="" />
+        <p>Currently operating in +30 countries across de globe</p>
       </div>
     </div>
 
-    <!-- ===== footer card ===== -->
-    <div class="px-4">
-        <div class="relative max-w-6xl mx-auto w-full bg-card rounded-2xl transform translate-y-1/2 py-14 px-4 md:px-8">
-            <div class="relative z-50 w-3/5 md:pl-10">
-                <p class="font-bebas-neue text-4xl text-lilacSecondary">Let’s talk</p>
-                <h1 class="font-open-sans text-lilac pt-6 pb-8">Whether it's a quick question or a fantastic idea, <br> let's start with a conversation.</h1>
-                <a class="block" href="#"><span class="text-gray-900 font-bold font-open-sans text-15 bg-lilac-1000 rounded-xl py-2 px-4 hover:bg-lilac-600 focus:bg-lilac-200 transition ease-in">Schedule a call</span></a>
-            </div>
-            <!-- triangle -->
-            <div class="hidden md:block absolute right-1/3 bottom-1/3">
-                <svg width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
-                </svg>
-            </div>
-            <!-- pentagon -->
-            <div class="hidden md:block absolute right-100 top-12">
-                <svg width="68" height="65" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#CCB1E6"/>
-                </svg>
-            </div>
-            <!-- circle -->
-            <svg class="hidden md:block absolute right-60 top-6" width="85" height="86" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
-            </svg>
-
-            <!-- triangle little -->
-            <div class="md:hidden absolute top-20 right-28">
-                <svg width="20" height="20" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
-                </svg>
-            </div>
-            <!-- pentagon tittle -->
-            <div class="md:hidden absolute top-6 right-16">
-                <svg width="30" height="30" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#CCB1E6"/>
-                </svg>
-            </div>
-            <!-- circle little -->
-            <svg class="md:hidden absolute top-20 right-4" width="35" height="35" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD"/>
-            </svg>
-            <!-- man img -->
-            <img class="absolute right-4 md:right-10 bottom-6 w-32 md:w-64" src="assets/img/man.svg" alt="">
-        </div>
+    <!-- SHAPE -->
+    <div class="relative">
+      <div class="scale absolute -bottom-8 -left-14 hidden md:block">
+        <svg class="spin" width="94.46" height="89.85" viewBox="0 0 127 121" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#CCB1E6" />
+        </svg>
+      </div>
     </div>
+  </div>
 
-    <!-- ===== footer ===== -->
-    <footer class="bg-purple text-lilac-500">
-        <div class="max-w-6xl mx-auto border-b-2 border-[#D8E3F5] pt-72 pb-14 px-4">
-            <img src="./assets/img/Logo.svg" alt="Logo" class="w-20 pb-2" />
-            <div class="flex flex-wrap justify-between">
-                <p class="w-full lg:w-2/6 py-4">We are an outstanding digital product studio that combines strategic thinking and the latest technologies to craft innovative solutions that consistently break ground.</p>
+  <!-- ===== footer card ===== -->
+  <div class="px-4">
+    <div class="relative max-w-6xl mx-auto w-full bg-card rounded-2xl transform translate-y-1/2 py-14 px-4 md:px-8">
+      <div class="relative z-50 w-3/5 md:pl-10">
+        <p class="font-bebas-neue text-4xl text-lilacSecondary">Let’s talk</p>
+        <h1 class="font-open-sans text-lilac pt-6 pb-8">Whether it's a quick question or a fantastic idea, <br> let's
+          start with a conversation.</h1>
+        <a class="block" href="#"><span
+            class="text-gray-900 font-bold font-open-sans text-15 bg-lilac-1000 rounded-xl py-2 px-4 hover:bg-lilac-600 focus:bg-lilac-200 transition ease-in">Schedule
+            a call</span></a>
+      </div>
+      <!-- triangle -->
+      <div class="hidden md:block absolute right-1/3 bottom-1/3">
+        <svg width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF" />
+        </svg>
+      </div>
+      <!-- pentagon -->
+      <div class="hidden md:block absolute right-100 top-12">
+        <svg width="68" height="65" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z"
+            fill="#CCB1E6" />
+        </svg>
+      </div>
+      <!-- circle -->
+      <svg class="hidden md:block absolute right-60 top-6" width="85" height="86" viewBox="0 0 156 157" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD" />
+      </svg>
 
-                <div class="w-full lg:w-4/6 flex flex-wrap lg:pl-32 py-4">
-                  <ul class="w-full sm:w-1/3 space-y-2">
-                    <li><a href="#" class="text-white font-bold">Services</a></li>
-                    <li><a href="ser_pro_strategy.html">Product strategy</a></li>
-                    <li><a href="ser_pro_design.html">Product design</a></li>
-                    <li><a href="development.html">Development</a></li>
-                    <li><a href="staff_augment.html">Staff augmentation</a></li>
-                </ul>
-                <ul class="w-full sm:w-1/3 space-y-2 pt-8 sm:pt-0">
-                    <li><a href="#" class="text-white font-bold">Our work</a></li>
-                    <li><a href="best_buy.html">Best buy</a></li>
-                    <li><a href="curascribe.html">Curascribe</a></li>
-                    <li><a href="d_local.html">D-local</a></li>
-                </ul>
-                <ul class="w-full sm:w-1/3 space-y-2 pt-8 sm:pt-0">
-                    <li><a href="#" class="text-white font-bold">About us</a></li>
-                    <li><a href="#">Playbook</a></li>
-                    <li><a href="#">Carreers</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-                </div>
-            </div>
+      <!-- triangle little -->
+      <div class="md:hidden absolute top-20 right-28">
+        <svg width="20" height="20" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF" />
+        </svg>
+      </div>
+      <!-- pentagon tittle -->
+      <div class="md:hidden absolute top-6 right-16">
+        <svg width="30" height="30" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z"
+            fill="#CCB1E6" />
+        </svg>
+      </div>
+      <!-- circle little -->
+      <svg class="md:hidden absolute top-20 right-4" width="35" height="35" viewBox="0 0 57 57" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD" />
+      </svg>
+      <!-- man img -->
+      <img class="absolute right-4 md:right-10 bottom-6 w-32 md:w-64" src="assets/img/man.svg" alt="">
+    </div>
+  </div>
+
+  <!-- ===== footer ===== -->
+  <footer class="bg-purple text-lilac-500">
+    <div class="max-w-6xl mx-auto border-b-2 border-[#D8E3F5] pt-72 pb-14 px-4">
+      <img src="./assets/img/Logo.svg" alt="Logo" class="w-20 pb-2" />
+      <div class="flex flex-wrap justify-between">
+        <p class="w-full lg:w-2/6 py-4">We are an outstanding digital product studio that combines strategic thinking
+          and the latest technologies to craft innovative solutions that consistently break ground.</p>
+
+        <div class="w-full lg:w-4/6 flex flex-wrap lg:pl-32 py-4">
+          <ul class="w-full sm:w-1/3 space-y-2">
+            <li><a href="#" class="text-white font-bold">Services</a></li>
+            <li><a href="ser_pro_strategy.html">Product strategy</a></li>
+            <li><a href="ser_pro_design.html">Product design</a></li>
+            <li><a href="development.html">Development</a></li>
+            <li><a href="staff_augment.html">Staff augmentation</a></li>
+          </ul>
+          <ul class="w-full sm:w-1/3 space-y-2 pt-8 sm:pt-0">
+            <li><a href="#" class="text-white font-bold">Our work</a></li>
+            <li><a href="best_buy.html">Best buy</a></li>
+            <li><a href="curascribe.html">Curascribe</a></li>
+            <li><a href="d_local.html">D-local</a></li>
+          </ul>
+          <ul class="w-full sm:w-1/3 space-y-2 pt-8 sm:pt-0">
+            <li><a href="#" class="text-white font-bold">About us</a></li>
+            <li><a href="#">Playbook</a></li>
+            <li><a href="#">Carreers</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
         </div>
-        <div class="max-w-6xl mx-auto flex justify-between py-10 px-4">
-            <p>&copy; Copyright 2021 Light-it. All Right Reserved.</p>
-            <div class="hidden md:flex space-x-5">
-                <a href="#"><img src="./assets/img/linkedin.svg" alt="LinkidIn"/></a>
-                <a href="#"><img src="./assets/img/github.svg" alt="Github"/></a>
-                <a href="#"><img src="./assets/img/dribbble.svg" alt="Drib"/></a>
-                <a href="#"><img src="./assets/img/twitter.svg" alt="Twitter"/></a>
-                <a href="#"><img src="./assets/img/instagram.svg" alt="Instagram"/></a>
-            </div>
-        </div>
-    </footer>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto flex justify-between py-10 px-4">
+      <p>&copy; Copyright 2021 Light-it. All Right Reserved.</p>
+      <div class="hidden md:flex space-x-5">
+        <a href="#"><img src="./assets/img/linkedin.svg" alt="LinkidIn" /></a>
+        <a href="#"><img src="./assets/img/github.svg" alt="Github" /></a>
+        <a href="#"><img src="./assets/img/dribbble.svg" alt="Drib" /></a>
+        <a href="#"><img src="./assets/img/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="./assets/img/instagram.svg" alt="Instagram" /></a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="assets/js/app.js"></script>
-  </body>
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>

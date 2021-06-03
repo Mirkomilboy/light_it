@@ -1,428 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>LightIt</title>
-  </head>
-  <body class="bg-lilac-100 font-open-sans text-custom-gray-1000">
 
-    <!-- ===== Navigation ===== -->
-    <div id="nav" class="fixed z-50 w-full">
-        <header class="max-w-8xl mx-auto flex flex-wrap items-center justify-between py-2 md:py-8 px-4">
-            <div>
-                <a href="index.html"><img class="w-32 md:w-48" src="assets/img/Logo_purple.svg" alt=""></a>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>LightIt</title>
+</head>
 
-            <button id="menuBtn" class="md:hidden focus:outline-none"><img class="w-6" src="assets/img/menuBtnBlack.svg" alt=""></button>
+<body class="bg-lilac-100 font-open-sans text-custom-gray-1000">
 
-            <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
-                <nav>
-                    <ul id="nav2" class="md:flex justify-between items-center font-open-sans text-white md:text-gray-900 font-bold text-15 space-y-4 md:space-y-0 md:space-x-12 py-4 md:pt-0">
-                        <li><a href="#">Our Work</a></li>
-                        <li class="relative group">
-                          <a href="#">Services</a>
-                          <div class="hidden absolute w-52 bg-lilac-200 shadow-md text-custom-gray-900 text-sm font-normal rounded-xl p-6 space-y-4 group-hover:block">
-                              <a class="block" href="ser_pro_strategy.html">Product strategy</a>
-                              <a class="block" href="ser_pro_design.html">Product design</a>
-                              <a class="block" href="development.html">Development</a>
-                              <a class="block" href="staff_augment.html">Staff augmentation</a>
-                          </div>
-                        </li>
-                        <li><a href="#">Playbook</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a class="text-white bg-purple rounded-xl py-3 px-4 hover:bg-purple-900 active:bg-purple-800 transition ease-in" href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </div>
+  <!-- ===== Navigation ===== -->
+  <div id="nav" class="fixed z-50 w-full">
+    <header class="max-w-8xl mx-auto flex flex-wrap items-center justify-between py-2 md:py-8 px-4">
+      <div>
+        <a href="index.html"><img class="w-32 md:w-48" src="assets/img/Logo_purple.svg" alt=""></a>
+      </div>
 
-    <!-- ===== hero ===== -->
-    <div class="relative z-10 w-full overflow-hidden">
-        <div class="max-w-6xl mx-auto px-4 pt-36">
-            <div class="relative z-20">
-                <h1 class="text-4xl md:text-6xl tracking-tight font-bebas-neue text-custom-gray-900">CuraScribe: Virtual scribes as a Service.</h1>
-                <div class="hidden md:block md:w-4/6 md:pr-14">
-                    <p class="font-bold pt-10">Our client: Curascribe</p>
-                    <p class="">The company is an LA-based start-up in the healthcare & tech industry that aims to eliminate the doctor’s time spent charting by creating an innovative and groundbreaking platform, unseen before in the medical industry.</p>
-                    <p class="font-bold pt-10">Industry</p>
-                    <p class="">Healthcare</p>
+      <button id="menuBtn" class="md:hidden focus:outline-none"><img class="w-6" src="assets/img/menuBtnBlack.svg"
+          alt=""></button>
+
+      <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
+        <nav>
+          <ul id="nav2"
+            class="md:flex justify-between items-center font-open-sans text-white md:text-gray-900 font-bold text-15 space-y-4 md:space-y-0 md:space-x-12 py-4 md:pt-0">
+            <li><a href="#">Our Work</a></li>
+            <li class="relative group">
+              <a href="#">Services</a>
+              <div class="hidden absolute w-52  group-hover:block pt-1.5">
+                <div class="bg-lilac-200 shadow-md text-custom-gray-900  text-sm font-normal rounded-xl py-4">
+                  <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover"
+                    href="ser_pro_strategy.html">Product
+                    strategy</a>
+                  <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover" href="ser_pro_design.html">Product
+                    design</a>
+                  <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover"
+                    href="development.html">Development</a>
+                  <a class="block py-3 px-6 hover:bg-opacity-10 hover:bg-text-hover" href="staff_augment.html">Staff
+                    augmentation</a>
                 </div>
-            </div>
-            <img src="assets/img/Curascribe_logo.svg" alt="Curascribe_Logo" class="md:hidden w-32 py-6"/>
-            <img class="mx-auto md:-mt-16" src="assets/img/Laptop_curascribe.svg" alt="iphone"/>
+              </div>
+            </li>
+            <li><a href="#">Playbook</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a
+                class="text-white bg-purple rounded-xl py-3 px-4 hover:bg-purple-900 active:bg-purple-800 transition ease-in"
+                href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <!-- ===== hero ===== -->
+  <div class="relative z-10 w-full overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 pt-36">
+      <div class="relative z-20">
+        <h1 class="text-4xl md:text-6xl tracking-tight font-bebas-neue text-custom-gray-900">CuraScribe: Virtual scribes
+          as a Service.</h1>
+        <div class="hidden md:block md:w-4/6 md:pr-14">
+          <p class="font-bold pt-10">Our client: Curascribe</p>
+          <p class="">The company is an LA-based start-up in the healthcare & tech industry that aims to eliminate the
+            doctor’s time spent charting by creating an innovative and groundbreaking platform, unseen before in the
+            medical industry.</p>
+          <p class="font-bold pt-10">Industry</p>
+          <p class="">Healthcare</p>
         </div>
-        <!-- pentagon -->
-        <div class="scale hidden md:block absolute z-0 top-24 -right-14">
-            <svg class="spin" width="127" height="121" viewBox="0 0 127 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#F0F4FB"/>
-            </svg>
-        </div>
-        <!-- Triangle -->
-        <div class="scale hidden md:block absolute z-0 top-60 right-10">
-            <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#C9E9DA" />
-            </svg>
-        </div>
-        <img src="assets/shapes/dot_grid.svg" alt="" class="hidden md:block absolute z-0 transform rotate-90 top-12 left-0"/>
+      </div>
+      <img src="assets/img/Curascribe_logo.svg" alt="Curascribe_Logo" class="md:hidden w-32 py-6" />
+      <img class="mx-auto md:-mt-16" src="assets/img/Laptop_curascribe.svg" alt="iphone" />
     </div>
+    <!-- pentagon -->
+    <div class="scale hidden md:block absolute z-0 top-24 -right-14">
+      <svg class="spin" width="127" height="121" viewBox="0 0 127 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#F0F4FB" />
+      </svg>
+    </div>
+    <!-- Triangle -->
+    <div class="scale hidden md:block absolute z-0 top-60 right-10">
+      <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#C9E9DA" />
+      </svg>
+    </div>
+    <img src="assets/shapes/dot_grid.svg" alt=""
+      class="hidden md:block absolute z-0 transform rotate-90 top-12 left-0" />
+  </div>
 
-    <!-- ===== overview ===== -->
-    <div class="relative z-0 overview bg-lilac-1000 -mt-36">
-        <img src="assets/img/Curascribe_logo.svg" alt="Curascribe_Logo" class="absolute right-24 top-32 xl:top-4 hidden md:block" />
-        <div class="relative max-w-6xl mx-auto pt-28 md:pt-72 pb-14 md:pb-24 px-4">
-            <!-- Only Mobile -->
-            <p class="font-bold block md:hidden pt-16">Our client: Curascribe</p>
-            <p class="pb-8 block md:hidden">The company is an LA-based start-up in the healthcare & tech industry that aims to eliminate the doctor’s time spent charting by creating an innovative and groundbreaking platform, unseen before in the medical industry. </p>
-            <p class="font-bold block md:hidden">Industry</p>
-            <p class="block md:hidden">Healthcare</p>
-            <!-- END -->
+  <!-- ===== overview ===== -->
+  <div class="relative z-0 overview bg-lilac-1000 -mt-36">
+    <img src="assets/img/Curascribe_logo.svg" alt="Curascribe_Logo"
+      class="absolute right-24 top-32 xl:top-4 hidden md:block" />
+    <div class="relative max-w-6xl mx-auto pt-28 md:pt-72 pb-14 md:pb-24 px-4">
+      <!-- Only Mobile -->
+      <p class="font-bold block md:hidden pt-16">Our client: Curascribe</p>
+      <p class="pb-8 block md:hidden">The company is an LA-based start-up in the healthcare & tech industry that aims to
+        eliminate the doctor’s time spent charting by creating an innovative and groundbreaking platform, unseen before
+        in the medical industry. </p>
+      <p class="font-bold block md:hidden">Industry</p>
+      <p class="block md:hidden">Healthcare</p>
+      <!-- END -->
 
-            <h3 class="text-[43px] md:text-[50px] font-bebas-neue text-custom-gray-900 pt-32 md:pt-0">OVERVIEW</h3>
-            <p class="pt-4 md:pt-0 text-sm md:text-base"> We designed and built the first web and mobile platform that connects doctors with virtual scribes, helping doctors save time, focus entirely on the patient's health, and store confidential information safely. <br /> <br /> Time is money, and when it comes to doctors, time can also be saving someone's life. Have you ever imagined how much time doctors invest in the documentation for each patient's medical record? Curascribe is a virtual scribe medical platform whose goal is to save doctors time and help them focus entirely on the patient's health, leaving EMRs, government, and insurance regulations in the hands of their virtual scribes. </p>
-        </div>
-        <!-- circle -->
-        <svg class="scale absolute bottom-2/4 -right-8 md:bottom-4/6 md:-right-10" width="117" height="117" viewBox="0 0 117 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="58.3649" cy="58.7409" r="58.3649" fill="#DAC6ED"/>
+      <h3 class="text-[43px] md:text-[50px] font-bebas-neue text-custom-gray-900 pt-32 md:pt-0">OVERVIEW</h3>
+      <p class="pt-4 md:pt-0 text-sm md:text-base"> We designed and built the first web and mobile platform that
+        connects doctors with virtual scribes, helping doctors save time, focus entirely on the patient's health, and
+        store confidential information safely. <br /> <br /> Time is money, and when it comes to doctors, time can also
+        be saving someone's life. Have you ever imagined how much time doctors invest in the documentation for each
+        patient's medical record? Curascribe is a virtual scribe medical platform whose goal is to save doctors time and
+        help them focus entirely on the patient's health, leaving EMRs, government, and insurance regulations in the
+        hands of their virtual scribes. </p>
+    </div>
+    <!-- circle -->
+    <svg class="scale absolute bottom-2/4 -right-8 md:bottom-4/6 md:-right-10" width="117" height="117"
+      viewBox="0 0 117 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="58.3649" cy="58.7409" r="58.3649" fill="#DAC6ED" />
+    </svg>
+    <img src="assets/shapes/dot_grid.svg" alt="" class="absolute bottom-[399px] -right-24 md:bottom-1/4 md:-right-8" />
+  </div>
+
+  <!-- ===== the project ===== -->
+  <div class="my-20 md:my-52 relative overview">
+    <!-- circle -->
+    <svg class="scale absolute -top-28 right-4 md:top-20 md:right-16" width="56" height="56" viewBox="0 0 57 57"
+      fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#F4F7FC" />
+    </svg>
+    <img class="absolute transform rotate-90 -top-44 -right-6 hidden md:block" src="assets/shapes/dot_grid.svg"
+      alt="" />
+    <div
+      class="max-w-6xl mx-4 md:mx-36 flex space-x-0 md:space-x-12 flex-col space-y-10 md:space-y-0 md:flex-row relative">
+      <!-- Flex left -->
+      <div class="md:w-1/2 relative mx-auto md:mx-0">
+        <img src="assets/img/doctors_project.svg" alt="" class="w-[345px] md:w-auto h-auto" />
+      </div>
+      <!-- Flex right -->
+      <div class="md:w-1/2 relative md:self-end md:pb-14">
+        <h3 class="text-4xl md:text-5xl text-custom-gray-900 font-bebas-neue">THE PROJECT</h3>
+        <p class="text-sm md:text-base relative z-10"> Light-it was involved in the project from early stages to help
+          Curascribe ideate and validate its technical specifications, which we subsequently developed. Our team worked
+          side-by-side with Curascribe to figure out a roadmap. We got full hands-on product validation, UX/UI design,
+          and development based on the roadmap and goals established.</p>
+      </div>
+      <!-- triangle -->
+      <div class="scale absolute bottom-8 -left-12 md:-bottom-44 md:-left-44">
+        <svg class="spin" width="52" height="61" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#F0F4FB" />
         </svg>
-        <img src="assets/shapes/dot_grid.svg" alt="" class="absolute bottom-[399px] -right-24 md:bottom-1/4 md:-right-8"/>
+      </div>
     </div>
+  </div>
 
-    <!-- ===== the project ===== -->
-    <div class="my-20 md:my-52 relative overview">
-        <!-- circle -->
-        <svg class="scale absolute -top-28 right-4 md:top-20 md:right-16" width="56" height="56" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#F4F7FC"/>
+  <!-- ===== challenges ===== -->
+  <div class="relative w-full overflow-hidden max-w-6xl mx-auto pt-2 md:pt-20 mb-20 md:mb-40 px-4">
+    <div class="relative z-20 md:w-1/2">
+      <h3 class="text-5xl text-custom-gray-900 font-bebas-neue pb-2">CHALLANGES</h3>
+      <p class="text-sm md:text-base"> We joined the project with the goal of ideating, technically validating and
+        building the platform to host Curascribe’s scribing solution, that aimed to provide customized, one-on-one
+        virtual scribe services to Medical Practitioners. This was full of exciting challenges: </p>
+    </div>
+    <img class="absolute z-0 transform md:rotate-90 top-80 -left-32 md:top-36 md:-left-40"
+      src="assets/shapes/dot_grid.svg" alt="" />
+
+    <!-- Cards -->
+    <div class="relative grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
+      <div class="bg-white p-5 space-y-6 rounded-lg shadow-md relative z-10">
+        <!-- 1st Card -->
+        <div class="flex items-center">
+          <img src="assets/img/Pencil_alt.svg" alt="icon" />
+          <h4 class="text-xl pl-2">Innovation</h4>
+        </div>
+        <p class="text-sm md:text-base"> We were creating the first web-based transcription full-service platform. Which
+          naturally had to be highly usable and intuitive for all: doctors, clinics and scribes. And fully extensible so
+          that they can onboard other transcription companies in the future.</p>
+      </div>
+
+      <!-- 2nd Card -->
+      <div class="bg-white p-5 space-y-6 rounded-lg shadow-md relative z-10">
+        <div class="flex items-center">
+          <img src="assets/img/bag.svg" alt="icon" />
+          <h4 class="text-xl pl-2">Compatibility</h4>
+        </div>
+        <p class="text-sm md:text-base"> Scribes use foot pedals to play the records, so our solution had to be
+          compatible with the pedal, covering all the edge cases. The foot pedal proof of concept was quite a challenge
+          that was solved by building a chrome extension and windows app.</p>
+      </div>
+
+      <!-- 3rd Card -->
+      <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
+        <div class="flex items-center">
+          <img src="assets/img/Lock_closed.svg" alt="icon" />
+          <h4 class="text-xl pl-2">Security</h4>
+        </div>
+        <p class="text-sm md:text-base"> The consult's audio files' information is extremely sensible and indispensable,
+          so the platform had to be 100% reliable and safe. We had to cover numerous edge cases to guarantee this.</p>
+      </div>
+      <!-- pentagon -->
+      <div class="scale absolute z-0 top-4 md:-top-2 -right-4 md:-right-8">
+        <svg class="spin" width="68" height="65" viewBox="0 0 70 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z"
+            fill="#919BC8" />
         </svg>
-        <img class="absolute transform rotate-90 -top-44 -right-6 hidden md:block" src="assets/shapes/dot_grid.svg" alt=""/>
-        <div class="max-w-6xl mx-4 md:mx-36 flex space-x-0 md:space-x-12 flex-col space-y-10 md:space-y-0 md:flex-row relative">
-            <!-- Flex left -->
-            <div class="md:w-1/2 relative mx-auto md:mx-0">
-                <img src="assets/img/doctors_project.svg" alt="" class="w-[345px] md:w-auto h-auto"/>
-            </div>
-            <!-- Flex right -->
-            <div class="md:w-1/2 relative md:self-end md:pb-14">
-                <h3 class="text-4xl md:text-5xl text-custom-gray-900 font-bebas-neue">THE PROJECT</h3>
-                <p class="text-sm md:text-base relative z-10"> Light-it was involved in the project from early stages to help Curascribe ideate and validate its technical specifications, which we subsequently developed. Our team worked side-by-side with Curascribe to figure out a roadmap. We got full hands-on product validation, UX/UI design, and development based on the roadmap and goals established.</p>
-            </div>
-            <!-- triangle -->
-            <div class="scale absolute bottom-8 -left-12 md:-bottom-44 md:-left-44">
-                <svg class="spin" width="52" height="61" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#F0F4FB"/>
-                </svg>
-            </div>
-        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Process & Workflow ====== -->
+  <div class="mb-20 md:mb-40 relative overview">
+    <!-- LAPTOP ONLY -->
+    <!-- circle -->
+    <svg class="scale absolute md:top-72 md:-left-10 top-96 -left-14" width="117" height="118" viewBox="0 0 117 118"
+      fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="58.3649" cy="58.7409" r="58.3649" fill="#C9E9DA" />
+    </svg>
+
+    <!-- pentagon -->
+    <div class="scale absolute hidden md:block top-[425px] left-16">
+      <svg class="spin" width="46" height="43" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z"
+          fill="#B7BEDB" />
+      </svg>
     </div>
 
-    <!-- ===== challenges ===== -->
-    <div class="relative w-full overflow-hidden max-w-6xl mx-auto pt-2 md:pt-20 mb-20 md:mb-40 px-4">
-        <div class="relative z-20 md:w-1/2">
-            <h3 class="text-5xl text-custom-gray-900 font-bebas-neue pb-2">CHALLANGES</h3>
-            <p class="text-sm md:text-base"> We joined the project with the goal of ideating, technically validating and building the platform to host Curascribe’s scribing solution, that aimed to provide customized, one-on-one virtual scribe services to Medical Practitioners. This was full of exciting challenges: </p>
-        </div>
-        <img class="absolute z-0 transform md:rotate-90 top-80 -left-32 md:top-36 md:-left-40" src="assets/shapes/dot_grid.svg" alt=""/>
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="md:w-1/2">
+        <h3 class=" text-4xl md:text-5xl text-custom-gray-900 font-bebas-neue pb-2"> Process & Workflow </h3>
+        <p class="text-sm md:text-base"> The project had three main stages: Discovery, UX/UI Design and Development.</p>
+      </div>
 
-        <!-- Cards -->
-        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
-            <div class="bg-white p-5 space-y-6 rounded-lg shadow-md relative z-10">
-                <!-- 1st Card -->
-                <div class="flex items-center">
-                    <img src="assets/img/Pencil_alt.svg" alt="icon" />
-                    <h4 class="text-xl pl-2">Innovation</h4>
-                </div>
-                <p class="text-sm md:text-base"> We were creating the first web-based transcription full-service platform. Which naturally had to be highly usable and intuitive for all: doctors, clinics and scribes. And fully extensible so that they can onboard other transcription companies in the future.</p>
-            </div>
+      <!-- PROCESS TIMELINE -->
 
-            <!-- 2nd Card -->
-            <div class="bg-white p-5 space-y-6 rounded-lg shadow-md relative z-10">
-                <div class="flex items-center">
-                    <img src="assets/img/bag.svg" alt="icon" />
-                    <h4 class="text-xl pl-2">Compatibility</h4>
-                </div>
-                <p class="text-sm md:text-base"> Scribes use foot pedals to play the records, so our solution had to be compatible with the pedal, covering all the edge cases. The foot pedal proof of concept was quite a challenge that was solved by building a chrome extension and windows app.</p>
-            </div>
-
-            <!-- 3rd Card -->
-            <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
-                <div class="flex items-center">
-                    <img src="assets/img/Lock_closed.svg" alt="icon" />
-                    <h4 class="text-xl pl-2">Security</h4>
-                </div>
-                <p class="text-sm md:text-base"> The consult's audio files' information is extremely sensible and indispensable, so the platform had to be 100% reliable and safe. We had to cover numerous edge cases to guarantee this.</p>
-            </div>
-            <!-- pentagon -->
-            <div class="scale absolute z-0 top-4 md:-top-2 -right-4 md:-right-8">
-                <svg class="spin" width="68" height="65" viewBox="0 0 70 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z" fill="#919BC8"/>
-                </svg>
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== Process & Workflow ====== -->
-    <div class="mb-20 md:mb-40 relative overview">
+      <div class="md:pl-16 pt-10 flex space-x-4 md:space-x-24 relative">
         <!-- LAPTOP ONLY -->
-        <!-- circle -->
-        <svg class="scale absolute md:top-72 md:-left-10 top-96 -left-14" width="117" height="118" viewBox="0 0 117 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="58.3649" cy="58.7409" r="58.3649" fill="#C9E9DA" />
-        </svg>
+        <img src="assets/shapes/Timeline_Line.svg" alt="" class="self-start hidden md:block w[40px] h-[1823px]" />
 
-        <!-- pentagon -->
-        <div class="scale absolute hidden md:block top-[425px] left-16">
-            <svg class="spin" width="46" height="43" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#B7BEDB"/>
-            </svg>
-        </div>
+        <!-- MOBILE ONLY -->
+        <img src="assets/shapes/Timeline_mobile.svg" alt="" class="self-start block md:hidden !ml-0 !mr-0" />
+        <div>
+          <h3 class="text-[34px] font-bebas-neue uppercase">Product discovery : Defining the Solution</h3>
+          <p class="pt-2 pb-8 md:pb-7 text-sm md:text-base"> Curascribe required a robust and complex solution; defining
+            the MVP and user flow involved extensive research, ideation and validation, until we defined a brilliant
+            outline, that was made up by 4 components: an iOS App, a Web Platform, a Chrome Extension and a Windows App.
+            <br /> <br /> Doctors record consultations in Curascribe's mobile app and upload them along with some
+            required information. Each encounter is assigned to a virtual scribe, a medical expert that transcribes the
+            consult in the web platform and uploads it to the patient's medical record. The platform includes the
+            following components: </p>
 
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="md:w-1/2">
-            <h3 class=" text-4xl md:text-5xl text-custom-gray-900 font-bebas-neue pb-2" > Process & Workflow  </h3>
-            <p class="text-sm md:text-base"> The project had three main stages: Discovery, UX/UI Design and Development.</p>
-        </div>
-
-        <!-- PROCESS TIMELINE -->
-
-        <div class="md:pl-16 pt-10 flex space-x-4 md:space-x-24 relative">
-          <!-- LAPTOP ONLY -->
-          <img src="assets/shapes/Timeline_Line.svg" alt="" class="self-start hidden md:block w[40px] h-[1823px]" />
-
-          <!-- MOBILE ONLY -->
-          <img src="assets/shapes/Timeline_mobile.svg" alt="" class="self-start block md:hidden !ml-0 !mr-0" />
-          <div>
-            <h3 class="text-[34px] font-bebas-neue uppercase">Product discovery : Defining the Solution</h3>
-            <p class="pt-2 pb-8 md:pb-7 text-sm md:text-base"> Curascribe required a robust and complex solution; defining the MVP and user flow involved extensive research, ideation and validation, until we defined a brilliant outline, that was made up by 4 components: an iOS App, a Web Platform, a Chrome Extension and a Windows App. <br /> <br /> Doctors record consultations in Curascribe's mobile app and upload them along with some required information. Each encounter is assigned to a virtual scribe, a medical expert that transcribes the consult in the web platform and uploads it to the patient's medical record. The platform includes the following components: </p>
-
-            <!-- CARDS -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-7 relative">
-              <!-- CARD 1 -->
-              <div class="p-5 bg-white shadow rounded-lg">
-                <img src="assets/img/apple.svg" alt="" class="pb-6" />
-                <p class="pt-2 font-bold text-sm md:text-base"> iOS application</p>
-                <p class="text-sm md:text-base"> The mobile application is where providers (doctors) create encounters by recording the patient and filling in a brief form. It's also where doctors can review the consultation's information once it has been transcribed.
-                </p>
-              </div>
-
-              <!-- CARD 2 -->
-              <div class="p-5 bg-white shadow rounded-lg relative z-10">
-                <img src="assets/img/chrome.svg" alt="" class="pb-6" />
-                <p class="pt-2 font-bold text-sm md:text-base">Chrome Extension</p>
-                <p class="text-sm md:text-base"> Scribes transcribe the consultation in Microsoft Word. Building an extension was needed to capture the foot pedal commands in the background while writing the transcription here.</p>
-              </div>
-
-              <!-- CARD 3 -->
-              <div class="p-5 bg-white shadow rounded-lg relative z-10">
-                <img src="assets/img/Monitor.svg" alt="" class="pb-6" />
-                <p class="pt-2 font-bold text-sm md:text-base">Web platform</p>
-                <p class="text-sm md:text-base">It's where the scribes and managers work the whole day. Inthis platform, they receive the encounters, play the audiofiles, manage users, assign encounters, see attachments, andmore.</p>
-              </div>
-
-              <!-- CARD 4 -->
-              <div class="p-5 bg-white shadow rounded-lg">
-                <img src="assets/img/bag.svg" alt="" class="pb-6" />
-                <p class="text-sm md:text-base"> Scribes use foot pedals to play the records, so our solution had to be compatible with the pedal, covering all the edge cases. The foot pedal proof of concept was quite a challenge that was solved by building a chrome extension and windows app. </p>
-              </div>
-
-              <!-- pentagon -->
-              <div class="scale absolute bottom-1/2 -right-6 md:bottom-20 md:-right-52">
-                <svg class="spin" width="94" height="90" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#ECF1FA" />
-                  </svg>
-              </div>
-            </div>
-
-            <!-- UX/UI DESIGN -->
-            <div class="pt-16 md:pt-[90px] relative">
-              <h3 class="text-[34px] text-custom-gray-900 font-bebas-neue uppercase">
-                UX/UI Design
-              </h3>
-              <p class="py-4 md:py-7 text-sm md:text-base">
-                After defining the backlog, roadmap and absorbing all the
-                information, we began designing. We planned, sketched, and
-                repeated until we had a sharp wireframe.
-              </p>
-              <p class="pb-3 md:pb-7 text-sm md:text-base">
-                We went for a clean look and feel. As mentioned before, the
-                primary purpose was to optimize users' time; this left no space
-                for distracting visuals, low speed, or time-consuming
-                animations. The simpler, the better.
-              </p>
-              <p class="pb-10 md:pb-7 text-sm md:text-base">
-                This resulted in a minimalist and highly intuitive UI, friendly
-                to work with for long hours, and visually appealing.
-              </p>
-
-              <img src="assets/img/laptop_process.svg" alt="Laptop Image" />
-
-              <!-- triangle -->
-              <div class="scale absolute bottom-72 -left-24 md:bottom-44 md:-left-96">
-                <svg class="spin" width="66" height="77" viewBox="0 0 78 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.71526 67.1437L39.0324 0.835936L77.3496 67.1437L0.71526 67.1437Z" fill="#C9E9DA" />
-                  </svg>
-              </div>
-            </div>
-
-            <!-- DEVELOPMENT -->
-            <div class="pt-28 md:pt-28">
-              <h3 class="text-4xl text-custom-gray-900 font-bebas-neue uppercase">Development</h3>
-              <p class="py-2 md:py-7 pb-20"> The agile development process was divided into 2 week sprints. The team was made up of two developers, one PM, one UX/UI Designer, a DevOps, a QA Engineer and a HIPPAA Compliant expert. The team brought the product to life and kept the client’s updated during the whole process, starting with the MVP, testing it, and continously iterating. This stage was followed by ongoing maintenance.
+          <!-- CARDS -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-7 relative">
+            <!-- CARD 1 -->
+            <div class="p-5 bg-white shadow rounded-lg">
+              <img src="assets/img/apple.svg" alt="" class="pb-6" />
+              <p class="pt-2 font-bold text-sm md:text-base"> iOS application</p>
+              <p class="text-sm md:text-base"> The mobile application is where providers (doctors) create encounters by
+                recording the patient and filling in a brief form. It's also where doctors can review the consultation's
+                information once it has been transcribed.
               </p>
             </div>
+
+            <!-- CARD 2 -->
+            <div class="p-5 bg-white shadow rounded-lg relative z-10">
+              <img src="assets/img/chrome.svg" alt="" class="pb-6" />
+              <p class="pt-2 font-bold text-sm md:text-base">Chrome Extension</p>
+              <p class="text-sm md:text-base"> Scribes transcribe the consultation in Microsoft Word. Building an
+                extension was needed to capture the foot pedal commands in the background while writing the
+                transcription here.</p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="p-5 bg-white shadow rounded-lg relative z-10">
+              <img src="assets/img/Monitor.svg" alt="" class="pb-6" />
+              <p class="pt-2 font-bold text-sm md:text-base">Web platform</p>
+              <p class="text-sm md:text-base">It's where the scribes and managers work the whole day. Inthis platform,
+                they receive the encounters, play the audiofiles, manage users, assign encounters, see attachments,
+                andmore.</p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="p-5 bg-white shadow rounded-lg">
+              <img src="assets/img/bag.svg" alt="" class="pb-6" />
+              <p class="text-sm md:text-base"> Scribes use foot pedals to play the records, so our solution had to be
+                compatible with the pedal, covering all the edge cases. The foot pedal proof of concept was quite a
+                challenge that was solved by building a chrome extension and windows app. </p>
+            </div>
+
+            <!-- pentagon -->
+            <div class="scale absolute bottom-1/2 -right-6 md:bottom-20 md:-right-52">
+              <svg class="spin" width="94" height="90" viewBox="0 0 96 91" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z"
+                  fill="#ECF1FA" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- UX/UI DESIGN -->
+          <div class="pt-16 md:pt-[90px] relative">
+            <h3 class="text-[34px] text-custom-gray-900 font-bebas-neue uppercase">
+              UX/UI Design
+            </h3>
+            <p class="py-4 md:py-7 text-sm md:text-base">
+              After defining the backlog, roadmap and absorbing all the
+              information, we began designing. We planned, sketched, and
+              repeated until we had a sharp wireframe.
+            </p>
+            <p class="pb-3 md:pb-7 text-sm md:text-base">
+              We went for a clean look and feel. As mentioned before, the
+              primary purpose was to optimize users' time; this left no space
+              for distracting visuals, low speed, or time-consuming
+              animations. The simpler, the better.
+            </p>
+            <p class="pb-10 md:pb-7 text-sm md:text-base">
+              This resulted in a minimalist and highly intuitive UI, friendly
+              to work with for long hours, and visually appealing.
+            </p>
+
+            <img src="assets/img/laptop_process.svg" alt="Laptop Image" />
+
+            <!-- triangle -->
+            <div class="scale absolute bottom-72 -left-24 md:bottom-44 md:-left-96">
+              <svg class="spin" width="66" height="77" viewBox="0 0 78 68" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.71526 67.1437L39.0324 0.835936L77.3496 67.1437L0.71526 67.1437Z" fill="#C9E9DA" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- DEVELOPMENT -->
+          <div class="pt-28 md:pt-28">
+            <h3 class="text-4xl text-custom-gray-900 font-bebas-neue uppercase">Development</h3>
+            <p class="py-2 md:py-7 pb-20"> The agile development process was divided into 2 week sprints. The team was
+              made up of two developers, one PM, one UX/UI Designer, a DevOps, a QA Engineer and a HIPPAA Compliant
+              expert. The team brought the product to life and kept the client’s updated during the whole process,
+              starting with the MVP, testing it, and continously iterating. This stage was followed by ongoing
+              maintenance.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- ===== results ===== -->
-    <section class="relative max-w-6xl mx-auto pb-24 px-4">
-      <h3 class="text-5xl text-custom-gray-900 font-bebas-neue md:pb-2">RESULTS</h3>
+  <!-- ===== results ===== -->
+  <section class="relative max-w-6xl mx-auto pb-24 px-4">
+    <h3 class="text-5xl text-custom-gray-900 font-bebas-neue md:pb-2">RESULTS</h3>
 
-      <!-- CARDS -->
-      <div class="relative grid md:grid-cols-2 gap-10 md:gap-7 pt-10 z-10">
-        <!-- 1st Card -->
-        <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
-          <img src="assets/img/Services_icons.svg" alt="" />
-          <p>
-            Medical providers using Curascribe are able to see 42% more patients
-            on average in the same time schedule.
-          </p>
-        </div>
-
-        <!-- 2nd Card -->
-        <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
-          <img src="./assets/img/Thumb_down.svg" alt="" />
-          <p>
-            Doctors can now focus 100% on the patient, which results in more
-            successful and fruitful encounters.
-          </p>
-        </div>
-
-        <!-- 3rd Card -->
-        <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
-          <img src="./assets/img/health.svg" alt="" />
-          <p>
-            Patients are receiving much better attention and better medical
-            experiences.
-          </p>
-        </div>
-
-        <!-- 4th Card -->
-        <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
-          <img src="./assets/img/med_building.svg" alt="" />
-          <p>
-            Clinics are being more effective and organized with EMRs and
-            schedules. This has an impact on the revenue, and staff & patients
-            satisfaction.
-          </p>
-        </div>
-
-        <!-- 5th Card -->
-        <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
-          <img src="./assets/img/Monitor.svg" alt="" />
-          <p>
-            We built a tailored platform highly usable and valuable for all
-            stakeholders: doctors, patients and clinics.
-          </p>
-        </div>
+    <!-- CARDS -->
+    <div class="relative grid md:grid-cols-2 gap-10 md:gap-7 pt-10 z-10">
+      <!-- 1st Card -->
+      <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
+        <img src="assets/img/Services_icons.svg" alt="" />
+        <p>
+          Medical providers using Curascribe are able to see 42% more patients
+          on average in the same time schedule.
+        </p>
       </div>
 
-      <!-- circle -->
-      <svg class="scale absolute top-[280px] -left-14 md:top-52 md:-left-24" width="142" height="142" viewBox="0 0 85 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="42.5346" cy="42.6317" r="42.3935" fill="#C9E9DA" />
-      </svg>
-    </section>
+      <!-- 2nd Card -->
+      <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
+        <img src="./assets/img/Thumb_down.svg" alt="" />
+        <p>
+          Doctors can now focus 100% on the patient, which results in more
+          successful and fruitful encounters.
+        </p>
+      </div>
 
-    <!-- ===== footer card ===== -->
-    <div class="px-4">
-        <div class="relative max-w-6xl mx-auto w-full bg-card rounded-2xl transform translate-y-1/2 py-14 px-4 md:px-8">
-            <div class="relative z-50 w-3/5 md:pl-10">
-                <p class="font-bebas-neue text-4xl text-lilacSecondary">Let’s talk</p>
-                <h1 class="font-open-sans text-lilac pt-6 pb-8">Whether it's a quick question or a fantastic idea, <br> let's start with a conversation.</h1>
-                <a class="block" href="#"><span class="text-gray-900 font-bold font-open-sans text-15 bg-lilac-1000 rounded-xl py-2 px-4 hover:bg-lilac-600 focus:bg-lilac-200 transition ease-in">Schedule a call</span></a>
-            </div>
-            <!-- triangle -->
-            <div class="hidden md:block absolute right-1/3 bottom-1/3">
-                <svg width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
-                </svg>
-            </div>
-            <!-- pentagon -->
-            <div class="hidden md:block absolute right-100 top-12">
-                <svg width="68" height="65" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z" fill="#CCB1E6"/>
-                </svg>
-            </div>
-            <!-- circle -->
-            <svg class="hidden md:block absolute right-60 top-6" width="85" height="86" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD"/>
-            </svg>
+      <!-- 3rd Card -->
+      <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
+        <img src="./assets/img/health.svg" alt="" />
+        <p>
+          Patients are receiving much better attention and better medical
+          experiences.
+        </p>
+      </div>
 
-            <!-- triangle little -->
-            <div class="md:hidden absolute top-20 right-28">
-                <svg width="20" height="20" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF"/>
-                </svg>
-            </div>
-            <!-- pentagon tittle -->
-            <div class="md:hidden absolute top-6 right-16">
-                <svg width="30" height="30" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z" fill="#CCB1E6"/>
-                </svg>
-            </div>
-            <!-- circle little -->
-            <svg class="md:hidden absolute top-20 right-4" width="35" height="35" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD"/>
-            </svg>
-            <!-- man img -->
-            <img class="absolute right-4 md:right-10 bottom-6 w-32 md:w-64" src="assets/img/man.svg" alt="">
-        </div>
+      <!-- 4th Card -->
+      <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
+        <img src="./assets/img/med_building.svg" alt="" />
+        <p>
+          Clinics are being more effective and organized with EMRs and
+          schedules. This has an impact on the revenue, and staff & patients
+          satisfaction.
+        </p>
+      </div>
+
+      <!-- 5th Card -->
+      <div class="bg-white p-5 space-y-6 rounded-lg shadow-md">
+        <img src="./assets/img/Monitor.svg" alt="" />
+        <p>
+          We built a tailored platform highly usable and valuable for all
+          stakeholders: doctors, patients and clinics.
+        </p>
+      </div>
     </div>
 
-    <!-- ===== footer ===== -->
-    <footer class="bg-purple text-lilac-500">
-        <div class="max-w-6xl mx-auto border-b-2 border-[#D8E3F5] pt-72 pb-14 px-4">
-            <img src="./assets/img/Logo.svg" alt="Logo" class="w-20 pb-2" />
-            <div class="flex flex-wrap justify-between">
-                <p class="w-full lg:w-2/6 py-4">We are an outstanding digital product studio that combines strategic thinking and the latest technologies to craft innovative solutions that consistently break ground.</p>
+    <!-- circle -->
+    <svg class="scale absolute top-[280px] -left-14 md:top-52 md:-left-24" width="142" height="142" viewBox="0 0 85 86"
+      fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="42.5346" cy="42.6317" r="42.3935" fill="#C9E9DA" />
+    </svg>
+  </section>
 
-                <div class="w-full lg:w-4/6 flex flex-wrap lg:pl-32 py-4">
-                  <ul class="w-full sm:w-1/3 space-y-2">
-                    <li><a href="#" class="text-white font-bold">Services</a></li>
-                    <li><a href="ser_pro_strategy.html">Product strategy</a></li>
-                    <li><a href="ser_pro_design.html">Product design</a></li>
-                    <li><a href="development.html">Development</a></li>
-                    <li><a href="staff_augment.html">Staff augmentation</a></li>
-                </ul>
-                <ul class="w-full sm:w-1/3 space-y-2 pt-8 sm:pt-0">
-                    <li><a href="#" class="text-white font-bold">Our work</a></li>
-                    <li><a href="best_buy.html">Best buy</a></li>
-                    <li><a href="curascribe.html">Curascribe</a></li>
-                    <li><a href="d_local.html">D-local</a></li>
-                </ul>
-                <ul class="w-full sm:w-1/3 space-y-2 pt-8 sm:pt-0">
-                    <li><a href="#" class="text-white font-bold">About us</a></li>
-                    <li><a href="#">Playbook</a></li>
-                    <li><a href="#">Carreers</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-                </div>
-            </div>
-        </div>
-        <div class="max-w-6xl mx-auto flex justify-between py-10 px-4">
-            <p>&copy; Copyright 2021 Light-it. All Right Reserved.</p>
-            <div class="hidden md:flex space-x-5">
-                <a href="#"><img src="./assets/img/linkedin.svg" alt="LinkidIn"/></a>
-                <a href="#"><img src="./assets/img/github.svg" alt="Github"/></a>
-                <a href="#"><img src="./assets/img/dribbble.svg" alt="Drib"/></a>
-                <a href="#"><img src="./assets/img/twitter.svg" alt="Twitter"/></a>
-                <a href="#"><img src="./assets/img/instagram.svg" alt="Instagram"/></a>
-            </div>
-        </div>
-    </footer>
+  <!-- ===== footer card ===== -->
+  <div class="px-4">
+    <div class="relative max-w-6xl mx-auto w-full bg-card rounded-2xl transform translate-y-1/2 py-14 px-4 md:px-8">
+      <div class="relative z-50 w-3/5 md:pl-10">
+        <p class="font-bebas-neue text-4xl text-lilacSecondary">Let’s talk</p>
+        <h1 class="font-open-sans text-lilac pt-6 pb-8">Whether it's a quick question or a fantastic idea, <br> let's
+          start with a conversation.</h1>
+        <a class="block" href="#"><span
+            class="text-gray-900 font-bold font-open-sans text-15 bg-lilac-1000 rounded-xl py-2 px-4 hover:bg-lilac-600 focus:bg-lilac-200 transition ease-in">Schedule
+            a call</span></a>
+      </div>
+      <!-- triangle -->
+      <div class="hidden md:block absolute right-1/3 bottom-1/3">
+        <svg width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF" />
+        </svg>
+      </div>
+      <!-- pentagon -->
+      <div class="hidden md:block absolute right-100 top-12">
+        <svg width="68" height="65" viewBox="0 0 96 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z"
+            fill="#CCB1E6" />
+        </svg>
+      </div>
+      <!-- circle -->
+      <svg class="hidden md:block absolute right-60 top-6" width="85" height="86" viewBox="0 0 156 157" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="77.9996" cy="78.376" r="78" fill="#773DBD" />
+      </svg>
 
-    <script src="assets/js/app.js"></script>
-  </body>
+      <!-- triangle little -->
+      <div class="md:hidden absolute top-20 right-28">
+        <svg width="20" height="20" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#D7E4FF" />
+        </svg>
+      </div>
+      <!-- pentagon tittle -->
+      <div class="md:hidden absolute top-6 right-16">
+        <svg width="30" height="30" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z"
+            fill="#CCB1E6" />
+        </svg>
+      </div>
+      <!-- circle little -->
+      <svg class="md:hidden absolute top-20 right-4" width="35" height="35" viewBox="0 0 57 57" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#773DBD" />
+      </svg>
+      <!-- man img -->
+      <img class="absolute right-4 md:right-10 bottom-6 w-32 md:w-64" src="assets/img/man.svg" alt="">
+    </div>
+  </div>
+
+  <!-- ===== footer ===== -->
+  <footer class="bg-purple text-lilac-500">
+    <div class="max-w-6xl mx-auto border-b-2 border-[#D8E3F5] pt-72 pb-14 px-4">
+      <img src="./assets/img/Logo.svg" alt="Logo" class="w-20 pb-2" />
+      <div class="flex flex-wrap justify-between">
+        <p class="w-full lg:w-2/6 py-4">We are an outstanding digital product studio that combines strategic thinking
+          and the latest technologies to craft innovative solutions that consistently break ground.</p>
+
+        <div class="w-full lg:w-4/6 flex flex-wrap lg:pl-32 py-4">
+          <ul class="w-full sm:w-1/3 space-y-2">
+            <li><a href="#" class="text-white font-bold">Services</a></li>
+            <li><a href="ser_pro_strategy.html">Product strategy</a></li>
+            <li><a href="ser_pro_design.html">Product design</a></li>
+            <li><a href="development.html">Development</a></li>
+            <li><a href="staff_augment.html">Staff augmentation</a></li>
+          </ul>
+          <ul class="w-full sm:w-1/3 space-y-2 pt-8 sm:pt-0">
+            <li><a href="#" class="text-white font-bold">Our work</a></li>
+            <li><a href="best_buy.html">Best buy</a></li>
+            <li><a href="curascribe.html">Curascribe</a></li>
+            <li><a href="d_local.html">D-local</a></li>
+          </ul>
+          <ul class="w-full sm:w-1/3 space-y-2 pt-8 sm:pt-0">
+            <li><a href="#" class="text-white font-bold">About us</a></li>
+            <li><a href="#">Playbook</a></li>
+            <li><a href="#">Carreers</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto flex justify-between py-10 px-4">
+      <p>&copy; Copyright 2021 Light-it. All Right Reserved.</p>
+      <div class="hidden md:flex space-x-5">
+        <a href="#"><img src="./assets/img/linkedin.svg" alt="LinkidIn" /></a>
+        <a href="#"><img src="./assets/img/github.svg" alt="Github" /></a>
+        <a href="#"><img src="./assets/img/dribbble.svg" alt="Drib" /></a>
+        <a href="#"><img src="./assets/img/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="./assets/img/instagram.svg" alt="Instagram" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>

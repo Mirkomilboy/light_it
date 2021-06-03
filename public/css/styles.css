@@ -1355,6 +1355,10 @@ video {
 	--tw-bg-opacity: 1;
 	background-color: rgba(240, 244, 251, var(--tw-bg-opacity));
 }
+.bg-brand-gray-800 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(78, 88, 101, var(--tw-bg-opacity));
+}
 .bg-gray-900 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
@@ -1547,6 +1551,12 @@ video {
 .pt-7 {
 	padding-top: 1.75rem;
 }
+.pt-1\.5 {
+	padding-top: 0.375rem;
+}
+.pt-1 {
+	padding-top: 0.25rem;
+}
 .pl-8 {
 	padding-left: 2rem;
 }
@@ -1731,6 +1741,25 @@ video {
 	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+
+body.active-sticky #navIndex {
+	--tw-bg-opacity: 1;
+	background-color: rgba(32, 46, 61, var(--tw-bg-opacity));
+	transition-property: background-color, border-color, color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+	transition-duration: 300ms;
+}
+
+body.active-sticky #nav {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+	transition-property: background-color, border-color, color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+	transition-duration: 300ms;
+}
+
 .overview {
     overflow-x: clip;
 }
@@ -1905,9 +1934,19 @@ video {
 	--tw-bg-opacity: 1;
 	background-color: rgba(232, 238, 249, var(--tw-bg-opacity));
 }
+.hover\:bg-text-hover:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(31, 45, 61, var(--tw-bg-opacity));
+}
 .hover\:bg-gray-600:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+}
+.hover\:bg-opacity-20:hover {
+	--tw-bg-opacity: 0.2;
+}
+.hover\:bg-opacity-10:hover {
+	--tw-bg-opacity: 0.1;
 }
 .focus\:bg-lilac-200:focus {
 	--tw-bg-opacity: 1;

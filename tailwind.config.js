@@ -23,6 +23,8 @@ module.exports = {
         'main-light': '#D6D9DC',
         'main': '#202E3D',
         'card': '#374351',
+        'brand-gray-800': '#4E5865',
+        'text-hover': '#1f2d3d'
       },
       fontSize: {
         '15': '15px',
@@ -43,7 +45,7 @@ module.exports = {
         '100': '28rem',
       },
       gridTemplateRows: {
-       '8': 'repeat(8, minmax(0, 1fr))',
+        '8': 'repeat(8, minmax(0, 1fr))',
       }
     },
   },
