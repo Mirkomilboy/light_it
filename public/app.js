@@ -33,8 +33,8 @@ const menu = document.getElementById('menu');
 btn.addEventListener('click', function () {
     menu.classList.toggle('hidden');
     if (menu.classList.contains('hidden')) {
-        nav.style.cssText = "background: none;";
+        navIndex.style.cssText = "background: none;";
       } else {
-        nav.style.cssText = "background: #202e3d;";
+        navIndex.style.cssText = "background: #202e3d;";
       }
 })

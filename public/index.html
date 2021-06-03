@@ -11,17 +11,17 @@
 <body class="bg-lilac-100 text-custom-gray-1000">
     <!-- ===== Navigation ===== -->
     <div id="navIndex" class="fixed z-50 w-full">
-        <header class="max-w-8xl mx-auto flex flex-wrap items-center justify-between py-8 px-4">
+        <header class="max-w-8xl mx-auto flex flex-wrap items-center justify-between py-2 md:py-8 px-4">
             <div>
-                <a href="index.html"><img class="w-48" src="assets/img/Logo.svg" alt=""></a>
+                <a href="index.html"><img class="w-32 md:w-48" src="assets/img/Logo.svg" alt=""></a>
             </div>
     
             <button id="menuBtn" class="md:hidden focus:outline-none"><img class="w-6" src="assets/img/menuBtn.svg" alt=""></button>
     
             <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
                 <nav>
-                    <ul class="md:flex justify-between items-center font-open-sans text-white font-bold text-15 space-y-4 md:space-y-0 md:space-x-12 pt-4 md:pt-0">
-                        <li><a href="#">Our Work</a></li>
+                    <ul class="md:flex justify-between items-center font-open-sans text-white font-bold text-15 space-y-4 md:space-y-0 md:space-x-12 py-4 md:pt-0">
+                        <li><a href="#ourWork">Our Work</a></li>
                         <li><a href="ser_pro_strategy.html">Services</a></li>
                         <li><a href="#">Playbook</a></li>
                         <li><a href="#">Blog</a></li>
@@ -76,7 +76,9 @@
 
     <!-- ===== main ===== -->
     <div class="bg-main">
-
+        <div class="hidden md:block float-right sticky top-20 pt-20 px-2">
+            <a href="#"><img src="assets/img/Chatbot.svg" alt=""></a>
+        </div>
         <!-- ===== leading company partners ===== -->
         <div class="max-w-8xl ml-auto pl-8">
             <div class="flex items-center py-12 md:py-4">
@@ -84,22 +86,21 @@
                 <div class="hidden md:block bg-lilac-1000 w-full h-px"></div>
             </div>
             <div class="flex flex-wrap items-center justify-center md:justify-between md:pl-20 md:pr-4">
-                <a class="p-2" href="#"><img class="w-28 md:w-40" src="assets/img/bestbuy.svg" alt="best buy logo"></a>
+                <a class="p-2" href="#"><img class="w-28" src="assets/img/bestbuy.svg" alt="best buy logo"></a>
                 <a class="p-2" href="#"><img class="w-28 md:w-40" src="assets/img/curascribe.svg" alt="curascribe logo"></a>
                 <a class="p-2" href="#"><img class="w-28 md:w-40" src="assets/img/d_local.svg" alt="d local logo"></a>
                 <a class="p-2" href="#"><img class="w-28 md:w-40" src="assets/img/WTC.svg" alt="WTC logo"></a>
-                <a class="hidden md:block p-2" href="#"><img src="assets/img/Chatbot.svg" alt=""></a>
             </div>
         </div>
 
         <!-- ===== services ===== -->
-        <div class="max-w-6xl mx-auto grid grid-rows-8 grid-cols-1 md:grid-cols-2 gap-6 relative w-full overflow-x-hidden overview pt-24 px-4">
+        <div class="max-w-6xl mx-auto grid grid-rows-8 grid-cols-1 md:grid-cols-2 gap-6 relative w-full overflow-x-hidden overview pt-36 px-4">
             <div class="relative row-span-2 order-1">
                 <h1 class="relative z-10 font-bebas-neue text-[82px] text-lilacSecondary opacity-30 uppercase">services</h1>
                 <p class="absolute z-20 bottom-6 font-open-sans text-lilac pl-6">We're the partner you need! Our team will help you build top-notch digital products that strengthen your relationship with your users and make your business thrive. Let's take your business to the next level!</p>
             </div>
 
-            <div class="row-span-3 order-3 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4 hover:bg-gray-600 transition ease-in">
+            <div class="row-span-3 order-2 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4 hover:bg-gray-600 transition ease-in">
                 <img src="assets/img/product_design.svg" alt="">
                 <div class="space-y-4">
                     <h1 class="text-white text-2xl font-bebas-neue">product design</h1>
@@ -111,7 +112,7 @@
                 </div>
             </div>
 
-            <div class="row-span-3 order-2 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4 hover:bg-gray-600 transition ease-in">
+            <div class="row-span-3 order-3 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4 hover:bg-gray-600 transition ease-in">
                 <img src="assets/img/product_strategy.svg" alt="">
                 <div class="space-y-4">
                     <h1 class="text-white text-2xl font-bebas-neue">product strategy</h1>
@@ -124,7 +125,7 @@
                 </div>
             </div>
 
-            <div class="row-span-3 order-5 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4 hover:bg-gray-600 transition ease-in">
+            <div class="row-span-3 order-4 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4 hover:bg-gray-600 transition ease-in">
                 <img src="assets/img/staff_augmentation.svg" alt="">
                 <div class="space-y-4">
                     <h1 class="text-white text-2xl font-bebas-neue">staff augmentation</h1>
@@ -135,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div class="relative row-span-3 order-4 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4 hover:bg-gray-600 transition ease-in">
+            <div class="relative row-span-3 order-5 flex items-start p-8 rounded-xl bg-gray-700 bg-opacity-90 space-x-4 hover:bg-gray-600 transition ease-in">
                 <img src="assets/img/development.svg" alt="">
                 <div class="space-y-4">
                     <h1 class="text-white text-2xl font-bebas-neue">development</h1>
@@ -169,7 +170,7 @@
         <!-- ===== our work ===== -->
 
         <!-- ===== best buy ===== -->
-        <div class="max-w-6xl mx-auto flex flex-wrap items-center py-44 px-4">
+        <div id="ourWork" class="max-w-6xl mx-auto flex flex-wrap items-center py-44 px-4">
             <div class="relative w-full md:w-2/5 md:pr-6">
                 <p class="text-lilacSecondary font-bebas-neue text-sm">case study</p>
                 <h1 class="text-lilac font-bebas-neue text-4xl pb-8">best buy</h1>
@@ -217,6 +218,7 @@
         <div class="max-w-6xl mx-auto flex flex-wrap items-center pb-20 md:py-44 px-4">
             <div class="hidden md:block relative w-full md:w-3/5 md:pr-6">
                 <img class="relative z-20" src="assets/img/dlocal_phone.svg" alt="">
+                <img class="hidden md:block absolute z-10 left-36 bottom-0" src="assets/shapes/dot_grid.svg" alt="">
                 <!-- triangle -->
                 <div class="scale absolute z-10 top-10 right-56">
                     <svg class="spin" width="107" height="93" viewBox="0 0 107 93" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -260,7 +262,7 @@
         </div>
 
         <!-- ===== curascribe ===== -->
-        <div class="max-w-6xl mx-auto flex flex-wrap items-center pt-20 md:pt-44 pb-56 md:pb-96 px-4">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center relative w-full overflow-hidden pt-20 md:pt-44 pb-56 md:pb-96 px-4">
             <div class="w-full md:w-2/5 md:pr-8">
                 <p class="text-lilacSecondary relative z-20 font-bebas-neue text-sm">case study</p>
                 <h1 class="text-lilac relative z-20 font-bebas-neue text-4xl pb-8">curascribe</h1>
@@ -348,7 +350,7 @@
     </div>
 
     <!-- ===== client reviews ===== -->
-    <div class="max-w-5xl mx-auto px-4 md:px-12 pt-80">
+    <div class="max-w-5xl mx-auto px-4 md:px-12 pt-60">
         <div class="relative">
             <div class="grid md:grid-rows-5 grid-cols-1 md:grid-cols-5 gap-6">
                 <div class="relative z-30 md:row-start-2 md:row-end-4 md:col-start-1 md:col-end-3 rounded-xl bg-lilac-400 p-6">
@@ -433,7 +435,7 @@
                     <ul class="w-full sm:w-1/3 space-y-2 pt-8 sm:pt-0">
                         <li><a href="#" class="text-white font-bold">About us</a></li>
                         <li><a href="#">Playbook</a></li>
-                        <li><a href="#">Carrers</a></li>
+                        <li><a href="#">Carreers</a></li>
                         <li><a href="contact.html">Contact us</a></li>
                     </ul>
                 </div>
