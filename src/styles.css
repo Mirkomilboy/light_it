@@ -124,3 +124,9 @@
         transform: translateX(-200%);
     }
 }
+
+
+/* carousel */
+.owl-carousel .owl-item img {
+    width: auto !important;
+}

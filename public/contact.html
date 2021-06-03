@@ -22,7 +22,15 @@
                 <nav>
                     <ul class="md:flex justify-between items-center font-open-sans text-white md:text-gray-900 font-bold text-15 space-y-4 md:space-y-0 md:space-x-12 py-4 md:pt-0">
                         <li><a href="#">Our Work</a></li>
-                        <li><a href="ser_pro_strategy.html">Services</a></li>
+                        <li class="relative group">
+                            <a href="#">Services</a>
+                            <div class="hidden absolute w-52 bg-lilac-200 shadow-md text-custom-gray-900 text-sm font-normal rounded-xl p-6 space-y-4 group-hover:block">
+                                <a class="block" href="ser_pro_strategy.html">Product strategy</a>
+                                <a class="block" href="ser_pro_design.html">Product design</a>
+                                <a class="block" href="development.html">Development</a>
+                                <a class="block" href="staff_augment.html">Staff augmentation</a>
+                            </div>
+                        </li>
                         <li><a href="#">Playbook</a></li>
                         <li><a href="#">Blog</a></li>
                         <li class=""><a class="text-white bg-purple rounded-xl py-3 px-4 hover:bg-purple-900 active:bg-purple-800 transition ease-in" href="contact.html">Contact Us</a></li>
@@ -62,7 +70,7 @@
                 <textarea class="bg-lilac-400 w-full pl-2 py-2 rounded-xl focus:outline-none resize-none" name="details" id="details" cols="30" rows="4" placeholder="Project details"></textarea>
             </div>
             <div class="w-full">
-                <label class="block font-open-sans" for="budget">Budget</label>
+                <label for="budget">Budget</label>
                 <select class="bg-lilac-400 w-full pl-2 py-2 rounded-xl focus:outline-none" name="budget" id="budget" placeholder="text">
                     <option class="text-lilac" value="">text</option>
                     <option value="1">1</option>

@@ -38,3 +38,28 @@ btn.addEventListener('click', function () {
         navIndex.style.cssText = "background: #202e3d;";
       }
 })
+
+// btn.addEventListener('click', function () {
+//     if (menu.classList.contains('-translate-x-96')) {
+//       menu.classList.add('translate-x-96');
+//       menu.classList.remove('-translate-x-96');
+//     } else {
+//       menu.classList.add('-translate-x-96');
+//       menu.classList.remove('translate-x-96');
+//     }
+// })
+
+
+
+$(document).ready(function() {
+  $('.client .owl-carousel').owlCarousel({
+      loop:true,
+      autoplay:true,
+      dots:false,
+      responsive:{
+          0: {
+              items: 1
+          },
+      }
+  })
+});
