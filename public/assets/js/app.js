@@ -1,4 +1,5 @@
 // =============== changing bg of nav on scroll ===============
+// for home
 document.onscroll = function() {scrollFunction()};
 
 const navIndex = document.getElementById("navIndex");
@@ -12,6 +13,7 @@ function scrollFunction() {
 };
 
 
+// for other pages
 document.body.onscroll = function() {scrollFunctionAllPage()};
 
 const nav = document.getElementById("nav");
