@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* smooth */
+:root {
+    scroll-behavior: smooth;
+}
 
 body.active-sticky #navIndex {
     @apply transition-colors duration-300 bg-main
@@ -20,7 +24,7 @@ body.active-sticky #nav {
     -webkit-box-shadow: 10px 18px 30px 0px rgba(112, 122, 178, 0.05);
 }
 
-
+/* scaling and zooming */
 .scale {
     animation: scale 4s linear infinite;
 }
@@ -47,6 +51,7 @@ body.active-sticky #nav {
     }
 }
 
+/* hover effect */
 .readMore .element {
     background: #202E3D;
     background: linear-gradient(to left, #202E3D 50%, #202E3D 50%) right;
@@ -57,7 +62,7 @@ body.active-sticky #nav {
 
 .readMore:hover .element {
     background-position: left;
-    width: 100px;
+    width: 89px;
 }
 
 .laravel .laravelElement {
@@ -70,7 +75,7 @@ body.active-sticky #nav {
 
 .laravel:hover .laravelElement {
     background-position: left;
-    width: 100px;
+    width: 89px;
 }
 
 .successStory .successElement {
@@ -83,7 +88,7 @@ body.active-sticky #nav {
 
 .successStory:hover .successElement {
     background-position: left;
-    width: 180px;
+    width: 176px;
 }
 
 .blogPost .postEl {
@@ -96,7 +101,7 @@ body.active-sticky #nav {
 
 .blogPost:hover .postEl {
     background-position: left;
-    width: 130px;
+    width: 122px;
 }
 
 /* animating words */
@@ -114,7 +119,7 @@ body.active-sticky #nav {
 
 @keyframes animate {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-100%);
