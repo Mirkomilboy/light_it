@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss ./src/styles.css -o ./public/css/styles.css -w --verbose"
+    "dev": "postcss ./src/styles.css -o ./public/css/styles.css -w --verbose",
+    "build": "cross-env NODE_ENV=production postcss ./src/styles.css -o ./public/css/styles.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.1.2"
   }
