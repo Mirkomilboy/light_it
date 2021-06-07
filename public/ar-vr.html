@@ -57,7 +57,7 @@
                                 <a class="block hover:bg-secondary-500 py-2 px-4" href="service-development.html">
                                     Development
                                 </a>
-                                <a class="block hover:bg-secondary-500 py-2 px-4" href="staff.html">
+                                <a class="block hover:bg-secondary-500 py-2 px-4" href="service-staff.html">
                                     Staff augmentation
                                 </a>
                             </div>
@@ -97,8 +97,10 @@
         <div
             class="max-w-screen-2xl h-full flex items-center text-sm lg:text-base text-black-600 font-semibold leading-6 whitespace-nowrap mx-auto">
             <a href="service-product-strategy.html"
-                class="relative h-full inline-flex items-center bg-secondary-100 text-black-1000 px-4 lg:px-8 pl-16">
-                Services
+                class="relative h-full inline-flex items-center bg-secondary-100 text-black-1000 px-4 lg:px-8 pl-8 md:pl-16">
+                <span class="inline-block relative z-20">
+                    Services
+                </span>
                 <span class="pointer bg-secondary-100"></span>
             </a>
             <a href="service-development.html"
@@ -145,16 +147,34 @@
                 <!-- Illustration -->
                 <div class="md:w-1/2 relative px-10 md:px-0 mb-10 md:mb-0">
                     <img src="assets/images/ar_vr_main.svg" alt="">
+
+                    <div class="scale xl:hidden absolute z-0 bottom-0 -right-12">
+                        <svg class="spin" width="70" height="66" viewBox="0 0 70 66" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z"
+                                fill="#FBE0E4"></path>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- SHAPES -->
-        <img class="hidden lg:block absolute top-20 -left-20 -z-1" src="assets/shapes/dot_grid.svg" alt="">
 
-        <img class="absolute top-72 md:bottom-20 -right-28 md:right-0 -z-1" src="assets/shapes/dot_grid.svg" alt="">
+        <img class="absolute -z-1 bottom-1/3 lg:bottom-20 -right-14 transform rotate-90"
+            src="assets/shapes/dot_grid.svg" alt="">
+
+        <!-- pentagon -->
+        <div class="scale hidden xl:block  absolute z-0 bottom-32 right-32">
+            <svg class="spin" width="70" height="66" viewBox="0 0 70 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z"
+                    fill="#FBE0E4"></path>
+            </svg>
+        </div>
+
         <!-- triangle -->
-        <div class="scale absolute z-0 top-28 -left-10 md:left-14">
+        <div class="scale absolute z-0 top-4 lg:top-28 -left-10 lg:left-14">
             <svg class="spin" width="78" height="68" viewBox="0 0 78 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M0.71526 67.1437L39.0324 0.835936L77.3496 67.1437L0.71526 67.1437Z" fill="#DEF0FA" />
@@ -164,7 +184,7 @@
 
     <!-- THREE.JS -->
     <section class="relative overflow-hidden">
-        <div class="max-w-base mx-auto px-4 sm:px-6 py-10 lg:pt-20">
+        <div class="max-w-base mx-auto px-4 sm:px-6 py-10 lg:pt-32">
             <div class="flex items-center flex-wrap md:flex-nowrap md:space-x-11">
                 <div class="md:w-1/2 mb-8 md:mb-0 px-10 md:px-0">
                     <img src="assets/images/ar_vr_threejs.svg" alt="">
@@ -184,40 +204,37 @@
         </div>
 
         <!-- circle -->
-        <svg class="scale absolute top-10 -right-6" width="57" height="57" viewBox="0 0 57 57" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#CBE8F7"></circle>
+        <svg class="scale absolute z-0 top-0 lg:top-20 -right-4 lg:right-32" width="57" height="57" viewBox="0 0 57 57"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#DEF0FA"></circle>
         </svg>
 
-        <!-- pentagon -->
-        <div class="scale hidden lg:block absolute z-0 bottom-0 left-12">
-            <svg class="spin" xmlns="http://www.w3.org/2000/svg" width="94" height="94" viewBox="0 0 94 94" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M93.479 25.694L85.4336 83.5143L27.9575 93.7323L0.459503 42.2197L40.954 0.169792L93.479 25.694Z"
-                    fill="#E8EEF9" />
-            </svg>
-        </div>
+        <img class="absolute hidden lg:block -left-10 lg:bottom-20 transform rotate-90 -z-1"
+            src="assets/shapes/dot_grid.svg" alt="">
     </section>
 
+
     <!-- BLOG POST -->
-    <div class="max-w-base mx-auto relative px-4 sm:px-6 -mb-56">
-        <div class="bg-secondary-1000 rounded-2xll p-15">
+    <div class="max-w-base mx-auto relative px-4 sm:px-6 -mb-64 md:-mb-56 z-10">
+        <div class="bg-secondary-1000 rounded-2xll p-4 md:p-10 xl:p-15">
             <div class="flex flex-wrap items-center">
-                <div class="w-full md:w-2/5">
-                    <img src="assets/images/step_by_step.svg" alt="">
+                <div class="flex-1 mb-2 md:mb-0">
+                    <img class="inline-block px-12 sm:px-4 xl:px-0" src="assets/images/ar_vr_digital_product.svg"
+                        alt="">
                 </div>
-                <div class="w-full md:w-3/5 md:pr-20">
-                    <h3 class="font-secondary text-2xl leading-7 tracking-small">DIGITAL PRODUCT</h3>
-                    <h1 class="font-secondary text-34 py-2 tracking-small">
+
+                <div class="w-full md:w-3/5 xl:pr-20">
+                    <h3 class="font-secondary text-sm lg:text-2xl leading-7">DIGITAL PRODUCT</h3>
+                    <h1 class="font-secondary text-2xl lg:text-34 leading-7 py-2">
                         What's a Digital Product Agency?
                     </h1>
-                    <p class="text-black-900 pb-4">
+                    <p class="text-sm md:text-base text-black-900 pb-4">
                         A digital product agency is your partner in the creation of digital products, an ally that helps
                         you meet your technological needs. Discover more!
                     </p>
 
                     <a href="https://lightit.io/blog/digital-product-agency/"
-                        class="expend-underline blogpost inline-block text-15 font-bold text-dark-200 tracking-small leading-5 mt-4">
+                        class="expend-underline blogpost inline-block text-13 md:text-15 font-bold text-dark-200 tracking-small leading-5 mt-4">
                         Read blog post
                     </a>
                 </div>
@@ -225,56 +242,114 @@
         </div>
     </div>
 
-    <!-- OUR WORK -->
-    <section class="bg-black-1000 pt-80">
-        <div class="max-w-base mx-auto px-4 sm:px-6">
-            <div class="flex flex-wrap md:flex-nowrap items-center space-x-8">
-                <div class="max-w-md relative">
+
+    <section class="relative bg-black-1000 pt-96  overflow-hidden">
+
+        <!-- Virtual home -->
+        <div class="relative pb-20 xl:pb-44 ">
+            <div class="max-w-base mx-auto px-4 sm:px-6">
+                <!-- Mobile Title -->
+                <div class="max-w-2xl lg:hidden mx-auto md:px-5">
                     <p class="font-secondary text-sm text-secondary-1000 tracking-small leading-5">
                         case study
                     </p>
-                    <h3 class="font-secondary text-34 tracking-small text-secondary-100 mb-6">
-                        virtual home
+                    <h3 class="font-secondary text-34 tracking-small text-secondary-100">
+                        Virtual home
                     </h3>
-
-                    <p class="text-black-100 leading-6">
-                        VirtualHome is a web application
-                        where people can design their rooms in 3D and add new products to their spaces. To create
-                        your design, you just have to set up your room's measurements (or use a template room) and
-                        start creating. You can change the floor, walls, windows, doors, and hundreds of other
-                        elements. This way, the users can visualize diverse alternatives and make confident
-                        decisions.
-                    </p>
                 </div>
-                <div class="relative">
-                    <img src="assets/images/ar_vr_virtual_home.svg" alt="">
+
+                <div class="flex flex-wrap lg:flex-nowrap justify-center lg:space-x-7.5">
+                    <div class="max-w-md order-1 lg:order-none">
+                        <!-- Desktop -->
+                        <div class="hidden lg:block mb-6">
+                            <p class="font-secondary text-sm text-secondary-1000 tracking-small leading-5">
+                                case study
+                            </p>
+                            <h3 class="font-secondary text-34 tracking-small text-secondary-100">
+                                Virtual home
+                            </h3>
+                        </div>
+
+
+                        <p class="text-black-100 leading-6">
+                            VirtualHome is a web application where people can design their rooms in 3D and add new
+                            products to their spaces. To create your design, you just have to set up your room's
+                            measurements (or use a template room) and start creating. You can change the floor, walls,
+                            windows, doors, and hundreds of other elements. This way, the users can visualize diverse
+                            alternatives and make confident decisions.
+                        </p>
+                    </div>
+
+                    <div class="lg:flex-1 relative  md:-12 lg:px-0 py-4 lg:py-0">
+                        <img src="./assets/images/ar_vr_virtual_home.svg" alt="laptop" class="relative z-20">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="max-w-base mx-auto px-4 sm:px-6">
-            <div class="flex flex-wrap md:flex-nowrap items-center justify-between space-x-8">
-                <div class="relative">
-                    <img src="assets/images/ar_vr_envisionate.svg" alt="">
-                </div>
-                <div class="max-w-md relative">
+            <!-- pentagon  -->
+            <div class="scale absolute -left-2 -top-12 md:-left-6 md:top-1/2">
+                <svg class="spin w-11 h-11 desktop" width="96" height="91" viewBox="0 0 96 91" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.713623 34.8378L47.9425 0.525391L95.1714 34.8378L77.141 90.3769H18.7629L0.713623 34.8378Z"
+                        fill="#6B79B6"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- Envisionate -->
+        <div class="relative lg:pb-20 xl:pb-44 lg:pt-12">
+            <div class="max-w-base mx-auto px-4 sm:px-6">
+                <!-- Mobile Title -->
+                <div class="max-w-2xl lg:hidden mx-auto md:px-5">
                     <p class="font-secondary text-sm text-secondary-1000 tracking-small leading-5">
                         case study
                     </p>
-                    <h3 class="font-secondary text-34 tracking-small text-secondary-100 mb-6">
+                    <h3 class="font-secondary text-34 tracking-small text-secondary-100">
                         Envisionate
                     </h3>
+                </div>
 
-                    <p class="text-black-100 leading-6">
-                        Envisionate is an AR e-commerce for interior design brands. Users scan their rooms with their
-                        phone's camera and get a 360º view of the site. Following this, they are able to virtually place
-                        furniture and other house items in the room and check out how they look and interact with the
-                        environment. Envisionate is onboarding several house-decoration brands so that users can try out
-                        thousands of options and decide which one fits better before buying anything.
-                    </p>
+                <div class="flex flex-wrap lg:flex-nowrap justify-center lg:space-x-7.5">
+                    <div class="lg:flex-1 relative  md:-12 lg:px-0 py-4 lg:py-0">
+                        <img src="./assets/images/ar_vr_envisionate.svg" alt="laptop" class="relative z-20">
+                    </div>
+
+                    <div class="max-w-md order-1 lg:order-none">
+                        <!-- Desktop -->
+                        <div class="hidden lg:block mb-6">
+                            <p class="font-secondary text-sm text-secondary-1000 tracking-small leading-5">
+                                case study
+                            </p>
+                            <h3 class="font-secondary text-34 tracking-small text-secondary-100">
+                                Envisionate
+                            </h3>
+                        </div>
+
+
+                        <p class="text-black-100 leading-6">
+                            Envisionate is an AR e-commerce for interior design brands. Users scan their rooms with
+                            their phone's camera and get a 360º view of the site. Following this, they are able to
+                            virtually place furniture and other house items in the room and check out how they look and
+                            interact with the environment. Envisionate is onboarding several house-decoration brands so
+                            that users can try out thousands of options and decide which one fits better before buying
+                            anything.
+                        </p>
+                    </div>
                 </div>
             </div>
+
+            <img class="md:hidden absolute z-0 -top-25 -right-20 transform rotate-90" src="assets/shapes/dot_grid.svg"
+                alt="">
+
+            <!-- circle -->
+            <svg class="scale w-14 h-14 lg:w-auto lg:h-auto absolute z-0 right-4 lg:-right-6 -top-8" width="85"
+                height="86" viewBox="0 0 85 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="42.5346" cy="42.6317" r="42.3935" fill="#9564CB"></circle>
+            </svg>
         </div>
+        <!-- end -->
 
 
         <!-- Next/Prev navbar -->

@@ -62,7 +62,8 @@ module.exports = {
         15: '3.75rem',
         22: '88px',
         25: '6.25rem',
-        7.5: '30px'
+        7.5: '30px',
+        100: '25rem'
       },
       fontFamily: {
         'primary': ['Open Sans', 'sans-serif'],
