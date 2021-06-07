@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    button {
+        @apply focus:outline-none
+    }
+
+    .btn {
+        @apply inline-block text-15 font-bold tracking-small rounded-xl py-3.5 px-6
+    }
+
+    .btn.purple {
+        @apply bg-primary-1000 text-white hover:bg-primary-900 active:bg-primary-800
+    }
+
+    .btn.ghost,
+    .btn-small.ghost {
+        @apply bg-secondary-1000 text-black-1000 hover:bg-secondary-600 active:bg-secondary-200
+    }
+}
+
+body {
+    @apply bg-secondary-100 relative font-primary
+}
+
+body.active-sticky header.home {
+    @apply transition-colors duration-300 bg-black-1000 
+}
+
+
+.dropdown {
+    transition: all .2s ease-in-out;
+    animation: goup .2s ease-in-out;
+}
+
+@keyframes goup {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.overview {
+    overflow: clip;
+}
+
+/* READ MORE BUTTON */
+.expend-underline{
+    position: relative;
+    padding: 2.5px 5.5px 7px 5.5px;
+    z-index: 10;
+}
+
+.expend-underline::before {
+    content: '';
+    background: #202E3D;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    z-index: -1;
+    transition: width .3s ease-in-out;
+}
+
+
+.expend-underline.light::before{
+    width: 10%;
+    background: #646E79;
+}
+
+.expend-underline.laravel::before{
+    width: 20%;
+    background: #D7E4FF;
+}
+
+.expend-underline.blogpost::before{
+    width: 18%;
+    background: #646E79;
+}
+
+
+
+.expend-underline:hover:before {
+    width: 100%;
+}
+
+
+/* Animations */
+/* scaling and zooming */
+.scale {
+    animation: scale 4s linear infinite;
+}
+
+.spin {
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+}
+
+/* carousel */
+.owl-carousel .owl-item img {
+    width: auto !important;
+}
+
+
+/* SERVICE PAGES */
+.pointer {
+    @apply h-6 w-6 absolute top-1/2 -right-2 rounded transform rotate-45 z-10 -mt-2.5
+}
+
+/* animating words */
+.words .scroll div {
+    animation: animate 10s linear infinite;
+    animation-delay: -2s;
+    -webkit-text-stroke-width: .75px;
+    -webkit-text-stroke-color: #000;
+}
+
+.words .scroll div:nth-child(2) {
+    animation: animate2 5s linear infinite;
+    animation-delay: -60s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
