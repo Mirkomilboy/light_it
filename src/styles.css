@@ -11,6 +11,10 @@
         @apply inline-block text-15 font-bold tracking-small rounded-xl py-3.5 px-6
     }
 
+    .btn.ex {
+        @apply hidden md:inline-block
+    }
+
     .btn.purple {
         @apply bg-primary-1000 text-white hover:bg-primary-900 active:bg-primary-800
     }

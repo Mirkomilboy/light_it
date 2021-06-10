@@ -43,6 +43,9 @@ module.exports = {
           900: '#374351',
           1000: '#202E3D'
         },
+        purple: {
+
+        },
         red: {
           100: '#FDF2F3'
         },
@@ -60,6 +63,7 @@ module.exports = {
       spacing: {
         4.5: '18px',
         15: '3.75rem',
+        18: '72px',
         22: '88px',
         25: '6.25rem',
         7.5: '30px',
@@ -94,7 +98,8 @@ module.exports = {
       },
       boxShadow: {
         md: '0px 6.8125px 10.2188px -1.70312px rgba(31, 45, 61, 0.1), 0px 3.40625px 6.8125px -1.70312px rgba(31, 45, 61, 0.06);',
-        'sombra': '0px 10px 20px rgba(215, 228, 255, 0.2)'
+        'sombra': '0px 10px 20px rgba(215, 228, 255, 0.2)',
+        base: '0px 1.70312px 5.10938px rgba(31, 45, 61, 0.1), 0px 1.70312px 3.40625px rgba(31, 45, 61, 0.06);'
       },
       borderRadius: {
         'lgx': '10px',
