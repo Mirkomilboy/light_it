@@ -100,14 +100,14 @@
         <div class="relative">
             <div class="max-w-base relative mx-auto px-4 sm:px-6 pt-14 pb-40 lg:pt-8 lg:pb-64 z-20">
                 <h2 class="font-secondary text-50 md:text-6xl text-black-900 tracking-small">
-                    CuraScribe: Virtual scribes as a Service.
+                    CuraScribe: Virtual <br class="lg:hidden"> scribes as a Service.
                 </h2>
 
                 <!-- mobile -->
-                <img class="mt-3 lg:hidden" src="assets/images/bestBuy_logo_sm.svg" alt="">
+                <img class="mt-3 lg:hidden" src="assets/images/Curascribe_logo.svg" alt="">
 
                 <!-- Desktop -->
-                <div class="relative max-w-2xl leading-6 pr-8 hidden lg:block">
+                <div class="relative max-w-2xl leading-6 pr-8 hidden lg:block mt-8">
                     <p class="font-semibold">
                         Our client: Curascribe
                     </p>
@@ -127,7 +127,26 @@
             </div>
 
 
-            <img src="assets/shapes/dots.png" alt="" class=" absolute -bottom-36 -left-20 lg:-left-8 md:z-10">
+            <img src="assets/shapes/dot_grid-2.svg" alt="" class="hidden md:block opacity-30 absolute top-0 left-0">
+
+            <!-- pentagon -->
+            <div class="scale hidden md:block absolute z-0 -top-8 -right-14">
+                <svg class="spin" width="127" height="121" viewBox="0 0 127 121" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z"
+                        fill="#F0F4FB"></path>
+                </svg>
+            </div>
+
+            <!-- Triangle -->
+            <div class="scale hidden md:block absolute z-0 top-28 right-20">
+                <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z" fill="#C9E9DA"></path>
+                </svg>
+            </div>
         </div>
 
         <div class="bg-secondary-1000 relative">
@@ -141,7 +160,7 @@
             </div>
 
             <!-- mobile -->
-            <div class=" relative max-w-2xl leading-6 pr-8  lg:hidden">
+            <div class=" relative max-w-2xl leading-6 px-4 lg:hidden  pt-9">
                 <p class="font-semibold">
                     Our client: Curascribe
                 </p>
@@ -163,7 +182,7 @@
                 <h2 class="font-secondary text-43 tracking-small">
                     Overview
                 </h2>
-                <p class="text-black-1000 leading-6 pr-2">
+                <p class="text-black-1000 leading-6 pr-2 mt-2 lg:mt-8">
                     We designed and built the first web and mobile platform that connects doctors with virtual scribes,
                     helping doctors save time, focus entirely on the patient's health, and store confidential
                     information safely.
@@ -178,10 +197,13 @@
 
 
             <!-- Circle -->
-            <svg class="scale absolute bottom-64  -right-8 lg:bottom-16 md:-right-10" width="117" height="117"
+            <svg class="scale absolute bottom-[32rem]  -right-8 lg:bottom-44 md:-right-10" width="117" height="117"
                 viewBox="0 0 117 118" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="58.3649" cy="58.7409" r="58.3649" fill="#DAC6ED"></circle>
             </svg>
+
+            <img src="assets/shapes/dot_grid.svg" alt=""
+                class="absolute bottom-[399px] -right-24 md:bottom-1/4 md:-right-8">
         </div>
     </div>
     <!-- end -->
@@ -221,22 +243,102 @@
                 </div>
             </div>
         </div>
-
-        <div class="scale hidden md:block absolute top-1/2 -left-10">
-            <svg class="spin" width="94.46" height="89.85" viewBox="0 0 127 121" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+        <!-- triangle -->
+        <div class="scale absolute hidden md:block bottom-0 left-0">
+            <svg class="spin" xmlns="http://www.w3.org/2000/svg" width="103" height="103" viewBox="0 0 103 103"
+                fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z" fill="#B7BEDB">
-                </path>
+                    d="M27.9587 102.324L0.709797 0.471715L102.563 27.7206L27.9587 102.324Z" fill="#F0F4FB" />
             </svg>
         </div>
 
-        <img class="absolute bottom-0 -left-4 -z-1" src="assets/shapes/dot_grid.svg" alt="">
+        <img class="absolute hidden md:block -top-8 -right-8 transform rotate-90" src="assets/shapes/dot_grid.svg"
+            alt="">
+
+        <svg class="scale absolute top-0 right-4 md:top-1/4 md:right-16" width="56" height="56" viewBox="0 0 57 57"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="28.1721" cy="28.4104" r="28.1721" fill="#F4F7FC"></circle>
+        </svg>
     </div>
+
+    <!-- Challenges -->
+    <div class="relative overflow-hidden">
+        <div class="max-w-base mx-auto px-4 sm:px-6 py-22 md:py-40">
+            <div class="max-w-lg">
+                <h2 class="font-secondary text-50 text-black-900 tracking-small">
+                    Challenges
+                </h2>
+                <p class="text-black-1000 leading-6 mt-4">
+                    We joined the project with the goal of ideating, technically validating and building the platform to
+                    host Curascribe’s scribing solution, that aimed to provide customized, one-on-one virtual scribe
+                    services to Medical Practitioners. This was full of exciting challenges:
+                </p>
+            </div>
+
+            <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-7.5 mt-7">
+                <div class="bg-white shadow-base rounded-xl p-5">
+                    <div class="flex items-center">
+                        <img src="assets/images/Pencil_alt.svg" alt="icon">
+                        <h4 class="text-xl leading-7 pl-2">Innovation</h4>
+                    </div>
+
+                    <p class="text-black-1000 leading-6 mt-5">
+                        We were creating the first web-based transcription full-service platform. Which naturally had to
+                        be
+                        highly usable and intuitive for all: doctors, clinics and scribes. And fully extensible so that
+                        they
+                        can onboard other transcription companies in the future.
+                    </p>
+                </div>
+                <div class="bg-white shadow-base rounded-xl p-5">
+                    <div class="flex items-center">
+                        <img src="assets/images/bag.svg" alt="icon">
+                        <h4 class="text-xl leading-7 pl-2">Compatibility</h4>
+                    </div>
+
+                    <p class="text-black-1000 leading-6 mt-5">
+                        Scribes use foot pedals to play the records, so our solution had to be compatible with the
+                        pedal,
+                        covering all the edge cases. The foot pedal proof of concept was quite a challenge that was
+                        solved
+                        by building a chrome extension and windows app.
+                    </p>
+                </div>
+                <div class="bg-white shadow-base rounded-xl p-5">
+                    <div class="flex items-center">
+                        <img src="assets/images/Lock_closed.svg" alt="icon">
+                        <h4 class="text-xl leading-7 pl-2">Security</h4>
+                    </div>
+
+                    <p class="text-black-1000 leading-6 mt-5">
+                        The consult's audio files' information is extremely sensible and indispensable, so the platform
+                        had
+                        to be 100% reliable and safe. We had to cover numerous edge cases to guarantee this.
+                    </p>
+                </div>
+
+
+                <div class="scale absolute -top-8 -right-4 md:-right-8 -z-1">
+                    <svg class="spin" width="68" height="65" viewBox="0 0 70 66" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.892944 25.1748L35.1978 0.251953L69.5026 25.1748L56.4061 65.5158H14.0031L0.892944 25.1748Z"
+                            fill="#919BC8"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+        <img src="assets/shapes/dot_grid-2.svg" alt=""
+            class="block opacity-50 transform rotate-90 md:transform-none absolute top-1/2 -left-48 md:top-72  md:left-0 -z-1">
+    </div>
+    <!-- end -->
 
     <!-- Process & Workflow -->
     <div class="relative overflow-hidden pt-20 md:pt-0">
-        <div class="max-w-base mx-auto px-4 sm:px-6">
+        <div class="max-w-base mx-auto 
+         px-4 sm:px-6">
             <div class="max-w-lg">
                 <h2 class="font-secondary text-43 lg:text-50 text-black-900 tracking-small">
                     Process & Workflow
@@ -265,43 +367,59 @@
                         </h4>
 
                         <p class="text-black-1000 py-2 pb-8 md:pt-8">
-                            The discovery phase consisted mainly of defining the platform's features and
-                            technological
-                            needs, translating them to requirements. We worked side-by-side with Bestbuy's team to
-                            re-think the core of the platform. We understood that the needs of the users had
-                            changed,
-                            and there were new challenges to confront. The business needs and technological
-                            possibilities evolved, and now we had the possibility to measure data and discover lots
-                            of
-                            valuable insights.
+                            Curascribe required a robust and complex solution; defining the MVP and user flow involved
+                            extensive research, ideation and validation, until we defined a brilliant outline, that was
+                            made up by 4 components: an iOS App, a Web Platform, a Chrome Extension and a Windows App.
                             <br><br>
-                            We defined the MVP:
+                            Doctors record consultations in Curascribe's mobile app and upload them along with some
+                            required information. Each encounter is assigned to a virtual scribe, a medical expert that
+                            transcribes the consult in the web platform and uploads it to the patient's medical record.
+                            The platform includes the following components:
                         </p>
 
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-10 gap-x-7.5 lg:gap-y-4 relative z-20">
 
                             <div class="bg-white shadow-base rounded-xl py-8 px-6">
-                                <img src="assets/images/Services_icon.svg" alt="">
+                                <img src="assets/images/apple.svg" alt="">
                                 <h4 class="font-bold text-black-1000 leading-6 mt-6">
-                                    A scalable platform
+                                    iOS application
                                 </h4>
                                 <p class="text-black-1000 leading-6">
-
-                                    A scalable platform for modern mobile users, content creators that love the
-                                    digital
-                                    world and are thrilled to make a business deal entirely digitally, without even
-                                    the
-                                    need to exchange long, tedious emails or phone calls.
+                                    The mobile application is where providers (doctors) create encounters by recording
+                                    the patient and filling in a brief form. It's also where doctors can review the
+                                    consultation's information once it has been transcribed.
                                 </p>
                             </div>
                             <div class="bg-white shadow-base rounded-xl py-8 px-6">
-                                <img src="assets/images/Presentation_icon.svg" alt="">
+                                <img src="assets/images/chrome.svg" alt="">
                                 <h4 class="font-bold text-black-1000 leading-6 mt-6">
-                                    Data reports
+                                    Chrome Extension
                                 </h4>
                                 <p class="text-black-1000 leading-6">
-                                    The platform was intuitive and straightforward for them, and BestBuy didn't only
-                                    benefit from making deals easier but also from relevant data reports.
+                                    Scribes transcribe the consultation in Microsoft Word. Building an extension was
+                                    needed to
+                                    capture the foot pedal commands in the background while writing the transcription
+                                    here.
+                                </p>
+                            </div>
+                            <div class="bg-white shadow-base rounded-xl py-8 px-6">
+                                <img src="assets/images/Monitor.svg" alt="">
+                                <h4 class="font-bold text-black-1000 leading-6 mt-6">
+                                    Web platform
+                                </h4>
+                                <p class="text-black-1000 leading-6">
+                                    It's where the scribes and managers work the whole day. In this platform, they
+                                    receive the encounters, play the audio files, manage users, assign encounters, see
+                                    attachments, and more.
+                                </p>
+                            </div>
+                            <div class="bg-white shadow-base rounded-xl py-8 px-6">
+                                <img src="assets/images/bag.svg" alt="">
+
+                                <p class="text-black-1000 leading-6 mt-6">
+                                    Scribes use foot pedals to play the records, so our solution had to be compatible
+                                    with the pedal, covering all the edge cases. The foot pedal proof of concept was
+                                    quite a challenge that was solved by building a chrome extension and windows app.
                                 </p>
                             </div>
                         </div>
@@ -325,35 +443,19 @@
                         </h4>
 
                         <p class="text-sm md:text-base text-black-1000 py-2 md:py-8">
-                            The site's design was outdated visually, and the mobile user experience was poor,
-                            essentially because, when it was initially built, smartphones weren't on the table.
+                            After defining the backlog, roadmap and absorbing all the information, we began designing.
+                            We planned, sketched, and repeated until we had a sharp wireframe.
                             <br><br>
-                            A big challenge was adapting it to Best Buy's new brand identity. BestBuy's personality
-                            had
-                            evolved a lot, and it was quite a challenge to learn everything about their new rigorous
-                            brand guidelines and design practices. The redesign caused a fantastic impact on the
-                            user
-                            experience of the site.
+                            We went for a clean look and feel. As mentioned before, the primary purpose was to optimize
+                            users' time; this left no space for distracting visuals, low speed, or time-consuming
+                            animations. The simpler, the better.
                             <br><br>
-                            We also made the site responsive: bloggers only used computers, but most influencers
-                            nowadays work solely with their phones, so the platform had to function perfectly on
-                            both.
-                            We used a mobile-first approach when designing and made it a flawless fit for all screen
-                            sizes.
+                            This resulted in a minimalist and highly intuitive UI, friendly to work with for long hours,
+                            and visually appealing.
                         </p>
 
                         <div class="relative">
-                            <img src="assets/images/process-ux-ui.png" class="mx-auto" alt="">
-
-
-                            <div class="scale absolute top-16 -right-20">
-                                <svg class="spin" width="52" height="46" viewBox="0 0 52 46" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.777884 45.0289L26.2411 0.964843L51.7043 45.0289L0.777884 45.0289Z"
-                                        fill="#7E8ABF"></path>
-                                </svg>
-                            </div>
+                            <img src="assets/images/laptop_process.gif" class="mx-auto" alt="">
                         </div>
                     </div>
                 </div>
@@ -375,86 +477,46 @@
                         </h4>
 
                         <p class="text-sm md:text-base text-black-1000 py-2 pb-8 md:py-8">
-                            Development tasks included creating new features, improving existing ones, working in
-                            the
-                            server's maintenance and actualization, and optimizing the software's performance.
-                            <br><br>
-                            Some of the tasks were:
+                            The agile development process was divided into 2 week sprints. The team was made up of two
+                            developers, one PM, one UX/UI Designer, a DevOps, a QA Engineer and a HIPPAA Compliant
+                            expert. The team brought the product to life and kept the client’s updated during the whole
+                            process, starting with the MVP, testing it, and continously iterating. This stage was
+                            followed by ongoing maintenance.
                         </p>
-
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-10 md:gap-7.5 relative z-20">
-                            <div class="bg-white shadow-base rounded-xl py-8 px-6">
-                                <img src="assets/images/Presentation_icon.svg" alt="">
-
-                                <p class="text-black-1000 leading-6 mt-6">
-                                    Creating automatized reports with data about each influencer and their
-                                    characteristics. This information is highly valuable for BestBuy's marketing
-                                    team.
-                                </p>
-                            </div>
-                            <div class="bg-white shadow-base rounded-xl py-8 px-6">
-                                <img src="assets/images/diagram_icon.svg" alt="">
-
-                                <p class="text-black-1000 leading-6 mt-6 pr-8">
-                                    Building data reports for each campaign, that measured performance among other
-                                    relevant metrics.
-                                </p>
-                            </div>
-                            <div class="bg-white shadow-base rounded-xl py-8 px-6">
-                                <img src="assets/images/Services_icon.svg" alt="">
-                                <p class="text-black-1000 leading-6 mt-6">
-                                    New views, such as the list of open projects for influencers to apply, with
-                                    categories and filters, the FAQs, among others.
-                                </p>
-                            </div>
-                            <div class="bg-white shadow-base rounded-xl py-8 px-6">
-                                <img src="assets/images/Document_report.svg" alt="">
-                                <p class="text-black-1000 leading-6 mt-6">
-                                    Developing a dashboard with analytics that crosses different relevant metrics
-                                    about
-                                    influencers. For example, an interesting finding is the number of stores per
-                                    state
-                                    compared with the number of influencers there.
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- top shapes -->
-        <div class="absolute hidden lg:block top-[16%] -left-20 -z-1">
+        <div class="absolute top-[14%] md:top-[16%] -left-4 -z-1">
 
-            <div class="scale ml-32">
-                <svg class="spin" width="47" height="44" viewBox="0 0 47 44" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+            <svg class="scale w-20 h-20 md:w-auto md:h-auto" xmlns="http://www.w3.org/2000/svg" width="90" height="118"
+                viewBox="0 0 90 118" fill="none">
+                <circle cx="31.5404" cy="59.0254" r="58.3649" transform="rotate(-45 31.5404 59.0254)" fill="#C9E9DA" />
+            </svg>
+
+            <div class="scale ml-16 hidden lg:block">
+                <svg width="47" height="44" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z"
                         fill="#7E8ABF"></path>
                 </svg>
             </div>
 
-            <svg class="scale hidden md:block " width="156" height="157" viewBox="0 0 156 157" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="77.9996" cy="78.376" r="78" fill="#E8EEF9"></circle>
-            </svg>
-
         </div>
 
-        <img class="absolute hidden lg:block bottom-1/4 -left-12" src="assets/shapes/dots.png" alt="">
+        <div class="absolute block top-[45%] md:top-1/3 -right-4 -z-1">
 
-        <!-- center circle -->
-        <svg class="scale hidden lg:block absolute bottom-1/3 left-14 mb-28" xmlns="http://www.w3.org/2000/svg"
-            width="57" height="58" viewBox="0 0 57 58" fill="none">
-            <circle cx="28.3003" cy="29.1079" r="28.1721" transform="rotate(-45 28.3003 29.1079)" fill="#B7BEDB" />
-        </svg>
+            <div class="scale ml-16">
+                <svg width="94" height="89" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.976074 16.8034L23.7729 0.241211L46.5698 16.8034L37.8667 43.6115H9.68825L0.976074 16.8034Z"
+                        fill="#ECF1FA"></path>
+                </svg>
+            </div>
 
-        <!-- bottom circle -->
-        <svg class="scale absolute bottom-8 -right-16" width="143" height="143" viewBox="0 0 156 157" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <circle cx="77.9996" cy="78.376" r="78" fill="#E8EEF9"></circle>
-        </svg>
+        </div>
     </div>
 
     <!-- RESULT -->
@@ -462,48 +524,48 @@
         <h2 class="font-secondary text-50 text-black-900 tracking-small">
             Results
         </h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7.5 mt-7">
+        <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-7.5 mt-7">
             <div class="bg-white shadow-base rounded-xl p-5">
                 <img src="assets/images/Services_icons.svg" alt="">
 
                 <p class="text-black-1000 leading-6 mt-5">
-                    +3000 influencers enrolled.
+                    Medical providers using Curascribe are able to see 42% more patients on average in the same time
+                    schedule.
                 </p>
             </div>
             <div class="bg-white shadow-base rounded-xl p-5">
                 <img src="assets/images/Thumb_down.svg" alt="">
 
                 <p class="text-black-1000 leading-6 mt-5">
-                    +500 products promoted by influencers
+                    Doctors can now focus 100% on the patient, which results in more successful and fruitful encounters.
                 </p>
-            </div>
-            <div class="bg-white shadow-base rounded-xl p-5 relative">
-                <div class="flex items-center space-x-4">
-                    <a href="#"><img class="w-14" src="assets/images/instagram.svg" alt=""></a>
-                    <a href="#"><img class="w-14" src="assets/images/facebook.svg" alt=""></a>
-                    <a href="#"><img class="w-14" src="assets/images/twitter.svg" alt=""></a>
-                    <a href="#"><img class="w-14" src="assets/images/youtube.svg" alt=""></a>
-                    <a href="#"><img class="w-14" src="assets/images/vimeo.svg" alt=""></a>
-                </div>
-                <p class="text-black-1000 leading-6 mt-5">
-                    Influencer promoted the products on social media.
-                </p>
-
-                <div class="scale absolute -bottom-8 -left-14 hidden md:block -z-1">
-                    <svg class="spin" width="94.46" height="89.85" viewBox="0 0 127 121" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 46.3167L63.1176 0.460938L126.235 46.3167L102.139 120.54H24.1214L0 46.3167Z"
-                            fill="#CCB1E6"></path>
-                    </svg>
-                </div>
             </div>
             <div class="bg-white shadow-base rounded-xl p-5">
-                <img src="assets/images/Sparkles.svg" alt="">
+                <img src="assets/images/health.svg" alt="">
                 <p class="text-black-1000 leading-6 mt-6">
-                    Improved look and feel
+                    Patients are receiving much better attention and better medical experiences.
                 </p>
             </div>
+            <div class="bg-white shadow-base rounded-xl p-5">
+                <img src="assets/images/med_building.svg" alt="">
+                <p class="text-black-1000 leading-6 mt-6">
+                    Clinics are being more effective and organized with EMRs and schedules. This has an impact on the
+                    revenue, and staff & patients satisfaction.
+                </p>
+            </div>
+            <div class="bg-white shadow-base rounded-xl p-5">
+                <img src="assets/images/Monitor.svg" alt="">
+                <p class="text-black-1000 leading-6 mt-6">
+                    We built a tailored platform highly usable and valuable for all stakeholders: doctors, patients and
+                    clinics.
+                </p>
+            </div>
+
+            <!-- circle -->
+            <svg class="scale w-32 h-32 lg:w-auto lg:h-auto absolute top-28 md:top-20 -left-20 -z-1" width="142"
+                height="142" viewBox="0 0 85 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="42.5346" cy="42.6317" r="42.3935" fill="#C9E9DA"></circle>
+            </svg>
         </div>
     </div>
     <!-- end -->
