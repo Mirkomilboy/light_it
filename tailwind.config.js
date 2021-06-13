@@ -43,10 +43,8 @@ module.exports = {
           900: '#374351',
           1000: '#202E3D'
         },
-        purple: {
-
-        },
         red: {
+          1000: '#EB5D62',
           100: '#FDF2F3'
         },
         'light-blue': {
@@ -71,8 +69,7 @@ module.exports = {
       },
       fontFamily: {
         'primary': ['Open Sans', 'sans-serif'],
-        'secondary': ['Bebas Neue', 'sans-serif'],
-        // 'londrina-shadow': ['Londrina Shadow'],
+        'secondary': ['Bebas Neue', 'sans-serif']
       },
       maxWidth: {
         content: '33.75rem',
@@ -116,7 +113,10 @@ module.exports = {
       },
       gridTemplateRows: {
         '8': 'repeat(8, minmax(0, 1fr))',
-      }
+      },
+      screens: {
+        'xs': { 'min': '500px', 'max': '767px' }
+      },
     },
   },
   variants: {

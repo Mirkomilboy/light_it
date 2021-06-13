@@ -39,7 +39,7 @@ body {
 
 body.active-sticky header.home,
 body.active-sticky .home,
-#mobile-nav.active {
+#mobile-nav.dark.active {
     @apply transition-colors duration-300 bg-black-1000 
 }
 
@@ -121,6 +121,10 @@ body.active-sticky .home,
 
 .spin {
     animation: spin 20s linear infinite;
+}
+
+.image-width {
+    @apply xs:w-2/3 mx-auto
 }
 
 @keyframes spin {

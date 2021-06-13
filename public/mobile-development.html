@@ -97,7 +97,7 @@
         <div
             class="max-w-screen-2xl h-full flex items-center text-sm lg:text-base text-black-600 font-semibold leading-6 whitespace-nowrap mx-auto">
             <a href="service-product-strategy.html"
-                class="relative h-full inline-flex items-center bg-secondary-100 text-black-1000 px-4 lg:px-8 pl-6 md:pl-16">
+                class="relative h-full inline-flex items-center bg-secondary-100 text-black-1000 px-5 lg:px-8 pl-6 md:pl-16">
 
                 <span class="inline-block relative z-20">Services</span>
                 <span class="pointer bg-secondary-100"></span>
@@ -116,7 +116,7 @@
                 class="relative h-full inline-flex items-center text-black-1000 hover:text-black-1000 px-5 lg:px-8">
                 Mobile Development
             </a>
-            <a href="ar-vr.html" class="relative h-full inline-flex items-center hover:text-black-1000 px-4 lg:px-8">
+            <a href="ar-vr.html" class="relative h-full inline-flex items-center hover:text-black-1000 px-5 lg:px-8">
                 AR/VR
             </a>
         </div>
@@ -131,7 +131,7 @@
         <div class="max-w-base mx-auto px-4 sm:px-6 py-10 lg:pt-24">
             <div class="flex items-center flex-wrap md:flex-nowrap md:space-x-11">
                 <!-- Content -->
-                <div class="relative md:w-1/2 lg:max-w-content text-black-900 order-1 md:order-none">
+                <div class="relative md:w-1/2 lg:w-full lg:max-w-content text-black-900 order-1 md:order-none">
                     <h1 class="font-secondary text-50 lg:text-82 tracking-tiny mb-2 lg:mb-4">
                         MOBILE DEVELOPMENT
                     </h1>
@@ -146,13 +146,22 @@
 
                 <!-- Illustration -->
                 <div class="md:w-1/2 relative px-10 md:px-0 mb-10 md:mb-0">
-                    <img src="assets/images/mobile_main.svg" alt="">
+                    <img class="image-width" src="assets/images/mobile_main.svg" alt="">
+
+                    <!-- circle -->
+                    <svg class="scale w-14 h-14 lg:w-auto lg:h-auto absolute bottom-0 -right-10 -z-1" width="156"
+                        height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="77.9996" cy="78.376" r="78" fill="#B9E0F5"></circle>
+                    </svg>
+
+                    <img class="w-1/2 lg:w-auto absolute bottom-12 -right-8 lg:-right-12 -z-1"
+                        src="assets/shapes/dot_grid-2.svg" alt="">
                 </div>
             </div>
         </div>
 
 
-        <img class="absolute top-72 md:bottom-20 -right-28 md:right-0 -z-1" src="assets/shapes/dot_grid.svg" alt="">
+
 
         <!-- pentagon -->
         <div class="scale absolute -z-1 top-4 xl:top-28 -left-4 xl:left-14">
@@ -171,7 +180,7 @@
         <div class="max-w-base mx-auto px-4 sm:px-6 py-10 lg:pt-20">
             <div class="flex items-center flex-wrap md:flex-nowrap md:space-x-11">
                 <div class="md:w-1/2 relative mb-8 md:mb-0 px-10 md:px-0">
-                    <img src="assets/images/cross_platform_app.svg" alt="">
+                    <img class="image-width" src="assets/images/cross_platform_app.svg" alt="">
 
                     <!-- pentagon -->
                     <div class="scale md:hidden absolute z-0 bottom-0 -left-12">
@@ -212,7 +221,7 @@
                     </p>
                 </div>
                 <div class="md:w-1/2 relative px-6 md:px-0 mb-8 md:mb-0">
-                    <img src="assets/images/ios_apps.svg" alt="">
+                    <img class="image-width" src="assets/images/ios_apps.svg" alt="">
 
                     <!-- pentagon -->
                     <div class="scale absolute right-0 top-0 -z-1">
@@ -251,7 +260,7 @@
         <div class="max-w-base mx-auto px-4 sm:px-6 pt-10 lg:py-20">
             <div class="flex items-center flex-wrap md:flex-nowrap md:space-x-11">
                 <div class="md:w-1/2 relative">
-                    <img src="assets/images/android_apps.svg" alt="">
+                    <img class="image-width" src="assets/images/android_apps.svg" alt="">
 
                     <!-- triangle -->
                     <div class="scale absolute z-0 top-0 left-0">
@@ -264,7 +273,7 @@
                     </div>
                 </div>
 
-                <div class="mmd:w-1/2 lg:ax-w-content text-black-900 order-1 md:order-none">
+                <div class="md:w-1/2 lg:ax-w-content text-black-900 order-1 md:order-none">
                     <h1 class="font-secondary text-34 lg:text-50 tracking-tiny mb-4">
                         Android Apps
                     </h1>
@@ -290,8 +299,8 @@
                 </div>
 
                 <div class="w-full md:w-3/5 xl:pr-20">
-                    <h3 class="font-secondary text-sm lg:text-2xl leading-7">STEP-BY-STEP</h3>
-                    <h1 class="font-secondary text-2xl lg:text-34 leading-7 py-2">
+                    <h3 class="font-secondary text-sm text-black-1000 lg:text-2xl leading-7">STEP-BY-STEP</h3>
+                    <h1 class="font-secondary text-2xl text-black-1000 lg:text-34 leading-7 py-2">
                         I Have an App Idea... What Should I do Next?
                     </h1>
                     <p class="text-sm md:text-base text-black-900 pb-4">
@@ -483,6 +492,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>

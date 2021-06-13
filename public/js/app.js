@@ -22,13 +22,13 @@ hamburgerMenu.addEventListener('click', e => {
 });
 
 // SERVICE DROPDOWN
-// document.querySelector('.service-btn').addEventListener('click', e => {
-//     e.preventDefault()
-//     document.querySelector('.service-icon').classList.toggle('rotate-0')
+document.querySelector('.service-btn').addEventListener('click', e => {
+    e.preventDefault()
+    document.querySelector('.service-icon').classList.toggle('rotate-0')
 
-//     const dropdown = e.target.nextElementSibling;
-//     dropdown.classList.toggle('max-h-0')
-// });
+    const dropdown = e.target.nextElementSibling;
+    dropdown.classList.toggle('max-h-0')
+});
 
 
 // Service navbar scroll
@@ -36,16 +36,16 @@ hamburgerMenu.addEventListener('click', e => {
     function scrollHorizontally(e) {
         e = window.event || e;
         var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-        document.getElementById('service-nav').scrollLeft -= (delta * 40); // Multiplied by 40
+        document.querySelector('.scroll-effect').scrollLeft -= (delta * 40); // Multiplied by 40
         e.preventDefault();
     }
-    if (document.getElementById('service-nav').addEventListener) {
+    if (document.querySelector('.scroll-effect').addEventListener) {
         // IE9, Chrome, Safari, Opera
-        document.getElementById('service-nav').addEventListener("mousewheel", scrollHorizontally, false);
+        document.querySelector('.scroll-effect').addEventListener("mousewheel", scrollHorizontally, false);
         // Firefox
-        document.getElementById('service-nav').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+        document.querySelector('.scroll-effect').addEventListener("DOMMouseScroll", scrollHorizontally, false);
     } else {
         // IE 6/7/8
-        document.getElementById('service-nav').attachEvent("onmousewheel", scrollHorizontally);
+        document.querySelector('.scroll-effect').attachEvent("onmousewheel", scrollHorizontally);
     }
 })();
