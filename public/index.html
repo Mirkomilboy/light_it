@@ -28,8 +28,9 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header class="home w-full lg:h-base fixed top-0 py-4 md:py-7 lg:py-0 z-1000">
+
+    <!-- DESKTOP Navbar -->
+    <header class="home w-full hidden md:block h-base fixed top-0 py-0 z-1000">
         <nav class="max-w-nav h-full flex items-center mx-auto px-5">
             <div class="w-full flex item-center justify-between">
                 <!-- Logo -->
@@ -42,9 +43,8 @@
                 </a>
 
                 <!-- Menu -->
-                <div
-                    class="hidden md:flex items-center text-15 text-white font-bold leading-5 tracking-small space-x-7 lg:space-x-10">
-                    <a href="#" class="block py-3.5">
+                <div class="flex items-center text-15 text-white font-bold leading-5 tracking-small space-x-10">
+                    <a href="#our-work" class="block py-3.5">
                         Our work
                     </a>
                     <div class="relative group">
@@ -77,25 +77,83 @@
                     <a href="#" class="block py-3.5">
                         Blog
                     </a>
-                    <a href="#" class="btn ghost">
+                    <a href="contact.html" class="btn ghost">
                         Contact us
                     </a>
                 </div>
-
-                <button type="button" aria-label="Toggle navigation" class="hamburger-menu block md:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 25" fill="none">
-                        <path d="M4 6.16016H20M4 12.1602H20M4 18.1602H20" stroke="#fff" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" viewBox="0 0 25 25" fill="none">
-                        <path d="M6.5 18.2061L18.5 6.20606M6.5 6.20605L18.5 18.2061" stroke="#202E3D" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
             </div>
         </nav>
     </header>
+
+    <!-- MOBILE Navbar -->
+    <nav id="mobile-nav" class="md:hidden fixed inset-0 z-1000">
+        <div class="home max-w-nav w-full flex item-center justify-between py-4 px-5">
+            <!-- Mobile logo -->
+            <a href="index.html" class="block">
+                <img class="block md:hidden" src="./assets/images/Logo-white-small.svg" alt="">
+            </a>
+
+            <button type="button" aria-label="Toggle navigation" class="hamburger-menu block md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="open-svg h-6 w-6 pointer-events-none" viewBox="0 0 24 25"
+                    fill="none">
+                    <path d="M4 6.16016H20M4 12.1602H20M4 18.1602H20" stroke="#fff" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="close-svg h-6 w-6 pointer-events-none hidden"
+                    viewBox="0 0 25 25" fill="none">
+                    <path d="M6.5 18.2061L18.5 6.20606M6.5 6.20605L18.5 18.2061" stroke="#fff" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu -->
+        <div
+            class="mobile-menu h-full bg-black-900 text-xl text-white text-center transition-transform duration-300 ease-in-out transform -translate-x-full leading-7 py-18">
+            <a href="#" class="block py-5">
+                Our work
+            </a>
+            <div class="py-5">
+                <button type="button" class="service-btn w-full inline-flex items-center justify-center">
+                    Services
+
+                    <!-- active  -->
+                    <svg class="service-icon transition-transform transform -rotate-180 rotate-0 ml-3 pointer-events-none"
+                        xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                        <path d="M16.3337 7.5L10.5003 13.3333L4.66699 7.5" stroke="#fff" stroke-width="1.66667"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <!-- active: max-h-52  -->
+                <div class="dropdown text-base max-h-52 max-h-0 overflow-hidden leading-6 space-y-3">
+                    <a class="block pt-3" href="service-product-strategy.html">
+                        Product strategy
+                    </a>
+                    <a class="block" href="service-product-design.html  ">
+                        Product design
+                    </a>
+                    <a class="block" href="service-development.html">
+                        Development
+                    </a>
+                    <a class="block pb-3" href="service-staff.html">
+                        Staff augmentation
+                    </a>
+                </div>
+            </div>
+
+            <a href="#" class="block py-5">
+                Playbook
+
+            </a>
+            <a href="#" class="block py-5">
+                Blog
+            </a>
+            <a href="#" class="block py-5">
+                Contact us
+            </a>
+        </div>
+    </nav>
     <!-- end  -->
 
     <!-- Hero and Leading companies -->
@@ -330,7 +388,7 @@
     <!-- end -->
 
     <!-- Our work -->
-    <section class="bg-black-1000 relative lg:py-20 xl:py-44 ">
+    <section id="our-work" class="bg-black-1000 relative lg:py-20 xl:py-44 ">
         <div class="max-w-base mx-auto px-4 sm:px-6">
             <!-- Mobile Title -->
             <div class="max-w-2xl lg:hidden mx-auto md:px-5">
@@ -470,7 +528,7 @@
     <!-- end -->
 
     <!-- CURASCRIBE -->
-    <section class="bg-black-1000 relative py-20">
+    <section class="bg-black-1000 relative py-20 overflow-hidden">
         <div class="max-w-base mx-auto px-4 sm:px-6">
             <!-- Mobile Title -->
             <div class="lg:hidden relative z-10">
@@ -537,8 +595,8 @@
                         </div>
 
                         <!-- Dots -->
-                        <img class="absolute -bottom-12 left-12 transform rotate-90" src="assets/shapes/dot_grid.svg"
-                            alt="">
+                        <img class="hidden md:block absolute -bottom-12 left-12 transform rotate-90"
+                            src="assets/shapes/dot_grid.svg" alt="">
                     </div>
                 </div>
             </div>
