@@ -193,7 +193,6 @@ body.active-sticky .home,
     }
       .scroll-effect::-webkit-scrollbar
       {
-        @apply h-1
+        @apply h-0
       }
-
 }

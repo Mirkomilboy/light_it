@@ -2143,9 +2143,8 @@ body.active-sticky header.home, body.active-sticky .home, #mobile-nav.active {
 		overflow-x: scroll;
 	}
       .scroll-effect::-webkit-scrollbar {
-		height: 0.25rem;
+		height: 0px;
 	}
-
 }
 
 
