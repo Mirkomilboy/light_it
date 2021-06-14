@@ -18,6 +18,7 @@ const hamburgerMenu = document.querySelector('.hamburger-menu')
 hamburgerMenu.addEventListener('click', e => {
     e.preventDefault()
 
+    console.log('clicking')
     mobileMenu.classList.toggle('active')
 });
 

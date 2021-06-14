@@ -37,9 +37,9 @@ body {
     @apply bg-secondary-100 relative font-primary
 }
 
+
 body.active-sticky header.home,
-body.active-sticky .home,
-#mobile-nav.dark.active {
+body.active-sticky .dark {
     @apply transition-colors duration-300 bg-black-1000 
 }
 
