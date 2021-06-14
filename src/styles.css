@@ -52,14 +52,24 @@ body.active-sticky .home,
 }
 
 #mobile-nav.active .mobile-menu{
-    @apply translate-x-0
+    @apply left-0 h-screen
 }
-
 
 .dropdown {
     transition: all .2s ease-in-out;
     animation: goup .2s ease-in-out;
 }
+
+
+/* CUSTOM SELECT DROPDOWN */
+.select-box .options-container {
+    @apply w-full max-h-0 absolute top-14 opacity-0 transition-all duration-500 z-20
+}
+.select-box .options-container.active {
+    @apply max-h-56 opacity-100
+}
+
+
 
 @keyframes goup {
     0% {

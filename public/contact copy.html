@@ -152,13 +152,12 @@
     <!-- Free spaces -->
     <div class="pt-14 md:pt-[138px]"></div>
 
-    <div class="max-w-6xl relative mx-auto px-4 py-6 pb-20 overflow-hidden">
+    <div class="max-w-6xl relative mx-auto px-4 py-6 overflow-hidden">
         <h2 class="font-secondary text-68 md:text-82 text-secondary-1000 tracking-tiny">
             CONTACT US
         </h2>
 
-        
-        <img class="absolute w-11/12 sm:w-full md:hidden"
+        <img class="absolute w-full md:hidden"
             src="assets/images/contact-svg.svg" alt="">
 
         <!--  -->
@@ -214,47 +213,15 @@
                     </div>
                 </div>
 
-                <div class="relative">
+                <div>
                     <label for="type-of-project" class="block text-black-1000 leading-6">
                         Budget
                     </label>
-                    <div class="select-box relative flex flex-col">
-                        <div class="options-container bg-secondary-200 shadow-md rounded-xl leading-5 overflow-hidden order-1">
-                            <div class="option text-sm text-dark-200 leading-5 cursor-pointer hover:bg-secondary-400 py-2 px-4">
-                                <input type="radio"  class="hidden " id="base" name="price"/>
-                                <label class="cursor-pointer" for="base">< $20,000</label>
-                            </div>
 
-                            <div class="option text-sm text-dark-200 leading-5 cursor-pointer hover:bg-secondary-400 py-2 px-4">
-                                <input type="radio"  class="hidden" id="standart" name="price"/>
-                                <label class="cursor-pointer" for="standart">$20,000 - $50,000</label>
-                            </div>
-
-                            <div class="option text-sm text-dark-200 leading-5 cursor-pointer hover:bg-secondary-400 py-2 px-4">
-                                <input type="radio"  class="hidden" id="medium" name="price"/>
-                                <label class="cursor-pointer" for="medium">$50,000 - $100,000</label>
-                            </div>
-
-                            <div class="option text-sm text-dark-200 leading-5 cursor-pointer hover:bg-secondary-400 py-2 px-4">
-                                <input type="radio"  class="hidden" id="extra" name="price"/>
-                                <label class="cursor-pointer" for="extra">$100,000 - $500,000</label>
-                            </div>
-
-                            <div class="option text-sm text-dark-200 leading-5 cursor-pointer hover:bg-secondary-400 py-2 px-4">
-                                <input type="radio"  class="hidden" id="enterprize" name="price"/>
-                                <label class="cursor-pointer" for="enterprize">$500,000 or more</label>
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="selected relative w-full h-12 text-black-400 bg-secondary-400 placeholder-black-400 border border-transparent focus:bg-secondary-200 focus:outline-none  focus:border-secondary-1000 rounded-xl p-3">
-                            Select Price
-                        </div>
+                    <div class="mt-1">
+                        <input type="text" name="type-of-project" id="type-of-project" placeholder="Paceholder"
+                            class="w-full h-12 text-black-400 bg-secondary-400 placeholder-black-400 border border-transparent focus:bg-secondary-200 focus:outline-none  focus:border-secondary-1000 rounded-xl p-3">
                     </div>
-
-
                 </div>
                 <div>
                     <label for="type-of-project" class="block text-black-1000 leading-6">
@@ -286,7 +253,7 @@
             src="assets/images/contact-svg.svg" alt="">
     </div>
 
-    <footer class="bg-primary-1000 text-secondary-500">
+    <footer class="bg-primary-1000 text-secondary-500 ">
         <div class="max-w-base mx-auto border-b border-secondary-1000 px-4 sm:px-6 py-14">
             <img src="./assets/images/Logo-white-small.svg" alt="Logo" class="pb-2">
 
@@ -334,29 +301,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-    <script>
-        // CUSTOM SELECT DROPDWON
-        const selected = document.querySelector(".selected");
-        const optionsContainer = document.querySelector(".options-container");
-
-        const optionsList = document.querySelectorAll(".option");
-
-        selected.addEventListener("click", () => {
-            optionsContainer.classList.toggle("active");
-        });
-
-
-        optionsList.forEach(option => 
-            option.addEventListener("click", () => {
-                var priceText = option.querySelector("label").textContent;
-                selected.innerHTML = priceText
-                optionsContainer.classList.remove("active");
-            }));
-    </script>
 
     <script src="js/app.js"></script>
 </body>

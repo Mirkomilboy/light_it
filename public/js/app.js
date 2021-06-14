@@ -49,3 +49,8 @@ document.querySelector('.service-btn').addEventListener('click', e => {
         document.querySelector('.scroll-effect').attachEvent("onmousewheel", scrollHorizontally);
     }
 })();
+
+
+
+
+
